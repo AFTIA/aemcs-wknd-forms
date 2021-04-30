@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/forms-wknd" mode="merge"/>
+    <filter root="/content/forms-wknd" mode="merge"/>
+    <filter root="/content/dam/forms-wknd/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/forms-wknd" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-themes/forms-wknd" mode="merge"/>
+    <filter root="/content/dam/forms-wknd/sample_logo.png" mode="merge"/>
+    <filter root="/content/dam/forms-wknd/sample_terms.png" mode="merge"/>
+</workspaceFilter>
