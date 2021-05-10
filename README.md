@@ -130,6 +130,6 @@ The project comes with the auto-public repository configured. To setup the repos
 The AEM SDK versions are as follows:
 
 - AEM SDK: 2021.4.5181.20210416T172032Z-210325
-  Link: https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-sdk-2021.4.5181.20210416T172032Z-210325.zip
+  - Link: https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-sdk-2021.4.5181.20210416T172032Z-210325.zip
 - AEM Forms SDK: 2021.04.16.02 
   - Link: https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-forms-addon-2021.04.16.02.zip
