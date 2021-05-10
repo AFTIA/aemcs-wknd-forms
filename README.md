@@ -133,3 +133,12 @@ The AEM SDK versions are as follows:
   - Link: https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-sdk-2021.4.5181.20210416T172032Z-210325.zip
 - AEM Forms SDK: 2021.04.16.02 
   - Link: https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-forms-addon-2021.04.16.02.zip
+
+## Configure Adobe Sign (HTTPS) alternative
+
+In order to quickly configure Adobe AEM to communicate with Adobe Sign install the following tools
+
+- Node (v.12.x.x)
+- Ngrok (npm install -g ngrok)
+- Run `ngrok http 4502` (this is assuming that AEM is listening over port 4502)
+- Now configure AEM Adobe Sign integration using the ngrok provided URL
