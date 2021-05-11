@@ -1737,7 +1737,10 @@ text-align:center;
 margin-top:4rem;
 padding-top:.5em;
 padding-bottom:.5rem;
+float:left;
 box-sizing: content-box;
+display: flex;
+justify-content: left;
 
 }
 @media (max-width : 767px){
