@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-05-10T14:41:27.033-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/fd/flamingo/gui/cloudservices/flamingo/template"
+        jcr:lastModified="{Date}2021-05-10T14:41:27.026-04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="PROD WKND Automated Forms Conversion Service"
+        sling:resourceType="fd/flamingo/gui/cloudservices/flamingo/page"
+        dorEnabled="true"
+        name="prod-wknd-automated-forms-conversion-service"
+        serviceUrl="https://aemformsconversion.adobe.io"
+        template="/conf/forms-wknd/settings/wcm/templates/blank-af"
+        theme="/content/dam/formsanddocuments-themes/forms-wknd/canvas-3-0"/>
+</jcr:root>
