@@ -604,13 +604,13 @@
                 component="fd/af/components/guidefooter">
                 <af_footer
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_default="[width:100%,text-align:center,background:#e6e6e6,margin-top:4rem,cssOverride:box-sizing : content-box;&#xa;,padding-top:.5em,padding-bottom:.5rem]"
-                    default_x0023_default_x0023_ui="[paddingLock:linkOff,marginLock:linkOff,backgroundColor:#e6e6e6,marginPopover:4rem\, —\, —\, —,paddingPopover:.5em\, —\, .5rem\, —,positionPopover:Set]"
+                    default_x0023_default="[width:100%,text-align:center,margin-top:4rem,cssOverride:box-sizing : content-box;&#xa;,padding-top:.5em,padding-bottom:.5rem]"
+                    default_x0023_default_x0023_ui="[paddingLock:linkOff,marginLock:linkOff,marginPopover:4rem\, —\, —\, —,paddingPopover:.5em\, —\, .5rem\, —,positionPopover:Set]"
                     phone_x0023_default="[margin-bottom:3.55rem]"
                     phone_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:—\, —\, 3.55rem\, —]"/>
                 <af_footertext
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_default="[color:#969696,font-size:0.75em]"/>
+                    default_x0023_default="[font-size:0.75em,font-weight:bold,color:#111111]"/>
             </af_guideFooter>
             <af_guideHeader
                 jcr:primaryType="nt:unstructured"

@@ -1734,7 +1734,6 @@ border-color:rgba(0,0,0,0.15);
 .afFooter{
 width:100%;
 text-align:center;
-background:#e6e6e6;
 margin-top:4rem;
 padding-top:.5em;
 padding-bottom:.5rem;
@@ -1748,8 +1747,9 @@ margin-bottom:3.55rem;
 }
 }
 .guideTextDraw.footerText{
-color:#969696;
 font-size:0.75em;
+font-weight:bold;
+color:#111111;
 
 }
 .afHeader{
