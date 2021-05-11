@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
+    
+    <!-- cloudconfig settings -->
+    <filter root="/conf/global/settings/cloudconfigs/echosign" mode="merge"/>
+    <filter root="/conf/global/settings/cloudconfigs/flamingo" mode="merge" />
+
     <!-- forms-wknd configuration -->
     <filter root="/conf/forms-wknd" mode="merge" />
 
