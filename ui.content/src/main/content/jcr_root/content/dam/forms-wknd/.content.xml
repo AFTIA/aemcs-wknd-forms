@@ -2,4 +2,13 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="sling:OrderedFolder">
     <asset.jpg/>
+    <sample_logo.png/>
+    <sample_terms.png/>
+    <jcr:content
+        cq:conf="/conf/forms-wknd"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="WKND Forms aaCS">
+        <folderThumbnail/>
+    </jcr:content>
+    <wknd-vacations/>
 </jcr:root>
