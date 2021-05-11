@@ -49,11 +49,11 @@
         <vault.password>admin</vault.password>
 
         <core.forms.components.version>0.0.22</core.forms.components.version>
-        <aem.forms.sdk.api>2021.04.26.02</aem.forms.sdk.api>
+        <aem.forms.sdk.api>2021.04.16.02</aem.forms.sdk.api>
         <bnd.version>5.1.2</bnd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <aem.sdk.api>2021.4.5226.20210427T070726Z-210325</aem.sdk.api>
+        <aem.sdk.api>2021.4.5181.20210416T172032Z-210325</aem.sdk.api>
         <aemanalyser.version>0.9.2</aemanalyser.version>
         <componentGroupName>WKND Forms aaCS</componentGroupName>
     </properties>
