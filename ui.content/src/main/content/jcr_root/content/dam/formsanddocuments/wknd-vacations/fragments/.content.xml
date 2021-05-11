@@ -5,7 +5,5 @@
     type="lcFolder">
     <jcr:content
         jcr:primaryType="nt:unstructured"
-        jcr:title="WKND Vacations">
-        <folderThumbnail/>
-    </jcr:content>
+        jcr:title="Fragments"/>
 </jcr:root>
