@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:fd="http://www.adobe.com/aemfd/fd/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    jcr:mixinTypes="[]"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/fd/af/default"
         cq:deviceGroups="mobile/groups/responsive"
-        cq:lastModified="{Date}2021-05-11T12:50:09.529-04:00"
+        cq:lastModified="{Date}2021-05-11T16:11:57.615-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/fd/af/templateForFragment/defaultFragmentTemplate"
         jcr:primaryType="cq:PageContent"
@@ -36,19 +35,16 @@
                 <items
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="fd/af/layouts/gridFluidLayout2">
-                    <afformtitle
-                        jcr:created="{Date}2021-05-11T12:49:53.385-04:00"
+                    <guidetextdraw
+                        jcr:created="{Date}2021-05-11T16:11:57.610-04:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-05-11T12:50:09.521-04:00"
+                        jcr:lastModified="{Date}2021-05-11T16:11:57.610-04:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Adaptive Form Title"
-                        sling:resourceType="fd/af/components/afFormTitle"
-                        _value="&lt;p>Overview&lt;/p>&#xd;&#xa;"
-                        css="guideformtitle container"
+                        sling:resourceType="fd/af/components/guidetextdraw"
+                        _value="&lt;p>The text will appear here&lt;/p>"
                         guideNodeClass="guideTextDraw"
-                        name="formTitle"
-                        textIsRich="true"/>
+                        name="textdraw1620763917645"/>
                 </items>
             </rootPanel>
         </guideContainer>

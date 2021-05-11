@@ -5,5 +5,7 @@
     type="lcFolder">
     <jcr:content
         jcr:primaryType="nt:unstructured"
-        jcr:title="Fragments"/>
+        jcr:title="Fragments">
+        <folderThumbnail/>
+    </jcr:content>
 </jcr:root>
