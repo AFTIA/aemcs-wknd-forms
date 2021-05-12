@@ -24,4 +24,10 @@
     <!-- forms-wknd forms -->
     <filter root="/content/dam/formsanddocuments/wknd-vacations" mode="merge" />
     <filter root="/content/forms/af/wknd-vacations" mode="merge" />
+
+    <!-- We.Finance Asset -->
+    <filter root="/content/dam/we-finance" mode="merge" />
+
+    <!-- We.Gov Asset -->
+    <filter root="/content/dam/we-gov" mode="merge" />
 </workspaceFilter>
