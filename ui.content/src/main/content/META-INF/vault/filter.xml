@@ -21,6 +21,10 @@
     <filter root="/content/dam/formsanddocuments-themes/forms-wknd" mode="merge" />
     <filter root="/etc/clientlibs/fd/themes/forms-wknd" mode="merge" />
 
+    <!-- forms-we themes -->
+    <filter root="/content/dam/formsanddocuments-themes/we-forms-aacs" mode="merge" />
+    <filter root="/etc/clientlibs/fd/themes/we-forms-aacs" mode="merge" />
+
     <!-- forms-wknd forms -->
     <filter root="/content/dam/formsanddocuments/wknd-vacations" mode="merge" />
     <filter root="/content/forms/af/wknd-vacations" mode="merge" />
