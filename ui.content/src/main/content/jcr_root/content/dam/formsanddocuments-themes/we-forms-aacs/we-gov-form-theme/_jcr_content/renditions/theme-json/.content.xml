@@ -617,8 +617,8 @@
                 component="fd/af/components/guideheader">
                 <af_header
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_default="[color:#969696,top:0px,right:0px,left:0px,border-left-width:0px,border-bottom-width:1px,border-right-width:0px,border-top-width:0px,height:90px,vertical-align:text-top,background:#f5f5f5,border-color:#e6e6e6,margin-bottom:1rem,border-style:solid]"
-                    default_x0023_default_x0023_ui="[borderWidthPopover:0px\, 0px\, 1px\, 0px,paddingLock:link,paddingPopover:Set,backgroundColor:#f5f5f5,borderWidthLock:linkOff,marginLock:linkOff,marginPopover:—\, —\, 1rem\, —]"
+                    default_x0023_default="[color:#969696,top:0px,right:0px,left:0px,border-left-width:0px,border-bottom-width:1px,border-right-width:0px,border-top-width:0px,height:90px,vertical-align:text-top,border-color:#e6e6e6,margin-bottom:1rem,border-style:solid,background:#0e2e54]"
+                    default_x0023_default_x0023_ui="[borderWidthPopover:0px\, 0px\, 1px\, 0px,paddingLock:link,paddingPopover:Set,borderWidthLock:linkOff,marginLock:linkOff,marginPopover:—\, —\, 1rem\, —,backgroundColor:#0e2e54]"
                     phone_x0023_default="[height:64px,padding-left:1rem,padding-right:1rem]"
                     phone_x0023_default_x0023_ui="[paddingLock:linkOff,paddingPopover:1rem,marginLock:linkOff,marginPopover:Set]"/>
                 <af_headerlogo

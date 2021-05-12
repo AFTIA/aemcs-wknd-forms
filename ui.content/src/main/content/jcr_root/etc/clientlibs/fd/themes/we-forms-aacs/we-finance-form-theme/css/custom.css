@@ -3,3 +3,7 @@
     width: 10em;
    	padding-top: 0.5em;
 }
+
+.footerText:before {
+   content: "2021 We.Finance All Rights Reserved"
+}
