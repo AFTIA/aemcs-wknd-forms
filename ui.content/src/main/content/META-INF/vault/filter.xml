@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    
+
     <!-- cloudconfig settings -->
-    <filter root="/conf/global/settings/cloudconfigs/echosign" mode="merge"/>
+    <filter root="/conf/global/settings/cloudconfigs/echosign" mode="merge" />
     <filter root="/conf/global/settings/cloudconfigs/flamingo" mode="merge" />
 
     <!-- forms-wknd configuration -->
@@ -28,6 +28,10 @@
     <!-- forms-wknd forms -->
     <filter root="/content/dam/formsanddocuments/wknd-vacations" mode="merge" />
     <filter root="/content/forms/af/wknd-vacations" mode="merge" />
+
+    <!-- forms-we forms -->
+    <filter root="/content/dam/formsanddocuments/we--forms" mode="merge" />
+    <filter root="/content/forms/af/we--forms" mode="merge" />
 
     <!-- We.Finance Asset -->
     <filter root="/content/dam/we-finance" mode="merge" />
