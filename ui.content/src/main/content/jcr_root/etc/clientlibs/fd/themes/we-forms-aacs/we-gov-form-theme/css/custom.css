@@ -1,0 +1,9 @@
+.logoImage {
+    content: url("/content/dam/we-gov/we-gov.png");
+    width: 10em;
+   	padding-top: 0.5em;
+}
+
+.footerText:before {
+  content: "2021 We.Gov All Rights Reserved"
+}
