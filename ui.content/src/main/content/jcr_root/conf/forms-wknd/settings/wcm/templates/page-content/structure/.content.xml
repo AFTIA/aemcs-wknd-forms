@@ -32,6 +32,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="forms-wknd/components/experiencefragment"
                 fragmentVariationPath="/content/experience-fragments/forms-wknd/us/en/site/footer/master"/>
+            <header/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">

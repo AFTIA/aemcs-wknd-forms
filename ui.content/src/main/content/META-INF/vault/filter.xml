@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/global/settings/cloudconfigs/echosign" mode="merge"/>
-
-    <filter root="/conf/global/settings/cloudconfigs/flamingo" mode="merge" />
     
-    <filter root="/conf/forms-wknd" mode="merge"/>
-    <filter root="/content/forms-wknd" mode="merge"/>
-    <filter root="/content/dam/forms-wknd/asset.jpg" mode="merge"/>
-    <filter root="/content/experience-fragments/forms-wknd" mode="merge"/>
-    <filter root="/content/dam/formsanddocuments-themes/forms-wknd" mode="merge"/>
-    <filter root="/content/dam/forms-wknd/sample_logo.png" mode="merge"/>
-    <filter root="/content/dam/forms-wknd/sample_terms.png" mode="merge"/>
+    <!-- cloudconfig settings -->
+    <filter root="/conf/global/settings/cloudconfigs/echosign" mode="merge"/>
+    <filter root="/conf/global/settings/cloudconfigs/flamingo" mode="merge" />
+
+    <!-- forms-wknd configuration -->
+    <filter root="/conf/forms-wknd" mode="merge" />
+
+    <!-- forms-wknd sites -->
+    <filter root="/content/forms-wknd" mode="merge" />
+
+    <!-- forms-wknd assets -->
+    <filter root="/content/dam/forms-wknd" mode="merge" />
+
+    <!-- forms-wknd experience fragments -->
+    <filter root="/content/experience-fragments/forms-wknd" mode="merge" />
+
+    <!-- forms-wknd themes -->
+    <filter root="/content/dam/formsanddocuments-themes/forms-wknd" mode="merge" />
+    <filter root="/etc/clientlibs/fd/themes/forms-wknd" mode="merge" />
+
+    <!-- forms-wknd forms -->
+    <filter root="/content/dam/formsanddocuments/wknd-vacations" mode="merge" />
+    <filter root="/content/forms/af/wknd-vacations" mode="merge" />
 </workspaceFilter>

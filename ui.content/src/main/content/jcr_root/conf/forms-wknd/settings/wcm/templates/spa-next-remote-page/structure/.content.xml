@@ -3,8 +3,8 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        jcr:primaryType="cq:PageContent"
         cq:template="/conf/forms-wknd/settings/wcm/templates/spa-next-remote-page"
+        jcr:primaryType="cq:PageContent"
         sling:resourceType="core/wcm/components/page/v2/page">
         <root
             jcr:primaryType="nt:unstructured"

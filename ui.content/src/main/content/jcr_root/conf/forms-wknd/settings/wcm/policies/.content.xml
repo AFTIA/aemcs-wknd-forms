@@ -9,26 +9,26 @@
                 <afpage2 jcr:primaryType="nt:unstructured">
                     <aftemplatedpage jcr:primaryType="nt:unstructured">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
-                            <default
-                                jcr:description="Policy of the Adaptive Form page"
-                                jcr:primaryType="nt:unstructured"
-                                jcr:title="Default Page"
-                                sling:resourceType="wcm/core/components/policy/policy"
-                                clientlibs="[wcm.foundation.components.page.responsive]">
-                                <jcr:content jcr:primaryType="nt:unstructured"/>
-                            </default>
+                        <default
+                            jcr:description="Policy of the Adaptive Form page"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Default Page"
+                            sling:resourceType="wcm/core/components/policy/policy"
+                            clientlibs="[wcm.foundation.components.page.responsive]">
+                            <jcr:content jcr:primaryType="nt:unstructured"/>
+                        </default>
                     </aftemplatedpage>
                 </afpage2>
                 <guideContainer jcr:primaryType="nt:unstructured">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
-                        <default
-                            jcr:description="Policy of the Adaptive Form Guide Container"
-                            jcr:primaryType="nt:unstructured"
-                            jcr:title="Simple Adaptive Form Guide Container Policy"
-                            sling:resourceType="wcm/core/components/policy/policy"
-                            components="[group:Adaptive Form]">
-                            <jcr:content jcr:primaryType="nt:unstructured"/>
-                        </default>
+                    <default
+                        jcr:description="Policy of the Adaptive Form Guide Container"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Simple Adaptive Form Guide Container Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:Adaptive Form]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </default>
                 </guideContainer>
             </components>
         </af>
@@ -64,9 +64,9 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
