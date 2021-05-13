@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2021-05-13T14:52:27.830-04:00"
+        cq:lastModified="{Date}2021-05-13T15:53:30.900-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/forms-wknd/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
@@ -35,6 +35,15 @@
                         id="mainText"
                         text="&lt;p>&lt;b>Welcome to WKND!&lt;/b>&lt;/p>&#xd;&#xa;"
                         textIsRich="true"/>
+                    <text_1523799733
+                        jcr:created="{Date}2021-05-13T15:01:44.138-04:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-05-13T15:53:22.353-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p style=&quot;text-align: center;&quot;>&lt;b>Start by selecting one of the applications below&lt;/b>&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
                     <container
                         jcr:created="{Date}2021-05-13T14:42:39.223-04:00"
                         jcr:createdBy="admin"
@@ -57,11 +66,11 @@
                         <text
                             jcr:created="{Date}2021-05-13T14:45:17.948-04:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2021-05-13T14:45:28.888-04:00"
+                            jcr:lastModified="{Date}2021-05-13T14:53:53.679-04:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="foundation/components/text"
-                            text="&lt;p style=&quot;text-align: center;&quot;>&lt;b>Enjoy one of our WKND outings. Click the link&amp;nbsp;&lt;a href=&quot;/content/forms/af/wknd-vacations/forms/wknd-vacations.html&quot;>here&lt;/a>&amp;nbsp;to start filling out the form&lt;/b>&lt;/p>&#xd;&#xa;"
+                            text="&lt;p style=&quot;text-align: center;&quot;>&lt;b>Enjoy one of our WKND outings. Click the link&amp;nbsp;&lt;a href=&quot;/content/forms/af/wknd-vacations/forms/wknd-vacations.html&quot; target=&quot;_blank&quot;>here&lt;/a>&amp;nbsp;to start filling out the form&lt;/b>&lt;/p>&#xd;&#xa;"
                             textIsRich="true"/>
                     </container>
                     <container_1313394349
@@ -84,11 +93,11 @@
                         <text
                             jcr:created="{Date}2021-05-13T14:47:21.498-04:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2021-05-13T14:52:27.819-04:00"
+                            jcr:lastModified="{Date}2021-05-13T15:53:30.885-04:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="foundation/components/text"
-                            text="&lt;p style=&quot;text-align: center;&quot;>&lt;b>&lt;a href=&quot;/content/forms/af/we--forms/forms/we--base-form.html&quot; target=&quot;_blank&quot;>Apply&lt;/a> for one of our WE.Finance credit cards and start collecting points.&lt;/b>&lt;/p>&#xd;&#xa;"
+                            text="&lt;p style=&quot;text-align: center;&quot;>&lt;b>&lt;a href=&quot;/content/forms/af/we--forms/forms/we--base-form.html&quot; target=&quot;_blank&quot;>Apply&lt;/a> for one of our WE.Finance credit cards and start collecting points&lt;/b>&lt;/p>&#xd;&#xa;"
                             textIsRich="true"/>
                     </container_1313394349>
                 </container>

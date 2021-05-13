@@ -35,6 +35,11 @@ textarea {
 #mainText {
     display: flex;
     justify-content: center;
+    font-size: large;
+}
+
+#mainText p {
+    font-size: 150%;
 }
 
 #wkndVacation .image {
