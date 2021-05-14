@@ -38,4 +38,10 @@
 
     <!-- We.Gov Asset -->
     <filter root="/content/dam/we-gov" mode="merge" />
+
+    <!-- WKND Sites Page Cycling -->
+    <filter root="/content/wknd/us/en/adventures/west-coast-cycling" mode="merge" />
+
+    <!-- WKND Sites Page Template -->
+    <filter root="/conf/wknd" mode="merge" />
 </workspaceFilter>
