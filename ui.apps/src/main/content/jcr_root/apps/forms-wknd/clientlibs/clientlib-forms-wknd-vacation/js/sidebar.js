@@ -60,6 +60,6 @@ function updatePricing(som, groupSize) {
         }
     }
     catch (e) {
-        console.error("Failed to retrieve the som or the id is undefined for the sidebar operation");
+        console.error("Failed to retrieve the som or the groupSize is undefined for the sidebar operation");
     }
 }
