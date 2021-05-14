@@ -38,4 +38,8 @@
 
     <!-- We.Gov Asset -->
     <filter root="/content/dam/we-gov" mode="merge" />
+
+    <!-- WKND Workflow -->
+    <filter root="/var/workflow/models/wknd-form-submission" mode="merge" />
+    <filter root="/conf/global/settings/workflow/models/wknd-form-submission" mode="merge" />
 </workspaceFilter>
