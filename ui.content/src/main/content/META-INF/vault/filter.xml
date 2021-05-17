@@ -41,4 +41,8 @@
 
     <!-- WKND Sites Page Cycling -->
     <filter root="/content/wknd/us/en/adventures/west-coast-cycling" mode="replace" />
+    
+    <!-- WKND Workflow -->
+    <filter root="/var/workflow/models/wknd-form-submission" mode="merge" />
+    <filter root="/conf/global/settings/workflow/models/wknd-form-submission" mode="merge" />
 </workspaceFilter>
