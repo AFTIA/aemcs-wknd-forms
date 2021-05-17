@@ -57,7 +57,7 @@
                     <validatorsSettings>
                         <jackrabbit-filter>
                             <options>
-                                <validRoots>/conf,/content,/content/experience-fragments,/content/dam</validRoots>
+                                <validRoots>/conf,/content,/content/experience-fragments,/content/dam,/var/workflow</validRoots>
                             </options>
                         </jackrabbit-filter>
                     </validatorsSettings>
