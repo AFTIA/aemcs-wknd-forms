@@ -167,3 +167,13 @@ In order to enable the AFC configurations users will need to create an IMS Confi
 **Note:** For cloud instances users should be using the Adobe Admin Console to create their Automated Forms Conversion Service configurations.
 
 Once the IMS config has been created users can navigate to http(s)://server:port/mnt/overlay/fd/flamingo/gui/cloudservices/flamingo/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Fflamingo%2Fprod-wknd-automated-forms-conversion-service to view the AFC configuration settings.
+
+## Install
+
+Once the Adobe WKND project is installed, then this project can be installed using the `mvn clean install -Padobe-public -PautoInstallSinglePackage` command in the root of the project.
+
+Users can then view the form on the WKND page by opening up this URL: http(s)://server:port/content/wknd/us/en/adventures/west-coast-cycling.html?wcmmode=disabled
+
+# Contributors
+
+- [Patrique Legault](mailto:patrique.legault@aftia.com)
