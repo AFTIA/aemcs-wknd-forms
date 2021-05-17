@@ -161,3 +161,7 @@ Users can locate the steps required to configure AEM with Adobe Sign here: https
 **Note:** Adobe Sign requires HTTPS in order to be configured, users can refer to `Configure Adobe Sign (HTTPS) alternative` for a quick HTTPS configuration of the AEM server.
 
 ## AFC Config
+
+In order to enable the AFC configurations users will need to create an IMS Configuration on their local instance of AEM, users can follow these instructions (https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=en#adduseranddevs). 
+
+**Note:** For cloud instances users should be using the Adobe Admin Console to create their Automated Forms Conversion Service configurations.
