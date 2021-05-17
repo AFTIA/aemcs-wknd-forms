@@ -22,7 +22,7 @@ function sideBarProp(som, id) {
         } else if (id === difficulty) {
             $("#" + node.id + " p").html("Difficulty<br/> <b>Beginner</b>");
         } else if (id === price) {
-            $("#" + node.id + " p").html("Price<br/> <b>50$ USD</b>");
+            $("#" + node.id + " p").html("Price<br/> <b>4500$ USD</b>");
         } else {
             console.log("Failed to identify the correct id for the given operation");
         }
@@ -45,13 +45,13 @@ function updatePricing(som, groupSize) {
             var cost = 0;
             var costStr = undefined;
             if (groupSize == 1) {
-                $("#" + node.id + " p").html("Price<br/> <b>50$ USD</b>");
+                $("#" + node.id + " p").html("Price<br/> <b>500$ USD</b>");
             } else if (groupSize > 1 && groupSize < 6) {
-                cost = 45 * groupSize;
+                cost = 450 * groupSize;
                 costStr = "Price<br/> <b>" + cost + "$ USD</b>";
                 $("#" + node.id + " p").html(costStr);
             } else if (groupSize > 5) {
-                cost = 40 * groupSize;
+                cost = 375 * groupSize;
                 costStr = "Price<br/> <b>" + cost + "$ USD</b>";
                 $("#" + node.id + " p").html(costStr);
             } else {

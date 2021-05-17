@@ -142,3 +142,38 @@ In order to quickly configure Adobe AEM to communicate with Adobe Sign install t
 - Ngrok (npm install -g ngrok)
 - Run `ngrok http 4502` (this is assuming that AEM is listening over port 4502)
 - Now configure AEM Adobe Sign integration using the ngrok provided URL
+
+# Project Setup
+
+## WKND 
+
+This project has a dependency on the WKND project hosted on Github. Please download and install the following version of the AEM WKND project in order to view the form on the correct Site page. https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-0.3.0
+
+Information about the project setup can be found on the release README page which is available here: https://github.com/adobe/aem-guides-wknd/blob/p6.1/README.md
+
+## Adobe Sign Config
+
+The Adobe Sign configuration can be found at the following URL: http(s)://server:port/libs/adobesign/cloudservices/adobesign.html/conf/global 
+
+Make sure to update the client id and client secret with values that are reflective to your envrionment. 
+Users can locate the steps required to configure AEM with Adobe Sign here: https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=en#configure-adobe-sign-scheduler-to-sync-the-signing-status
+
+**Note:** Adobe Sign requires HTTPS in order to be configured, users can refer to `Configure Adobe Sign (HTTPS) alternative` for a quick HTTPS configuration of the AEM server.
+
+## AFC Config
+
+In order to enable the AFC configurations users will need to create an IMS Configuration on their local instance of AEM, users can follow these instructions (https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=en#adduseranddevs). 
+
+**Note:** For cloud instances users should be using the Adobe Admin Console to create their Automated Forms Conversion Service configurations.
+
+Once the IMS config has been created users can navigate to http(s)://server:port/mnt/overlay/fd/flamingo/gui/cloudservices/flamingo/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Fflamingo%2Fprod-wknd-automated-forms-conversion-service to view the AFC configuration settings.
+
+## Install
+
+Once the Adobe WKND project is installed, then this project can be installed using the `mvn clean install -Padobe-public -PautoInstallSinglePackage` command in the root of the project.
+
+Users can then view the form on the WKND page by opening up this URL: http(s)://server:port/content/wknd/us/en/adventures/west-coast-cycling.html?wcmmode=disabled
+
+# Contributors
+
+- [Patrique Legault](mailto:patrique.legault@aftia.com)
