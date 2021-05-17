@@ -165,3 +165,5 @@ Users can locate the steps required to configure AEM with Adobe Sign here: https
 In order to enable the AFC configurations users will need to create an IMS Configuration on their local instance of AEM, users can follow these instructions (https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=en#adduseranddevs). 
 
 **Note:** For cloud instances users should be using the Adobe Admin Console to create their Automated Forms Conversion Service configurations.
+
+Once the IMS config has been created users can navigate to http(s)://server:port/mnt/overlay/fd/flamingo/gui/cloudservices/flamingo/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Fflamingo%2Fprod-wknd-automated-forms-conversion-service to view the AFC configuration settings.
