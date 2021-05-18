@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-05-17T18:13:22.015-04:00"
+        cq:lastModifiedBy="admin"
+        jcr:lastModified="{Date}2021-05-17T18:13:21.816-04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="WKND Forms Salesforce "
+        sling:resourceType="fd/fdm/gui/components/admin/fdmcloudservice/rest"
+        access_token_uri="https://login.salesforce.com/services/oauth2/token"
+        authenticationType="OAuth 2.0"
+        authorization_scope="api chatter_api full id openid refresh_token visualforce web"
+        client_id="3MVG9cHH2bfKACZa_fTW8KWqh7Sb83T.XMux7ccb2x06VaukBjaKqMaPYuEmQbGfNnYbvxXMu3XNLxwp2Wlvv"
+        client_secret="\{5736f6b4063722e2ea7baf4fc1bbfea5c8f141e8e7ed50a0168784e3f2b15f27646f048947efc6b2ecf106e739d9466a304348ad415bd19318b377e9e82105854bb486ebc904dcff720e546b08ae3dd471c38a31998c1fc4f928815f689cc386}"
+        dataSourceType="REST"
+        filename="swagger-sales-force-lead-extended.json"
+        location="header"
+        name="wknd-forms-salesforce"
+        oAuthUrl="https://login.salesforce.com/services/oauth2/authorize"
+        redirect_uri="https://4a668d7004e1.ngrok.io/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html"
+        refresh_token="\{e4c1643adb0b83c6c8179935882e37a2984c1f37d06b37298cd707355237e36fc61d4cd8457163a55e49c47a0f0e3440eeb5ae8c3fea3e9278719a233a7dd3010976267ad785869beba380220a490dcfd28435ec10d56429d5001996d454b089fd22353052817dcca86ac30ff9cd33c8}"
+        refresh_token_uri="https://login.salesforce.com/services/oauth2/token"
+        selectAuthentication="OAuth 2.0"
+        selectHeader="Authorization Bearer"
+        serviceEndPoint="https://patlego-dev-ed.lightning.force.com"
+        swaggerSource="swaggerFile">
+        <swaggerFile/>
+    </jcr:content>
+</jcr:root>

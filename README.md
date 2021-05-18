@@ -168,6 +168,12 @@ In order to enable the AFC configurations users will need to create an IMS Confi
 
 Once the IMS config has been created users can navigate to http(s)://server:port/mnt/overlay/fd/flamingo/gui/cloudservices/flamingo/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Fflamingo%2Fprod-wknd-automated-forms-conversion-service to view the AFC configuration settings.
 
+## Salesforce FDM Config
+
+Follow the instructions provided in the following document in order to configure an FDM with Salesforce https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.html?lang=en#aem-forms-1
+
+**Note:** A dev salesforce server should be acquired in order to get an integration going. 
+
 ## Install
 
 Once the Adobe WKND project is installed, then this project can be installed using the `mvn clean install -Padobe-public -PautoInstallSinglePackage` command in the root of the project.
