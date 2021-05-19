@@ -35,17 +35,15 @@ background:rgba(235,60,54,0.05);
 
 }
 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){
-margin-top:0.25rem;
 padding-left:0.5rem;
 padding-right:0.75rem;
-border-left-width:0.25rem;
-border-bottom-width:0px;
-border-right-width:0px;
-border-top-width:0px;
 border-style:solid;
-border-color:rgba(255,255,255,0);
-padding-top:0.5rem;
-margin-bottom:0.25rem;
+padding-top:0rem;
+border-right-width:.1px;
+border-bottom-width:.1px;
+border-left-width:.1px;
+border-top-width:.1px;
+border-color:rgba(105,105,105,0.13);
 
 }
 .guideFieldNode.validation-success:not(.guideButton):not(.guideTextDraw):not(.guideChart){
@@ -95,15 +93,6 @@ width:auto;
 display:block;
 }
 input,select,textarea,.guideScribble img,.afTermsAndConditions{
-border-style:solid;
-border-top-width:1px;
-border-left-width:1px;
-border-bottom-width:1px;
-border-right-width:1px;
-border-bottom-left-radius:0.25rem;
-border-bottom-right-radius:0.25rem;
-border-top-right-radius:0.25rem;
-border-top-left-radius:0.25rem;
 border-color:#cccccc;
 height:2.5rem;
 color:#555555;
@@ -113,6 +102,10 @@ padding-left:0.625rem;
 padding-top:0.625rem;
 padding-right:0.625rem;
 background:#ffffff;
+border-right-width:0px;
+border-bottom-width:0px;
+border-left-width:0px;
+border-top-width:0px;
 
 }
 .guideFieldWidget:not(.guideFieldButtonWidget) {
@@ -1523,9 +1516,13 @@ border-color:#555555;
 
 }
 button.submit:not(.af-icon-button){
-background:#666666;
 border-color:#666666;
-color:#ffffff;
+background:#fee800;
+color:#000000;
+border-top-right-radius:0px;
+border-bottom-left-radius:0px;
+border-bottom-right-radius:0px;
+border-top-left-radius:0px;
 
 }
 @media (max-width : 767px){
