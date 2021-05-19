@@ -178,6 +178,13 @@ Once the Adobe WKND project is installed, then this project can be installed usi
 
 Users can then view the form on the WKND page by opening up this URL: http(s)://server:port/content/wknd/us/en/adventures/west-coast-cycling.html?wcmmode=disabled
 
+## Output Container
+
+Follow the steps in the `Set up a local development environment and initial development project.pdf` in order to have a working Output container in your environment.
+
+System URL's
+- http://localhost:8008/systemenv
+
 # Contributors
 
 - [Patrique Legault](mailto:patrique.legault@aftia.com)
