@@ -30,6 +30,9 @@
     <filter root="/content/dam/formsanddocuments/wknd-vacations" mode="merge" />
     <filter root="/content/forms/af/wknd-vacations" mode="merge" />
 
+    <!-- forms-wknd fdm -->
+    <filter root="/content/dam/formsanddocuments-fdm/wknd" mode="merge" />
+
     <!-- forms-we forms -->
     <filter root="/content/dam/formsanddocuments/we--forms" mode="merge" />
     <filter root="/content/forms/af/we--forms" mode="merge" />
