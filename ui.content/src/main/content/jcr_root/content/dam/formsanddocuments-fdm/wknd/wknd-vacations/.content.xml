@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        jcr:lastModified="{Date}2021-05-20T12:09:47.204-04:00"
+        jcr:primaryType="dam:AssetContent"
+        sling:resourceType="fd/fm/fdm/render"
+        type="formdatamodel">
+        <metadata
+            jcr:primaryType="nt:unstructured"
+            author="admin"
+            title="WKND Vacations"
+            uiModel="\{&quot;models&quot;:{&quot;Lead&quot;:{&quot;x&quot;:520,&quot;y&quot;:80},&quot;SFResult&quot;:{&quot;x&quot;:280,&quot;y&quot;:80}}}"/>
+    </jcr:content>
+</jcr:root>

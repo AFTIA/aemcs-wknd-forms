@@ -1,0 +1,2235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2017-02-10T09:56:20Z" uuid="7038531f-2845-41b5-b36d-0a1a10c4122a">
+   <template xmlns="http://www.xfa.org/schema/xfa-template/3.6/">
+      <?formServer defaultPDFRenderFormat acrobat11.0dynamic?>
+      <?templateDesigner DefaultPreviewDynamic 1?>
+      <?templateDesigner DefaultRunAt client?>
+      <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+      <?templateDesigner WidowOrphanControl 0?>
+      <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+      <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+      <?templateDesigner DefaultLanguage JavaScript?>
+      <?acrobat JavaScript strictScoping?>
+      <?templateDesigner SavePDFWithLog 0?>
+      <?layout containedExclGroup 1?>
+      <?templateDesigner SaveTaggedPDF 0?>
+      <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+      <?templateDesigner Zoom 99?>
+      <?templateDesigner FormTargetVersion 36?>
+      <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+      <?templateDesigner XDPPreviewFormat 20?>
+      <subform layout="tb" locale="en_US" name="data">
+         <pageSet>
+            <pageArea name="AF_MASTERPAGE" id="Page1">
+               <contentArea x="12.7mm" y="31.75mm" w="184.15mm" h="230.886mm" name="ContentArea"/>
+               <medium stock="a4" short="210mm" long="297mm"/>
+               <area x="12.7mm" y="10.16mm" name="Header">
+                  <draw name="AF_LOGO_IMAGE" h="15.24mm" minW="80.604mm">
+                     <ui>
+                        <imageEdit/>
+                     </ui>
+                     <value>
+                        <image href="" contentType="image/png" transferEncoding="base64">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</image>
+                     </value>
+                  </draw>
+                  <subform x="103.545mm" name="HeaderInfo" layout="tb" w="80.604mm">
+                     <bind match="none"/>
+                     <draw name="AF_FORM_TITLE" w="80.604mm" minH="4.826mm">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="lowered"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font usehref=".#som($template.#subform.#font)" size="11pt" weight="bold" posture="normal" underline="0" lineThrough="0" baselineShift="0pt" letterSpacing="0" kerningMode="none" fontHorizontalScale="100%" fontVerticalScale="100%">
+                           <fill>
+                              <color value="79,76,76"/>
+                           </fill>
+                        </font>
+                        <margin topInset="0mm" bottomInset="0.254mm" leftInset="1mm" rightInset="1mm"/>
+                        <para vAlign="bottom" spaceBelow="0pt" spaceAbove="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" lineHeight="12pt">
+                           <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                        </para>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xmlns="http://www.w3.org/1999/xhtml">West Coast Travel</body>
+                           </exData>
+                        </value>
+                     </draw>
+                     <draw name="AF_HEADER_TEXT" w="80.604mm" minH="6.35mm">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="lowered"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font usehref=".#som($template.#subform.#font)" size="8pt" weight="normal" posture="normal" underline="0" lineThrough="0" baselineShift="0pt" letterSpacing="0" kerningMode="none" fontHorizontalScale="100%" fontVerticalScale="100%">
+                           <fill>
+                              <color value="145,143,143"/>
+                           </fill>
+                        </font>
+                        <margin topInset="0mm" bottomInset="0mm" leftInset="1mm" rightInset="1mm"/>
+                        <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" lineHeight="12pt">
+                           <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                        </para>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xmlns="http://www.w3.org/1999/xhtml">WKND Vacations</body>
+                           </exData>
+                        </value>
+                     </draw>
+                     <margin topInset="1.524mm" bottomInset="1.524mm"/>
+                     <?templateDesigner expand 1?></subform>
+                  <draw name="topSeparator" y="20.32mm" w="184.15mm" h="0in">
+                     <value>
+                        <line slope="/">
+                           <edge thickness="0.635mm" usehref=".#som($template.#subform.#edge)"/>
+                        </line>
+                     </value>
+                  </draw>
+                  <?templateDesigner expand 1?></area>
+               <area x="12.7mm" y="263.664mm" name="Footer">
+                  <draw name="bottonSeparator" w="184.15mm" h="0in" y="3.036mm">
+                     <value>
+                        <line slope="/">
+                           <edge thickness="0.254mm" usehref=".#som($template.#subform.#edge)"/>
+                        </line>
+                     </value>
+                  </draw>
+                  <draw name="AF_DISCLAIMER_LABEL" y="7.115mm" h="6.259mm" w="130.175mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>DISCLAIMER</text>
+                     </value>
+                     <font usehref=".#som($template.#subform.#font)" size="8pt" baselineShift="0pt" weight="normal" posture="normal" underline="0" lineThrough="0" letterSpacing="0" kerningMode="none" fontHorizontalScale="100%" fontVerticalScale="100%">
+                        <fill>
+                           <color value="145,143,143"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para lineHeight="12pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt">
+                        <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                     </para>
+                     <desc>
+                        <text name="fieldLabel">Disclaimer Label</text>
+                     </desc>
+                  </draw>
+                  <draw name="AF_DISCLAIMER_TEXT" y="15.609mm" x="0.032mm" w="130.143mm" h="14.758mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>This document is strictly private, confidential and personal to its recipients and should not be copied, distributed or reproduced in whole or in part, nor passed to any third party.</text>
+                     </value>
+                     <font usehref=".#som($template.#subform.#font)" size="8pt" baselineShift="0pt">
+                        <fill>
+                           <color value="145,143,143"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para lineHeight="12pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt">
+                        <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                     </para>
+                     <desc>
+                        <text name="fieldLabel">Disclaimer Text</text>
+                     </desc>
+                     <?renderCache.bounds 366075 39000 0 0 1417 1417 0 0?></draw>
+                  <field name="CurrentPageNumber" w="62mm" h="10.084mm" id="floatingField019144" access="readOnly" presence="hidden">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font usehref=".#som($template.#subform.#font)"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <event activity="ready" ref="$layout" name="event__layout_ready">
+                        <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this)
+</script>
+                     </event>
+                     <calculate override="error"/>
+                     <bind match="none"/>
+                     <?templateDesigner floatingFieldPlaceholder #?>
+                  </field>
+                  <field name="NumberofPages" w="62mm" h="10.084mm" id="floatingField020603" access="readOnly" presence="hidden">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font usehref=".#som($template.#subform.#font)"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <event activity="ready" ref="$layout" name="event__layout_ready">
+                        <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount()
+</script>
+                     </event>
+                     <calculate override="error"/>
+                     <bind match="none"/>
+                     <?templateDesigner floatingFieldPlaceholder ##?>
+                  </field>
+                  <draw name="pages" x="168.275mm" h="6.259mm" y="7.115mm" minW="16.587mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField019144"/>/<span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField020603"/></p></body>
+                        </exData>
+                     </value>
+                     <font usehref=".#som($template.#subform.#font)" size="8pt" weight="normal" posture="normal" underline="0" lineThrough="0" baselineShift="0pt" letterSpacing="0" kerningMode="none" fontHorizontalScale="100%" fontVerticalScale="100%">
+                        <fill>
+                           <color value="145,143,143"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para hAlign="right" lineHeight="12pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt">
+                        <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                     </para>
+                  </draw>
+                  <field name="CurrentDate" w="62mm" h="10.084mm" id="floatingField013023" access="readOnly" presence="hidden">
+                     <ui>
+                        <dateTimeEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </dateTimeEdit>
+                     </ui>
+                     <font usehref=".#som($template.#subform.#font)"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <date/>
+                     </value>
+                     <event activity="ready" ref="$layout" name="event__layout_ready">
+                        <script>$.rawValue = Num2Date(Date(), "YYYY-MM-DD")
+</script>
+                     </event>
+                     <calculate override="error"/>
+                     <bind match="none"/>
+                     <?templateDesigner floatingFieldPlaceholder {current date}?>
+                  </field>
+                  <draw name="date" y="15.609mm" x="155.575mm" h="6.259mm" minW="29.286mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField013023"/></p></body>
+                        </exData>
+                     </value>
+                     <font usehref=".#som($template.#subform.#font)" size="8pt" weight="normal" posture="normal" underline="0" lineThrough="0" baselineShift="0pt" letterSpacing="0" kerningMode="none" fontHorizontalScale="100%" fontVerticalScale="100%">
+                        <fill>
+                           <color value="145,143,143"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para hAlign="right" lineHeight="12pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt">
+                        <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                     </para>
+                  </draw>
+                  <field name="CurrentTime" w="62mm" h="10.084mm" id="floatingField027838" access="readOnly" presence="hidden">
+                     <ui>
+                        <dateTimeEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </dateTimeEdit>
+                     </ui>
+                     <font usehref=".#som($template.#subform.#font)"/>
+                     <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <time/>
+                     </value>
+                     <event activity="ready" ref="$layout" name="event__layout_ready">
+                        <script>$.rawValue = Num2Time(Time(), "HH:MM:SS")
+</script>
+                     </event>
+                     <calculate override="error"/>
+                     <bind match="none"/>
+                     <?templateDesigner floatingFieldPlaceholder {current time}?>
+                  </field>
+                  <draw name="time" y="24.103mm" x="155.575mm" h="6.259mm" minW="29.286mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField027838"/></p></body>
+                        </exData>
+                     </value>
+                     <font usehref=".#som($template.#subform.#font)" size="8pt" weight="normal" posture="normal" underline="0" lineThrough="0" baselineShift="0pt" letterSpacing="0" kerningMode="none" fontHorizontalScale="100%" fontVerticalScale="100%">
+                        <fill>
+                           <color value="145,143,143"/>
+                        </fill>
+                     </font>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para hAlign="right" lineHeight="12pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt">
+                        <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                     </para>
+                  </draw>
+                  <?templateDesigner expand 0?></area>
+               <?templateDesigner expand 1?></pageArea>
+         </pageSet>
+         <variables>
+            <?templateDesigner expand 1?>
+            <script contentType="application/x-javascript" name="dorRadioButtonMerge">
+            function mergeData(field, textField) {
+                if(dorMergeElementOverriddenData.isFieldOverridden(field.parent)){
+                    return;
+               }
+               var radioButtonList = textField.parent.resolveNode("AF_RADIOBUTTONLIST");
+               var hiddenField = textField.parent.resolveNode(textField.parent.name);
+               var oNodes = radioButtonList.nodes || [];
+               var nNodesLength = oNodes.length;
+               var sValue = getValueFromHiddenTextField(hiddenField);
+               var oOption = null;
+
+               if (dorShowSelectedOptions.value === "true") {
+                    hideRadioButtons(radioButtonList);
+                    if (hiddenField.rawValue != null){
+                        oOption = getSelectedNode(radioButtonList, sValue);
+                    }
+               } else {
+                    radioButtonList.rawValue = sValue;
+               }
+
+               // if radio button is inside table radio button title text field will be hidden
+               // make it visible
+               textField.presence = "visible";
+
+               // assign caption of selected option as value of textField
+               if ( oOption != null &amp;&amp; dorShowSelectedOptions.value === "true" ) {
+                    textField.rawValue = oOption.caption.value.text.value;
+               }
+            }
+
+            function hideRadioButtons(radioButtonList) {
+                var oNodes = radioButtonList.nodes || [];
+                var nNodesLength = oNodes.length;
+                 for (var nNodeCount = 0; nNodeCount &lt; nNodesLength; nNodeCount++) {
+                 var oNode = oNodes.item(nNodeCount);
+                 if ( oNode.className === "field" ) {
+                    oNode.presence = "hidden";
+                 }
+               }
+            }
+
+            function getSelectedNode(radioButtonList, radioButtonListValue) {
+                var oNodes = radioButtonList.nodes || [];
+                var nNodesLength = oNodes.length;
+                var oOption = null;
+                for (var nNodeCount = 0; nNodeCount &lt; nNodesLength; nNodeCount++) {
+                  var oNode = oNodes.item(nNodeCount);
+                  if ( oNode.className === "field" ) {
+                     var oItemsValue = oNode.resolveNode("#items.#text") || oNode.resolveNode("#items.#integer");
+                     if ( oItemsValue != null &amp;&amp; oItemsValue.value === radioButtonListValue) {
+                        oOption = oNode;
+                        break;
+                     }
+                  }
+               }
+               return oOption;
+            }
+
+         function getValueFromHiddenTextField(hiddenTextField) {
+            return hiddenTextField.rawValue != null ? hiddenTextField.rawValue.toString().replace(/^\s+|\s+$/g,'') : "";
+         }
+
+         function overrideOptionsForRadioButton(field, fieldOverriddenData) {
+         /**
+          * CQ-4307242 Generate DOR not working correctly with xml schema having checkbox and radio buttons
+          * "page" root node element was hardcoded, now it is dynamic.
+          */
+                var somExpr = field.somExpression.substring(xfa.resolveNode("xfa.form.#subform[0]").somExpression.length + 1);
+                var elementOverrideData = fieldOverriddenData[somExpr];
+                if (elementOverrideData.hasOwnProperty("options")) {
+                    var hiddenTextField = field.resolveNode(field.name);
+                    var titleField = field.resolveNode("AF_RADIOBUTTONLISTTITLE");
+                    var radioButtonList = field.resolveNode("AF_RADIOBUTTONLIST");
+                    titleField.presence = "visible";
+                    var optionsMap = elementOverrideData.options;
+                    var radioButtonListValue = getValueFromHiddenTextField(hiddenTextField);
+                    hideRadioButtons(radioButtonList);
+                    if ( radioButtonListValue != null &amp;&amp; optionsMap.hasOwnProperty(radioButtonListValue) ) {
+                        titleField.rawValue = optionsMap[radioButtonListValue];
+                    }
+                }
+            }
+</script>
+            <text name="dorValueSeparator">, </text>
+            <text name="dorShowSelectedOptions">true</text>
+            <text name="dorRowShadingInst">templateDesigner rowpattern first:.*, next:.*, firstcolor:.*, nextcolor:.*, apply:1</text>
+            <script contentType="application/x-javascript" name="dorCheckBoxMerge">
+            function mergeData(field, textField) {
+               if(dorMergeElementOverriddenData.isFieldOverridden(field.parent)){
+                    return;
+               }
+               var values = field.rawValue != null ? field.rawValue.toString().split(",") : [];
+               var checkBoxValues = getCheckBoxValues(field.parent);
+
+               // if check box is inside table check box title text field will be hidden
+               // make it visible and hide check boxes
+               textField.presence = "visible";
+               if (dorShowSelectedOptions.value === "true") {
+                  hideCheckBoxes(field.parent);
+               } else {
+                  resetCheckBoxes(field.parent);
+               }
+
+               // if no option selected hide check box subform
+               if ( values != null ) {
+                  var displayValues = [];
+                  var lengthOfValues = values.length;
+                  for (var count = 0; count &lt; lengthOfValues; count++) {
+                      // get check box button corresponding to value
+                      var value = values[count] || "";
+                      var checkBoxButton = checkBoxValues[value.toString().replace(/^\s+|\s+$/g, '')];
+                      if ( checkBoxButton != null &amp;&amp; checkBoxButton.className === "field") {
+                         if (dorShowSelectedOptions.value === "true") {
+                            // push display into displayValues array
+                            displayValues.push(checkBoxButton.caption.value.text.value);
+                         } else {
+                            checkBoxButton.value.integer = 1;
+                         }
+                      }
+                  }
+                  textField.rawValue = displayValues.join(dorValueSeparator.value) || "";
+               }
+            }
+
+            function hideCheckBoxes(nodeParent) {
+               var oNodes = nodeParent.nodes || [];
+               var nNodesLength = oNodes.length;
+
+               // hide all check boxes as selected options are shown together in textField
+               for (var nNodeCount = 0; nNodeCount &lt; nNodesLength; nNodeCount++) {
+                  var oField = oNodes.item(nNodeCount);
+                  if ( oField.className === "field" )
+                     if ( oField.resolveNode("#ui.#checkButton") != null ) {
+                        oField.presence = "hidden";
+                     }
+               }
+            }
+
+            function resetCheckBoxes(nodeParent) {
+               var oNodes = nodeParent.nodes || [];
+               var nNodesLength = oNodes.length;
+
+               // hide all check boxes as selected options are shown together in textField
+               for (var nNodeCount = 0; nNodeCount &lt; nNodesLength; nNodeCount++) {
+                  var oField = oNodes.item(nNodeCount);
+                  if ( oField.className === "field" ) {
+                     if ( oField.resolveNode("#ui.#checkButton") != null ) {
+                        oField.value.integer = 0;
+                     }
+                  }
+               }
+            }
+
+            function getCheckBoxValues(nodeParent) {
+               var mValues = {};
+               var oNodes = nodeParent.nodes || [];
+               var nNodesLength = oNodes.length;
+
+               // collect save values against check box in a map
+               for (var nNodeCount = 0; nNodeCount &lt; nNodesLength; nNodeCount++) {
+                  var oField = oNodes.item(nNodeCount);
+                  if ( oField.className === "field" ) {
+                     if ( oField.resolveNode("#ui.#checkButton") != null ) {
+                        sSaveValue = oField.resolveNode("extras.saveValue") || null;
+                        if ( sSaveValue != null ) {
+                           mValues[sSaveValue.value.toString().replace(/^\s+|\s+$/g, '')] = oField;
+                        }
+                     }
+                  }
+               }
+
+               return mValues;
+            }
+            function overrideOptionsForCheckBox(field,fieldOverriddenData) {
+             /**
+              * CQ-4307242 Generate DOR not working correctly with xml schema having checkbox and radio buttons
+              * "page" root node element was hardcoded, now it is dynamic.
+              */
+                var somExpr = field.somExpression.substring(xfa.resolveNode("xfa.form.#subform[0]").somExpression.length + 1);
+                var elementOverrideData = fieldOverriddenData[somExpr];
+                if (elementOverrideData.hasOwnProperty("options")) {
+                    var hiddenTextField = field.resolveNode(field.name);
+                    field.resolveNode("AF_CHECKBOXTITLE").presence = "visible";
+                    var optionsMap = elementOverrideData.options;
+                    var values = hiddenTextField.rawValue != null ? hiddenTextField.rawValue.toString().split(",") : [];
+                    hideCheckBoxes(field);
+                    if ( values != null ) {
+                        var displayValues = [];
+                        var lengthOfValues = values.length;
+                        for (var count = 0; count &lt; lengthOfValues; count++) {
+                            var value = values[count] || "";
+                            if (optionsMap.hasOwnProperty(value)) {
+                                displayValues.push(optionsMap[value]);
+                            }
+                        }
+                        }
+                    field.resolveNode("AF_CHECKBOXTITLE").rawValue = displayValues.join(dorValueSeparator.value) || "";
+                }
+            }
+
+            function overrideOptionsForImageChoice(field,fieldOverriddenData) {
+             /**
+              * CQ-4307242 Generate DOR not working correctly with xml schema having checkbox and radio buttons
+              * "page" root node element was hardcoded, now it is dynamic.
+              */
+                var somExpr = field.somExpression.substring(xfa.resolveNode("xfa.form.#subform[0]").somExpression.length + 1);
+                var elementOverrideData = fieldOverriddenData[somExpr];
+                if (elementOverrideData.hasOwnProperty("options")) {
+                    var hiddenTextField = field.resolveNode(field.name);
+                    field.resolveNode("AF_IMAGECHOICETITLE").presence = "visible";
+                    var optionsMap = elementOverrideData.options;
+                    var values = hiddenTextField.rawValue != null ? hiddenTextField.rawValue.toString().split(",") : [];
+                    hideCheckBoxes(field);
+                    field.resolveNode("AF_IMAGECHOICETITLE").rawValue = hiddenTextField.rawValue || "";
+                }
+            }
+</script>
+            <script contentType="application/x-javascript" name="dorExcludeFromDoR">
+            function exclude(oSOMExprs) {
+                    var nIndex = -1;
+                    var nPrevIndex = -1;
+                    var oFields = {};
+                    var oSeparator = '=';
+                    var oTrueStatus = "true";
+
+                    var oFieldStatus;
+                    var nIndexOfSeparator;
+                    var oSOMExpr;
+                    var bStatus;
+                    var oStatus;
+                     /**
+                      * CQ-4307242 Generate DOR not working correctly with xml schema having checkbox and radio buttons
+                      * "page" root node element was hardcoded, now it is dynamic.
+                      */
+                    var rootNodeElement = xfa.resolveNode("xfa.form.#subform[0]").name+"[0]" + ".";
+
+                    // initialize oFields map with templateIds or som expressions and their dorExclusion values
+                    while(true) {
+                        nIndex = oSOMExprs.indexOf(',', nPrevIndex + 1);
+                        if(nIndex == -1)
+                            break;
+
+                        oFieldStatus = oSOMExprs.substring(nPrevIndex + 1, nIndex);
+                        nIndexOfSeparator = oFieldStatus.indexOf(oSeparator);
+                        oSOMExpr = rootNodeElement + oFieldStatus.substring(0, nIndexOfSeparator);
+                        bStatus = oFieldStatus.substring(nIndexOfSeparator + 1);
+                        oStatus = "visible";
+
+                        if (bStatus == "true")
+                            oStatus = "hidden";
+
+                        oFields[oSOMExpr] = oStatus;
+                        nPrevIndex = nIndex;
+                    }
+                    oFieldStatus = oSOMExprs.substring(nPrevIndex + 1);
+                    nIndexOfSeparator = oFieldStatus.indexOf(oSeparator);
+                    oSOMExpr = rootNodeElement + oFieldStatus.substring(0, nIndexOfSeparator);
+                    bStatus = oFieldStatus.substring(nIndexOfSeparator + 1);
+                    oStatus = "visible";
+
+                    if (bStatus == "true")
+                        oStatus = "hidden";
+
+                    oFields[oSOMExpr] = oStatus;
+
+                    // get objects corresponding to templateIds
+                    iterate(xfa.form, oFields);
+              }
+
+              /**
+               * Maps SOM Expression or templateId (backward compatibility) to corresponding form field object.
+               */
+              function iterate(oTreeNode, oFields) {
+                var somExpr = oTreeNode.somExpression.substring(xfa.form.somExpression.length + 1);
+                if (oFields.hasOwnProperty(somExpr))
+                     oTreeNode.presence = oFields[somExpr];
+                else if(oFields.hasOwnProperty(oTreeNode.id)) // if we get templateId (backward compatibility)
+                     oTreeNode.presence = oFields[oTreeNode.id];
+
+                // iterate through children of subform and form only
+                if(oTreeNode.className == "subform" || oTreeNode.className == "form") {
+                    var oNodes = oTreeNode.nodes;
+                    for (var nCount = 0; nCount &lt; oNodes.length; nCount++) {
+                        iterate(oNodes.item(nCount), oFields);
+                    }
+                }
+            }
+         </script>
+            <script contentType="application/x-javascript" name="dorTableRowShading" runAt="both">
+            function shadeRows(oTableRow) {
+               applyRowShading(oTableRow);
+            }
+
+            /**
+             * If apply flag in row shading instruction is 1 extract values of first color
+             * and next color and use them to alternately shade rows
+             */
+            function applyRowShading(oTableRow) {
+               // get xml of table tag
+               var oSomExp = oTableRow.parent.somExpression.substring(xfa.form.somExpression.length + 1);
+               var oParentXML = xfa.template.resolveNode(oSomExp).saveXML("pretty");
+               // get regular expression to extract row shading instruction
+               var oFind = new RegExp(dorRowShadingInst.value, "g");
+               // get string for row shading instruction
+               var oRowShadingInst = oFind.exec(oParentXML)[0];
+
+               // regular expression to get color values and appy flag
+               var oColorRegExp = new RegExp("firstcolor:.*", "g");
+               // get string for color values and apply flag
+               var oColors = oColorRegExp.exec(oRowShadingInst)[0];
+
+               // values are separated by ,
+               var nIndexOfComma = oColors.indexOf(',');
+               // get value for first color
+               var oFirstColor = oColors.substring(11, nIndexOfComma);
+               nIndexOfComma = oColors.indexOf(',', nIndexOfComma + 1);
+               // get value for next color
+               var oNextColor = oColors.substring(11 + oFirstColor.length + 2 + 10, nIndexOfComma);
+               // get value of apply flag
+               var oApply = oColors.substring(11 + oFirstColor.length + 2 + 10 + oNextColor.length + 2 + 6);
+
+               // if apply flag is 1 only then apply row shading
+               if (oApply === '1')
+                  shadeRowsWithColor(oTableRow, oFirstColor, oNextColor);
+            }
+
+            /**
+             * Actual function to shade rows of the table alternately.
+             * @param oTableRow table row which has to be shade
+             * @param oFirstColor color with which first row would be shade
+             * @param oNextColor color with which next row would be shade
+             */
+            function shadeRowsWithColor(oTableRow, oFirstColor, oNextColor) {
+               // get hexadecimal values for colors
+               oFirstColor = getHexColor(oFirstColor);
+               oNextColor = getHexColor(oNextColor);
+
+               // get colors in string format
+               var oColor1 = getColorString(oFirstColor);
+               var oColor2 = getColorString(oNextColor);
+
+               // shade rows alternately
+               var oFreqs=[1,1];
+               var oColors=[oColor1, oColor2];
+               var nFreqSize = 0;
+
+               for (var i = 0; i &lt; oFreqs.length; i++)
+                  nFreqSize += oFreqs[i];
+
+               var nRelIndex = oTableRow.index % nFreqSize + 1;
+
+               for (var nRun=0; nRun &lt; oFreqs.length; nRun++) {
+                  if (nRelIndex &gt; oFreqs[nRun]) {
+                     nRelIndex -= oFreqs[nRun];
+                  }
+                  else {
+                     oTableRow.border.fill.color.value = oColors[nRun];
+                     break;
+                  }
+               }
+            }
+
+            /**
+             * Function that returns six digit hexadecimal value for color
+             * @param oColor hexadecimal color value having six or less digits
+             * @return six digit hexadecimal value with zero prefixed if needed
+             */
+            function getHexColor(oColor) {
+               while (oColor.length &lt; 6) {
+                  oColor = '0' + oColor;  // zero pad
+               }
+               return oColor;
+            }
+
+
+            /**
+             * Function that returns color string corresponding to hexadecimal color value
+             * @param oHexColor fixed length (6) hexadecimal color value
+             * @return color string
+             */
+            function getColorString(oHexColor) {
+               var oColor = parseInt(oHexColor.substring(0, 2), 16).toString() + ","
+                              + parseInt(oHexColor.substring(2, 4), 16).toString() + ","
+                              + parseInt(oHexColor.substring(4, 6), 16).toString();
+               return oColor;
+            }
+</script>
+            <script contentType="application/x-javascript" name="dorMergeElementOverriddenData">
+            function mergeOverriddenData(stateOverrideNode) {
+                        var elementJson = {};
+                        var oNodes = stateOverrideNode.nodes;
+                        for (var nCount = 0; nCount &lt; oNodes.length; nCount++) {
+                            var node = oNodes.item(nCount);
+                            if (node.className === "subform") {
+                            var overriddenElement = getElementJson(node);
+                            if (overriddenElement) {
+                                elementJson[overriddenElement.somExp] = overriddenElement;
+                            }
+                    }
+                }
+                iterate(xfa.form, elementJson);
+            }
+
+            function getElementJson(elementNode) {
+                    var somNode = elementNode.resolveNode("AF_SOMEXPR_XFO");
+                if (somNode  &amp;&amp; somNode.rawValue) {
+                    var retvalMap = {"somExp": somNode.rawValue};
+                    var optionsNode = elementNode.resolveNode("AF_OPTIONS_XFO");
+                    if (optionsNode) {
+                            var optionsMap = getOptionsMap(optionsNode);
+                            if (optionsMap) {
+                                retvalMap.options = optionsMap;
+                            }
+                    }
+                    return retvalMap;
+                }
+            }
+
+            function getOptionsMap(optionsNode) {
+                var retvalMap;
+                var oNodes = optionsNode.nodes;
+                for (var nCount = 0; nCount &lt; oNodes.length; nCount++) {
+                    var optionNode = oNodes.item(nCount);
+                    if (optionNode != null &amp;&amp; optionNode.className === "subform") {
+                            var optionDisplayNode = optionNode.resolveNode("AF_DISPLAY_XFO");
+                         var optionSaveNode = optionNode.resolveNode("AF_SAVE_XFO");
+                            if (optionDisplayNode &amp;&amp; optionDisplayNode.rawValue &amp;&amp; optionSaveNode &amp;&amp; optionSaveNode.rawValue) {
+                                retvalMap = retvalMap || {};
+                                retvalMap[optionSaveNode.rawValue] = optionDisplayNode.rawValue
+                        }
+                    }
+                }
+                return retvalMap;
+            }
+
+            /**
+             * Maps SOM Expression or templateId (backward compatibility) to corresponding form field object.
+             */
+            function iterate(oTreeNode, elementJson) {
+            /**
+             * CQ-4307242 Generate DOR not working correctly with xml schema having checkbox and radio buttons
+             * "page" root node element was hardcoded, now it is dynamic.
+             */
+                var somExpr = oTreeNode.somExpression.substring(xfa.resolveNode("xfa.form.#subform[0]").somExpression.length + 1);
+                if (elementJson.hasOwnProperty(somExpr)) {
+                    dorDefaultElementOverrideHandler.overrideOptionsForElement(oTreeNode, elementJson);
+                } else if (elementJson.hasOwnProperty(oTreeNode.id)) { // if we get templateId (backward compatibility)
+                    dorDefaultElementOverrideHandler.overrideOptionsForElement(oTreeNode, elementJson);
+                }
+                // iterate through children of subform and form only
+                if (oTreeNode.className == "subform" || oTreeNode.className == "form") {
+                    var oNodes = oTreeNode.nodes;
+                    for (var nCount = 0; nCount &lt; oNodes.length; nCount++) {
+                        iterate(oNodes.item(nCount), elementJson);
+                    }
+                }
+            }
+
+             function isFieldOverridden(field) {
+             /**
+              * CQ-4307242 Generate DOR not working correctly with xml schema having checkbox and radio buttons
+              * "page" root node element was hardcoded, now it is dynamic.
+              */
+                var somExprRequired = field.somExpression.substring(xfa.resolveNode("xfa.form.#subform[0]").somExpression.length + 1);
+                var stateOverrideNode = xfa.resolveNode("AF_STATEOVERRIDESSUBFORM_XFO");
+                var oNodes = stateOverrideNode.nodes;
+                for (var nCount = 0; nCount &lt; oNodes.length; nCount++) {
+                    var node = oNodes.item(nCount);
+                    if (node.className === "subform") {
+                        var overriddenElement = getElementJson(node);
+                        if (overriddenElement &amp;&amp; overriddenElement.somExp === somExprRequired) {
+                            return true;
+                        }
+                    }
+                }
+                return false;
+            }
+
+</script>
+            <script contentType="application/x-javascript" name="dorDefaultElementOverrideHandler"> function overrideOptionsForElement(elementNode, fieldOverriddenData) {
+    var element = elementNode.resolveNode("extras.dorElementType");
+    if (element != null) {
+        var elementType = element.value;
+        if (elementType === 'AF_CHECKBOX_XFO') {
+            dorCheckBoxMerge.overrideOptionsForCheckBox(elementNode, fieldOverriddenData);
+        } else if (elementType === 'AF_RADIOBUTTONLIST_XFO') {
+            dorRadioButtonMerge.overrideOptionsForRadioButton(elementNode, fieldOverriddenData);
+        } else if (elementType === "AF_IMAGECHOICE_XFO") {
+            dorCheckBoxMerge.overrideOptionsForImageChoice(elementNode, fieldOverriddenData);
+        } else if (elementType === "AF_DROPDOWNLIST_XFO") {
+            dorDropDownElementOverrideHandler.overrideOptionsForDropDown(elementNode, fieldOverriddenData);
+        }
+    }
+ }
+
+</script>
+            <script contentType="application/x-javascript" name="dorDropDownElementOverrideHandler">
+ function overrideOptionsForDropDown(field,fieldOverriddenData) {
+ /**
+  * CQ-4307242 Generate DOR not working correctly with xml schema having checkbox and radio buttons
+  * "page" root node element was hardcoded, now it is dynamic.
+  */
+    var somExpr = field.somExpression.substring(xfa.resolveNode("xfa.form.#subform[0]").somExpression.length + 1);
+    var elementOverrideData = fieldOverriddenData[somExpr];
+    if (elementOverrideData.hasOwnProperty("options")) {
+        if (checkIfNewDropDownValueSelected(field.rawValue,elementOverrideData.options)) {
+            field.clearItems();
+            for(var propertyName in elementOverrideData.options) {
+                var value = elementOverrideData.options[propertyName];
+                field.addItem(value, propertyName);
+            }
+        }
+    }
+ }
+
+ function checkIfNewDropDownValueSelected(fieldValue,optionsMap) {
+    var returnValue = false;
+    for(var propertyName in optionsMap) {
+        returnValue = returnValue  || (propertyName == fieldValue)
+    }
+    return returnValue;
+ }
+</script>
+         </variables>
+         <proto>
+            <font typeface="Arial"/>
+            <fill>
+               <color value="255,220,0"/>
+            </fill>
+            <edge>
+               <color value="255,220,0"/>
+            </edge>
+            <field name="designer__defaultHyphenation">
+               <para>
+                  <hyphenation hyphenate="1"/>
+               </para>
+            </field>
+            <draw name="spaceFiller" w="127mm" h="0mm" hAlign="center">
+               <value>
+                  <rectangle>
+                     <edge presence="hidden"/>
+                  </rectangle>
+               </value>
+            </draw>
+         </proto>
+         <subform layout="tb" name="AF_EXCLUDEFROMDORSUBFORM_XFO">
+            <field name="excludeFromDoRTextField" presence="hidden">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="45.6029mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text>Exclude From DoR Text Field</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$record.excludeFromDoR"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+                 if ( this.rawValue != null )
+                     dorExcludeFromDoR.exclude(this.rawValue);
+              </script>
+               </event>
+            </field>
+            <?templateDesigner expand 1?></subform>
+         <subform name="AF_STATEOVERRIDESSUBFORM_XFO" w="170.074mm" layout="tb" presence="hidden">
+            <subform name="AF_ELEMENT_XFO" w="193.798mm" layout="tb" presence="hidden">
+               <bind match="dataRef" ref="$record.stateOverrides.element[*]"/>
+               <occur min="0" max="-1"/>
+               <subform w="169.567mm" name="AF_OPTIONS_XFO" layout="tb">
+                  <bind match="dataRef" ref="$.options"/>
+                  <subform w="169.014mm" name="AF_OPTION_XFO" layout="tb">
+                     <bind match="dataRef" ref="$.option[*]"/>
+                     <occur min="0" max="-1"/>
+                     <field name="AF_DISPLAY_XFO" w="146.775mm" h="9mm">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="lowered"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Myriad Pro"/>
+                        <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="25mm">
+                           <para vAlign="middle"/>
+                           <value>
+                              <text>Display</text>
+                           </value>
+                        </caption>
+                        <bind match="dataRef" ref="$.displayValue"/>
+                     </field>
+                     <field name="AF_SAVE_XFO" w="149.874mm" h="8.767mm">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="lowered"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Myriad Pro"/>
+                        <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="25mm">
+                           <para vAlign="middle"/>
+                           <value>
+                              <text>Save</text>
+                           </value>
+                        </caption>
+                        <bind match="dataRef" ref="$.saveValue"/>
+                     </field>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 0?></subform>
+               <field name="AF_SOMEXPR_XFO" w="168.968mm" h="9mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="25mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text>somExpr</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.somExpr"/>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <bind match="dataRef" ref="$record.stateOverrides"/>
+            <event activity="initialize" name="event__initialize">
+               <script contentType="application/x-javascript">
+     dorMergeElementOverriddenData.mergeOverriddenData(this)
+
+</script>
+            </event>
+            <?templateDesigner expand 1?></subform>
+         <subform w="184.15mm" name="guideRootPanel" layout="tb" id="guideContainer-rootPanel__">
+            <?templateDesigner expand 1?>
+            <border>
+               <edge presence="hidden" stroke="lowered"/>
+               <corner presence="hidden"/>
+            </border>
+            <breakBefore/>
+            <margin bottomInset="0mm"/>
+            <extras>
+               <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+            </extras>
+            <bind match="none"/>
+            <subform w="184.15mm" name="sidebar" layout="tb" presence="hidden" id="guideContainer-rootPanel-panel__">
+               <?templateDesigner expand 1?>
+               <border>
+                  <edge presence="hidden" stroke="lowered"/>
+                  <corner presence="hidden"/>
+               </border>
+               <breakBefore/>
+               <margin bottomInset="0mm"/>
+               <extras>
+                  <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+               </extras>
+               <bind match="none"/>
+               <draw name="social" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel-guidetextdraw__">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>The text will appear here</p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                     <fill>
+                        <color value="167,165,165"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="4.318mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="4.318mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                     <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                  </para>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge thickness="0.1524mm">
+                        <color value="249,252,251"/>
+                     </edge>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner thickness="0.152mm">
+                        <color value="249,252,251"/>
+                     </corner>
+                     <corner/>
+                  </border>
+                  <keep intact="contentArea"/>
+                  <extras>
+                     <text name="dorElementType">AF_TEXT_XFO</text>
+                  </extras>
+               </draw>
+               <draw name="type" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel-guidetextdraw_2077990419__">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>The text will appear here</p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                     <fill>
+                        <color value="167,165,165"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="4.318mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="4.318mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                     <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                  </para>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge thickness="0.1524mm">
+                        <color value="249,252,251"/>
+                     </edge>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner thickness="0.152mm">
+                        <color value="249,252,251"/>
+                     </corner>
+                     <corner/>
+                  </border>
+                  <keep intact="contentArea"/>
+                  <extras>
+                     <text name="dorElementType">AF_TEXT_XFO</text>
+                  </extras>
+               </draw>
+               <draw name="length" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel-guidetextdraw_405272275__">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>The text will appear here</p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                     <fill>
+                        <color value="167,165,165"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="4.318mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="4.318mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                     <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                  </para>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge thickness="0.1524mm">
+                        <color value="249,252,251"/>
+                     </edge>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner thickness="0.152mm">
+                        <color value="249,252,251"/>
+                     </corner>
+                     <corner/>
+                  </border>
+                  <keep intact="contentArea"/>
+                  <extras>
+                     <text name="dorElementType">AF_TEXT_XFO</text>
+                  </extras>
+               </draw>
+               <draw name="size" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel-guidetextdraw_2107333374__">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>The text will appear here</p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                     <fill>
+                        <color value="167,165,165"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="4.318mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="4.318mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                     <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                  </para>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge thickness="0.1524mm">
+                        <color value="249,252,251"/>
+                     </edge>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner thickness="0.152mm">
+                        <color value="249,252,251"/>
+                     </corner>
+                     <corner/>
+                  </border>
+                  <keep intact="contentArea"/>
+                  <extras>
+                     <text name="dorElementType">AF_TEXT_XFO</text>
+                  </extras>
+               </draw>
+               <draw name="difficulty" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel-guidetextdraw_1732696197__">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>The text will appear here</p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                     <fill>
+                        <color value="167,165,165"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="4.318mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="4.318mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                     <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                  </para>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge thickness="0.1524mm">
+                        <color value="249,252,251"/>
+                     </edge>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner thickness="0.152mm">
+                        <color value="249,252,251"/>
+                     </corner>
+                     <corner/>
+                  </border>
+                  <keep intact="contentArea"/>
+                  <extras>
+                     <text name="dorElementType">AF_TEXT_XFO</text>
+                  </extras>
+               </draw>
+               <draw name="price" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel-guidetextdraw_1255159616__">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>The text will appear here</p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                     <fill>
+                        <color value="167,165,165"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="4.318mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="4.318mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                     <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                  </para>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge thickness="0.1524mm">
+                        <color value="249,252,251"/>
+                     </edge>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner thickness="0.152mm">
+                        <color value="249,252,251"/>
+                     </corner>
+                     <corner/>
+                  </border>
+                  <keep intact="contentArea"/>
+                  <extras>
+                     <text name="dorElementType">AF_TEXT_XFO</text>
+                  </extras>
+               </draw>
+            </subform>
+            <draw name="dorSpacer" usehref=".#som($template.#subform.spaceFiller)"/>
+            <subform w="184.15mm" name="main" layout="tb" id="guideContainer-rootPanel-panel_2104326166__">
+               <?templateDesigner expand 1?>
+               <border>
+                  <edge presence="hidden" stroke="lowered"/>
+                  <corner presence="hidden"/>
+               </border>
+               <breakBefore/>
+               <margin bottomInset="0mm"/>
+               <extras>
+                  <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+               </extras>
+               <bind match="none"/>
+               <subform w="184.15mm" name="panel1620763436612" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763436612__">
+                  <?templateDesigner expand 1?>
+                  <border>
+                     <edge presence="hidden" stroke="lowered"/>
+                     <corner presence="hidden"/>
+                  </border>
+                  <breakBefore/>
+                  <margin bottomInset="0mm"/>
+                  <extras>
+                     <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+                  </extras>
+                  <bind match="none"/>
+                  <subform w="184.15mm" name="panel1620763647289" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763436612-panel__">
+                     <?templateDesigner expand 1?>
+                     <border>
+                        <edge presence="hidden" stroke="lowered"/>
+                        <corner presence="hidden"/>
+                     </border>
+                     <breakBefore/>
+                     <margin bottomInset="0mm"/>
+                     <extras>
+                        <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+                     </extras>
+                     <bind match="none"/>
+                     <draw name="textdraw1620763917645" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763436612-panel-guidetextdraw__">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>The text will appear here</p></body>
+                           </exData>
+                        </value>
+                        <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                           <fill>
+                              <color value="167,165,165"/>
+                           </fill>
+                        </font>
+                        <margin bottomInset="4.318mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="4.318mm"/>
+                        <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                           <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                        </para>
+                        <border>
+                           <edge presence="hidden"/>
+                           <edge presence="hidden"/>
+                           <edge thickness="0.1524mm">
+                              <color value="249,252,251"/>
+                           </edge>
+                           <edge presence="hidden"/>
+                           <corner/>
+                           <corner/>
+                           <corner thickness="0.152mm">
+                              <color value="249,252,251"/>
+                           </corner>
+                           <corner/>
+                        </border>
+                        <keep intact="contentArea"/>
+                        <extras>
+                           <text name="dorElementType">AF_TEXT_XFO</text>
+                        </extras>
+                     </draw>
+                  </subform>
+               </subform>
+               <subform w="184.15mm" name="panel1620763493237" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763493237__">
+                  <?templateDesigner expand 1?>
+                  <border>
+                     <edge presence="hidden" stroke="lowered"/>
+                     <corner presence="hidden"/>
+                  </border>
+                  <breakBefore/>
+                  <margin bottomInset="0mm"/>
+                  <extras>
+                     <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+                  </extras>
+                  <bind match="none"/>
+                  <subform w="184.15mm" name="panel1620763671203" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763493237-panel__">
+                     <?templateDesigner expand 1?>
+                     <border>
+                        <edge presence="hidden" stroke="lowered"/>
+                        <corner presence="hidden"/>
+                     </border>
+                     <breakBefore/>
+                     <margin bottomInset="0mm"/>
+                     <extras>
+                        <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+                     </extras>
+                     <bind match="none"/>
+                     <draw name="textdraw1620763908801" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763493237-panel-guidetextdraw__">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>The text will appear here</p></body>
+                           </exData>
+                        </value>
+                        <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                           <fill>
+                              <color value="167,165,165"/>
+                           </fill>
+                        </font>
+                        <margin bottomInset="4.318mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="4.318mm"/>
+                        <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                           <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                        </para>
+                        <border>
+                           <edge presence="hidden"/>
+                           <edge presence="hidden"/>
+                           <edge thickness="0.1524mm">
+                              <color value="249,252,251"/>
+                           </edge>
+                           <edge presence="hidden"/>
+                           <corner/>
+                           <corner/>
+                           <corner thickness="0.152mm">
+                              <color value="249,252,251"/>
+                           </corner>
+                           <corner/>
+                        </border>
+                        <keep intact="contentArea"/>
+                        <extras>
+                           <text name="dorElementType">AF_TEXT_XFO</text>
+                        </extras>
+                     </draw>
+                  </subform>
+               </subform>
+               <subform w="184.15mm" name="panel1620763505050" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763505050__">
+                  <?templateDesigner expand 1?>
+                  <border>
+                     <edge presence="hidden" stroke="lowered"/>
+                     <corner presence="hidden"/>
+                  </border>
+                  <breakBefore/>
+                  <margin bottomInset="0mm"/>
+                  <extras>
+                     <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+                  </extras>
+                  <bind match="none"/>
+                  <subform w="184.15mm" name="panel1620763692747" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763505050-panel__">
+                     <?templateDesigner expand 1?>
+                     <border>
+                        <edge presence="hidden" stroke="lowered"/>
+                        <corner presence="hidden"/>
+                     </border>
+                     <breakBefore/>
+                     <margin bottomInset="0mm"/>
+                     <extras>
+                        <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+                     </extras>
+                     <bind match="none"/>
+                     <draw name="textdraw1620763900067" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763505050-panel-guidetextdraw__">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>The text will appear here</p></body>
+                           </exData>
+                        </value>
+                        <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                           <fill>
+                              <color value="167,165,165"/>
+                           </fill>
+                        </font>
+                        <margin bottomInset="4.318mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="4.318mm"/>
+                        <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                           <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                        </para>
+                        <border>
+                           <edge presence="hidden"/>
+                           <edge presence="hidden"/>
+                           <edge thickness="0.1524mm">
+                              <color value="249,252,251"/>
+                           </edge>
+                           <edge presence="hidden"/>
+                           <corner/>
+                           <corner/>
+                           <corner thickness="0.152mm">
+                              <color value="249,252,251"/>
+                           </corner>
+                           <corner/>
+                        </border>
+                        <keep intact="contentArea"/>
+                        <extras>
+                           <text name="dorElementType">AF_TEXT_XFO</text>
+                        </extras>
+                     </draw>
+                  </subform>
+               </subform>
+               <subform w="184.15mm" name="panel1620763520319" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319__">
+                  <?templateDesigner expand 1?>
+                  <border>
+                     <edge presence="hidden" stroke="lowered"/>
+                     <corner presence="hidden"/>
+                  </border>
+                  <breakBefore/>
+                  <margin bottomInset="0mm"/>
+                  <extras>
+                     <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+                  </extras>
+                  <bind match="none"/>
+                  <subform w="184.15mm" name="panel1620763711835" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel__">
+                     <?templateDesigner expand 1?>
+                     <border>
+                        <edge presence="hidden" stroke="lowered"/>
+                        <corner presence="hidden"/>
+                     </border>
+                     <breakBefore/>
+                     <margin bottomInset="0mm"/>
+                     <extras>
+                        <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+                     </extras>
+                     <bind match="none"/>
+                     <subform w="184.15mm" name="panel1620763975155" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-panel__">
+                        <?templateDesigner expand 1?>
+                        <border>
+                           <edge presence="hidden" stroke="lowered"/>
+                           <corner presence="hidden"/>
+                        </border>
+                        <breakBefore/>
+                        <draw minH="5.842mm" name="AF_PANELTITLE" w="184.15mm">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>Main</text>
+                           </value>
+                           <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="14pt" underline="0" usehref=".#som($template.#subform.#font)" weight="bold">
+                              <fill usehref=".#som($template.#subform.#fill)"/>
+                           </font>
+                           <margin bottomInset="1.27mm" leftInset="0.5mm" rightInset="0.5mm" topInset="3.81mm"/>
+                           <para lineHeight="18pt" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt">
+                              <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                           </para>
+                           <border>
+                              <edge presence="hidden"/>
+                              <edge presence="hidden"/>
+                              <edge thickness="0.1524mm">
+                                 <color value="233,239,239"/>
+                              </edge>
+                              <edge presence="hidden"/>
+                              <corner thickness="1.524mm">
+                                 <color value="233,239,239"/>
+                              </corner>
+                              <corner thickness="1.524mm"/>
+                              <corner thickness="0.152mm"/>
+                              <corner thickness="1.524mm"/>
+                           </border>
+                           <keep intact="contentArea" next="contentArea"/>
+                        </draw>
+                        <margin bottomInset="0mm"/>
+                        <extras>
+                           <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+                        </extras>
+                        <bind match="none"/>
+                        <field name="textbox1620763986964" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-panel-guidetextbox_7709029__">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" usehref=".#som($template.#subform.#font)" weight="normal">
+                              <fill>
+                                 <color value="79,76,76"/>
+                              </fill>
+                           </font>
+                           <margin bottomInset="4.318mm" leftInset="1mm" rightInset="1mm" topInset="4.318mm"/>
+                           <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" vAlign="middle">
+                              <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                           </para>
+                           <caption reserve="59.85mm">
+                              <margin rightInset="12.7mm"/>
+                              <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                                 <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                              </para>
+                              <value>
+                                 <text>First Name</text>
+                              </value>
+                              <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                                 <fill>
+                                    <color value="167,165,165"/>
+                                 </fill>
+                              </font>
+                           </caption>
+                           <border>
+                              <edge presence="hidden"/>
+                              <edge presence="hidden"/>
+                              <edge thickness="0.1524mm">
+                                 <color value="249,252,251"/>
+                              </edge>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                              <corner thickness="0.152mm">
+                                 <color value="249,252,251"/>
+                              </corner>
+                              <corner/>
+                           </border>
+                           <value>
+                              <text/>
+                           </value>
+                           <extras>
+                              <text name="dorElementType">AF_TEXTFIELD_XFO</text>
+                           </extras>
+                        </field>
+                        <field name="textbox1620764013806" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-panel-guidetextbox__">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" usehref=".#som($template.#subform.#font)" weight="normal">
+                              <fill>
+                                 <color value="79,76,76"/>
+                              </fill>
+                           </font>
+                           <margin bottomInset="4.318mm" leftInset="1mm" rightInset="1mm" topInset="4.318mm"/>
+                           <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" vAlign="middle">
+                              <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                           </para>
+                           <caption reserve="59.85mm">
+                              <margin rightInset="12.7mm"/>
+                              <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                                 <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                              </para>
+                              <value>
+                                 <text>Last Name</text>
+                              </value>
+                              <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                                 <fill>
+                                    <color value="167,165,165"/>
+                                 </fill>
+                              </font>
+                           </caption>
+                           <border>
+                              <edge presence="hidden"/>
+                              <edge presence="hidden"/>
+                              <edge thickness="0.1524mm">
+                                 <color value="249,252,251"/>
+                              </edge>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                              <corner thickness="0.152mm">
+                                 <color value="249,252,251"/>
+                              </corner>
+                              <corner/>
+                           </border>
+                           <value>
+                              <text/>
+                           </value>
+                           <extras>
+                              <text name="dorElementType">AF_TEXTFIELD_XFO</text>
+                           </extras>
+                        </field>
+                        <field name="email1620764066624" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-panel-guideemail__">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" usehref=".#som($template.#subform.#font)" weight="normal">
+                              <fill>
+                                 <color value="79,76,76"/>
+                              </fill>
+                           </font>
+                           <margin bottomInset="4.318mm" leftInset="1mm" rightInset="1mm" topInset="4.318mm"/>
+                           <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" vAlign="middle">
+                              <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                           </para>
+                           <caption reserve="59.85mm">
+                              <margin rightInset="12.7mm"/>
+                              <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                                 <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                              </para>
+                              <value>
+                                 <text>Email</text>
+                              </value>
+                              <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                                 <fill>
+                                    <color value="167,165,165"/>
+                                 </fill>
+                              </font>
+                           </caption>
+                           <border>
+                              <edge presence="hidden"/>
+                              <edge presence="hidden"/>
+                              <edge thickness="0.1524mm">
+                                 <color value="249,252,251"/>
+                              </edge>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                              <corner thickness="0.152mm">
+                                 <color value="249,252,251"/>
+                              </corner>
+                              <corner/>
+                           </border>
+                           <value>
+                              <text/>
+                           </value>
+                           <extras>
+                              <text name="dorElementType">AF_TEXTFIELD_XFO</text>
+                           </extras>
+                           <validate>
+                              <picture>^(([^&lt;&gt;()\[\]\\.,;:\s@"]+(\.[^&lt;&gt;()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$</picture>
+                           </validate>
+                        </field>
+                        <field name="telephone1620764071873" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-panel-guidetelephone__">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" usehref=".#som($template.#subform.#font)" weight="normal">
+                              <fill>
+                                 <color value="79,76,76"/>
+                              </fill>
+                           </font>
+                           <margin bottomInset="4.318mm" leftInset="1mm" rightInset="1mm" topInset="4.318mm"/>
+                           <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="59.85mm">
+                              <margin rightInset="12.7mm"/>
+                              <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                                 <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                              </para>
+                              <value>
+                                 <text>Phone Number</text>
+                              </value>
+                              <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                                 <fill>
+                                    <color value="167,165,165"/>
+                                 </fill>
+                              </font>
+                           </caption>
+                           <border>
+                              <edge presence="hidden"/>
+                              <edge presence="hidden"/>
+                              <edge thickness="0.1524mm">
+                                 <color value="249,252,251"/>
+                              </edge>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                              <corner thickness="0.152mm">
+                                 <color value="249,252,251"/>
+                              </corner>
+                              <corner/>
+                           </border>
+                           <keep intact="contentArea"/>
+                           <value>
+                              <text/>
+                           </value>
+                           <extras>
+                              <text name="dorElementType">AF_TELEPHONE_XFO</text>
+                           </extras>
+                           <validate>
+                              <picture>^[0-9]{0,14}$</picture>
+                           </validate>
+                        </field>
+                        <field name="numericbox1621011485855" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-panel-guidenumericbox__">
+                           <ui>
+                              <numericEdit>
+                                 <margin/>
+                              </numericEdit>
+                           </ui>
+                           <font size="9pt" usehref=".#som($template.#subform.#font)" weight="normal">
+                              <fill>
+                                 <color value="79,76,76"/>
+                              </fill>
+                           </font>
+                           <margin bottomInset="4.318mm" leftInset="1mm" rightInset="1mm" topInset="4.318mm"/>
+                           <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="59.85mm">
+                              <margin rightInset="12.7mm"/>
+                              <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                                 <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                              </para>
+                              <value>
+                                 <text>Group Number</text>
+                              </value>
+                              <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                                 <fill>
+                                    <color value="167,165,165"/>
+                                 </fill>
+                              </font>
+                           </caption>
+                           <border>
+                              <edge presence="hidden"/>
+                              <edge presence="hidden"/>
+                              <edge thickness="0.1524mm">
+                                 <color value="249,252,251"/>
+                              </edge>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                              <corner thickness="0.152mm">
+                                 <color value="249,252,251"/>
+                              </corner>
+                              <corner/>
+                           </border>
+                           <keep intact="contentArea"/>
+                           <extras>
+                              <text name="dorElementType">AF_NUMERICFIELD_XFO</text>
+                           </extras>
+                           <value>
+                              <decimal leadDigits="2">12</decimal>
+                           </value>
+                        </field>
+                     </subform>
+                     <subform name="checkbox1620764099527" w="184.15mm" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-guidecheckbox__">
+                        <?templateDesigner expand 1?>
+                        <field minH="0.111mm" name="AF_CHECKBOXTITLE" maxW="184.15mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" usehref=".#som($template.#subform.#font)" weight="normal">
+                              <fill>
+                                 <color value="79,76,76"/>
+                              </fill>
+                           </font>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                           <para marginLeft="0pt" marginRight="0pt" spaceBelow="0pt" vAlign="middle">
+                              <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                           </para>
+                           <keep intact="contentArea" next="contentArea"/>
+                           <bind match="none"/>
+                        </field>
+                        <field h="13.707mm" name="checkbox1620764099527" presence="hidden" maxW="184.15mm">
+                           <ui>
+                              <textEdit>
+                                 <border>
+                                    <edge stroke="lowered"/>
+                                 </border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font usehref=".#som($template.#subform.#font)" weight="bold">
+                              <fill>
+                                 <color value="128,128,128"/>
+                              </fill>
+                           </font>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para lineHeight="10pt" spaceBelow="0pt" vAlign="bottom"/>
+                           <caption placement="top" reserve="0.185306in">
+                              <para spaceBelow="7.2pt" vAlign="middle"/>
+                              <value>
+                                 <text>Text Field</text>
+                              </value>
+                           </caption>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript">
+                     dorCheckBoxMerge.mergeData(this, this.parent.resolveNode("AF_CHECKBOXTITLE"));
+                  
+</script>
+                           </event>
+                        </field>
+                        <bind match="none"/>
+                        <margin bottomInset="4.445mm" topInset="4.445mm"/>
+                        <border>
+                           <edge presence="hidden"/>
+                           <edge presence="hidden"/>
+                           <edge thickness="0.1524mm">
+                              <color value="249,252,251"/>
+                           </edge>
+                           <edge presence="hidden"/>
+                           <corner/>
+                           <corner/>
+                           <corner thickness="0.152mm">
+                              <color value="249,252,251"/>
+                           </corner>
+                           <corner/>
+                        </border>
+                        <keep intact="contentArea"/>
+                        <field minH="0.111mm" name="checkbox16207640995271" maxW="184.15mm">
+                           <ui>
+                              <checkButton mark="check"/>
+                           </ui>
+                           <font usehref=".#som($template.#subform.#font)"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="2mm"/>
+                           <value>
+                              <integer>0</integer>
+                           </value>
+                           <caption placement="right" reserve="175.936mm">
+                              <para marginLeft="21.6pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt">
+                                 <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                              </para>
+                              <value>
+                                 <text>Check the box to receive 5% off</text>
+                              </value>
+                              <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                                 <fill>
+                                    <color value="167,165,165"/>
+                                 </fill>
+                              </font>
+                           </caption>
+                           <items>
+                              <integer>1</integer>
+                              <integer>0</integer>
+                              <integer>2</integer>
+                           </items>
+                           <keep intact="contentArea" next="contentArea"/>
+                           <bind match="none"/>
+                           <extras>
+                              <text name="saveValue">0</text>
+                           </extras>
+                        </field>
+                        <extras>
+                           <text name="dorElementType">AF_CHECKBOX_XFO</text>
+                        </extras>
+                     </subform>
+                     <subform w="184.15mm" name="panel_7522762571620764130642" layout="tb" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-panel_752276257__">
+                        <?templateDesigner expand 1?>
+                        <border>
+                           <edge presence="hidden" stroke="lowered"/>
+                           <corner presence="hidden"/>
+                        </border>
+                        <breakBefore/>
+                        <draw minH="5.842mm" name="AF_PANELTITLE" w="184.15mm">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>Discount</text>
+                           </value>
+                           <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="14pt" underline="0" usehref=".#som($template.#subform.#font)" weight="bold">
+                              <fill usehref=".#som($template.#subform.#fill)"/>
+                           </font>
+                           <margin bottomInset="1.27mm" leftInset="0.5mm" rightInset="0.5mm" topInset="3.81mm"/>
+                           <para lineHeight="18pt" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt">
+                              <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                           </para>
+                           <border>
+                              <edge presence="hidden"/>
+                              <edge presence="hidden"/>
+                              <edge thickness="0.1524mm">
+                                 <color value="233,239,239"/>
+                              </edge>
+                              <edge presence="hidden"/>
+                              <corner thickness="1.524mm">
+                                 <color value="233,239,239"/>
+                              </corner>
+                              <corner thickness="1.524mm"/>
+                              <corner thickness="0.152mm"/>
+                              <corner thickness="1.524mm"/>
+                           </border>
+                           <keep intact="contentArea" next="contentArea"/>
+                        </draw>
+                        <margin bottomInset="0mm"/>
+                        <extras>
+                           <text name="dorElementType">AF_PANELSUBFORM_XFO</text>
+                        </extras>
+                        <bind match="none"/>
+                        <field name="dropdownlist1620764173132" w="184.15mm" minH="12.7mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-panel_752276257-guidedropdownlist__">
+                           <ui>
+                              <choiceList open="userControl">
+                                 <margin/>
+                              </choiceList>
+                           </ui>
+                           <font size="9pt" usehref=".#som($template.#subform.#font)" weight="normal">
+                              <fill>
+                                 <color value="79,76,76"/>
+                              </fill>
+                           </font>
+                           <margin bottomInset="4.318mm" leftInset="1mm" rightInset="1mm" topInset="4.318mm"/>
+                           <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="59.85mm">
+                              <margin rightInset="12.7mm"/>
+                              <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                                 <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                              </para>
+                              <value>
+                                 <text>How did you hear about us?</text>
+                              </value>
+                              <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                                 <fill>
+                                    <color value="167,165,165"/>
+                                 </fill>
+                              </font>
+                           </caption>
+                           <border>
+                              <edge presence="hidden"/>
+                              <edge presence="hidden"/>
+                              <edge thickness="0.1524mm">
+                                 <color value="249,252,251"/>
+                              </edge>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                              <corner thickness="0.152mm">
+                                 <color value="249,252,251"/>
+                              </corner>
+                              <corner/>
+                           </border>
+                           <keep intact="contentArea"/>
+                           <items>
+                              <text>Facebook</text>
+                              <text>Friend</text>
+                              <text>Twitter</text>
+                              <text>Google</text>
+                           </items>
+                           <items presence="hidden" save="1">
+                              <text>Facebook</text>
+                              <text>Friend</text>
+                              <text>Twitter</text>
+                              <text>Google</text>
+                           </items>
+                           <extras>
+                              <text name="dorElementType">AF_DROPDOWNLIST_XFO</text>
+                           </extras>
+                        </field>
+                        <field name="numericbox1620764242999" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-panel_752276257-guidenumericbox__">
+                           <ui>
+                              <numericEdit>
+                                 <margin/>
+                              </numericEdit>
+                           </ui>
+                           <font size="9pt" usehref=".#som($template.#subform.#font)" weight="normal">
+                              <fill>
+                                 <color value="79,76,76"/>
+                              </fill>
+                           </font>
+                           <margin bottomInset="4.318mm" leftInset="1mm" rightInset="1mm" topInset="4.318mm"/>
+                           <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="59.85mm">
+                              <margin rightInset="12.7mm"/>
+                              <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                                 <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                              </para>
+                              <value>
+                                 <text>Age</text>
+                              </value>
+                              <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                                 <fill>
+                                    <color value="167,165,165"/>
+                                 </fill>
+                              </font>
+                           </caption>
+                           <border>
+                              <edge presence="hidden"/>
+                              <edge presence="hidden"/>
+                              <edge thickness="0.1524mm">
+                                 <color value="249,252,251"/>
+                              </edge>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                              <corner thickness="0.152mm">
+                                 <color value="249,252,251"/>
+                              </corner>
+                              <corner/>
+                           </border>
+                           <keep intact="contentArea"/>
+                           <extras>
+                              <text name="dorElementType">AF_NUMERICFIELD_XFO</text>
+                           </extras>
+                           <value>
+                              <decimal leadDigits="2"/>
+                           </value>
+                        </field>
+                        <field name="dropdownlist_8810720661620764301998" w="184.15mm" minH="12.7mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-panel-panel_752276257-guidedropdownlist_881072066__">
+                           <ui>
+                              <choiceList open="userControl">
+                                 <margin/>
+                              </choiceList>
+                           </ui>
+                           <font size="9pt" usehref=".#som($template.#subform.#font)" weight="normal">
+                              <fill>
+                                 <color value="79,76,76"/>
+                              </fill>
+                           </font>
+                           <margin bottomInset="4.318mm" leftInset="1mm" rightInset="1mm" topInset="4.318mm"/>
+                           <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" vAlign="middle"/>
+                           <caption reserve="59.85mm">
+                              <margin rightInset="12.7mm"/>
+                              <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                                 <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                              </para>
+                              <value>
+                                 <text>Gender</text>
+                              </value>
+                              <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                                 <fill>
+                                    <color value="167,165,165"/>
+                                 </fill>
+                              </font>
+                           </caption>
+                           <border>
+                              <edge presence="hidden"/>
+                              <edge presence="hidden"/>
+                              <edge thickness="0.1524mm">
+                                 <color value="249,252,251"/>
+                              </edge>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                              <corner thickness="0.152mm">
+                                 <color value="249,252,251"/>
+                              </corner>
+                              <corner/>
+                           </border>
+                           <keep intact="contentArea"/>
+                           <items>
+                              <text>Female</text>
+                              <text>Male</text>
+                           </items>
+                           <items presence="hidden" save="1">
+                              <text>Female</text>
+                              <text>Male</text>
+                           </items>
+                           <extras>
+                              <text name="dorElementType">AF_DROPDOWNLIST_XFO</text>
+                           </extras>
+                        </field>
+                     </subform>
+                  </subform>
+                  <field name="adobesignblock1621520415697" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel_2104326166-panel1620763520319-adobesignblock__">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Signature:  <span data-adobesigntype="signature">{{sampleField_es_:signer1:signature}}</span> </p>
+<p> </p>
+</body>
+                        </exData>
+                     </value>
+                     <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                        <fill>
+                           <color value="79,76,76"/>
+                        </fill>
+                     </font>
+                     <margin bottomInset="4.318mm" leftInset="1mm" rightInset="1mm" topInset="4.318mm"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
+                        <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                     </para>
+                     <caption placement="top" reserve="5.08mm">
+                        <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="3pt" textIndent="0pt" vAlign="middle">
+                           <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
+                        </para>
+                        <value>
+                           <text>Customer Signature</text>
+                        </value>
+                        <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
+                           <fill>
+                              <color value="167,165,165"/>
+                           </fill>
+                        </font>
+                     </caption>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.1524mm">
+                           <color value="249,252,251"/>
+                        </edge>
+                        <edge presence="hidden"/>
+                        <corner/>
+                        <corner/>
+                        <corner thickness="0.152mm">
+                           <color value="249,252,251"/>
+                        </corner>
+                        <corner/>
+                     </border>
+                     <keep intact="contentArea"/>
+                     <bind match="none"/>
+                     <extras>
+                        <text name="dorElementType">AF_ADOBESIGNBLOCK_XFO</text>
+                     </extras>
+                  </field>
+               </subform>
+            </subform>
+         </subform>
+      </subform>
+   </template>
+   <config xmlns="http://www.xfa.org/schema/xci/3.0/">
+      <agent name="designer">
+         <!--  [0..n]  -->
+         <destination>pdf</destination>
+         <pdf>
+            <!--  [0..n]  -->
+            <fontInfo/>
+         </pdf>
+      </agent>
+      <present>
+         <!--  [0..n]  -->
+         <destination>pdf</destination>
+         <pdf>
+            <!--  [0..n]  -->
+            <fontInfo>
+               <embed>0</embed>
+            </fontInfo>
+            <version>1.7</version>
+            <adobeExtensionLevel>11</adobeExtensionLevel>
+            <tagged>0</tagged>
+         </pdf>
+         <xdp>
+            <packets>*</packets>
+         </xdp>
+      </present>
+   </config>
+   <localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+      <locale name="en_US" desc="English (United States)">
+         <calendarSymbols name="gregorian">
+            <monthNames>
+               <month>January</month>
+               <month>February</month>
+               <month>March</month>
+               <month>April</month>
+               <month>May</month>
+               <month>June</month>
+               <month>July</month>
+               <month>August</month>
+               <month>September</month>
+               <month>October</month>
+               <month>November</month>
+               <month>December</month>
+            </monthNames>
+            <monthNames abbr="1">
+               <month>Jan</month>
+               <month>Feb</month>
+               <month>Mar</month>
+               <month>Apr</month>
+               <month>May</month>
+               <month>Jun</month>
+               <month>Jul</month>
+               <month>Aug</month>
+               <month>Sep</month>
+               <month>Oct</month>
+               <month>Nov</month>
+               <month>Dec</month>
+            </monthNames>
+            <dayNames>
+               <day>Sunday</day>
+               <day>Monday</day>
+               <day>Tuesday</day>
+               <day>Wednesday</day>
+               <day>Thursday</day>
+               <day>Friday</day>
+               <day>Saturday</day>
+            </dayNames>
+            <dayNames abbr="1">
+               <day>Sun</day>
+               <day>Mon</day>
+               <day>Tue</day>
+               <day>Wed</day>
+               <day>Thu</day>
+               <day>Fri</day>
+               <day>Sat</day>
+            </dayNames>
+            <meridiemNames>
+               <meridiem>AM</meridiem>
+               <meridiem>PM</meridiem>
+            </meridiemNames>
+            <eraNames>
+               <era>BC</era>
+               <era>AD</era>
+            </eraNames>
+         </calendarSymbols>
+         <datePatterns>
+            <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+            <datePattern name="long">MMMM D, YYYY</datePattern>
+            <datePattern name="med">MMM D, YYYY</datePattern>
+            <datePattern name="short">M/D/YY</datePattern>
+         </datePatterns>
+         <timePatterns>
+            <timePattern name="full">h:MM:SS A Z</timePattern>
+            <timePattern name="long">h:MM:SS A Z</timePattern>
+            <timePattern name="med">h:MM:SS A</timePattern>
+            <timePattern name="short">h:MM A</timePattern>
+         </timePatterns>
+         <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+         <numberPatterns>
+            <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+            <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+            <numberPattern name="percent">z,zz9%</numberPattern>
+         </numberPatterns>
+         <numberSymbols>
+            <numberSymbol name="decimal">.</numberSymbol>
+            <numberSymbol name="grouping">,</numberSymbol>
+            <numberSymbol name="percent">%</numberSymbol>
+            <numberSymbol name="minus">-</numberSymbol>
+            <numberSymbol name="zero">0</numberSymbol>
+         </numberSymbols>
+         <currencySymbols>
+            <currencySymbol name="symbol">$</currencySymbol>
+            <currencySymbol name="isoname">USD</currencySymbol>
+            <currencySymbol name="decimal">.</currencySymbol>
+         </currencySymbols>
+         <typefaces>
+            <typeface name="Myriad Pro"/>
+            <typeface name="Minion Pro"/>
+            <typeface name="Courier Std"/>
+            <typeface name="Adobe Pi Std"/>
+            <typeface name="Adobe Hebrew"/>
+            <typeface name="Adobe Arabic"/>
+            <typeface name="Adobe Thai"/>
+            <typeface name="Kozuka Gothic Pro-VI M"/>
+            <typeface name="Kozuka Mincho Pro-VI R"/>
+            <typeface name="Adobe Ming Std L"/>
+            <typeface name="Adobe Song Std L"/>
+            <typeface name="Adobe Myungjo Std M"/>
+            <typeface name="Adobe Devanagari"/>
+         </typefaces>
+      </locale>
+   </localeSet>
+   <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+         <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+            <xmp:MetadataDate>2017-02-10T09:56:20Z</xmp:MetadataDate>
+            <xmp:CreatorTool>Designer 6.2</xmp:CreatorTool>
+            <pdf:Producer>Designer 6.2</pdf:Producer>
+            <xmpMM:DocumentID>uuid:7038531f-2845-41b5-b36d-0a1a10c4122a</xmpMM:DocumentID>
+            <desc:version rdf:parseType="Resource">
+               <rdf:value>6.2.0.20160331.1.924316.921890</rdf:value>
+               <desc:ref>/template/subform[1]</desc:ref>
+            </desc:version>
+         </rdf:Description>
+      </rdf:RDF>
+   </x:xmpmeta>
+   <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+      <xfa:data xfa:dataNode="dataGroup"/>
+      <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+         <dd:data/>
+      </dd:dataDescription>
+   </xfa:datasets>
+</xdp:xdp>

@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2021-05-11T16:45:29.913-04:00"
+        cq:lastModified="{Date}2021-05-20T13:42:50.901-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/forms-wknd/settings/wcm/templates/blank-af1"
         jcr:language="en"
@@ -13,25 +13,34 @@
         sling:resourceType="fd/af/components/page2/aftemplatedpage">
         <guideContainer
             fd:version="1.1"
-            jcr:lastModified="{Date}2021-05-11T16:26:58.383-04:00"
+            jcr:lastModified="{Date}2021-05-20T13:42:50.885-04:00"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="fd/af/components/guideContainer"
             _invokeSubmitActionSync="true"
-            actionType="fd/af/components/guidesubmittype/restendpoint"
+            _useSignedPdf="true"
+            actionType="fd/dashboard/components/actions/aemworkflowsubmit"
+            attachmentsFolderPath="attachments"
             clientLibRef="wknd-vacation"
+            dataXMLPath="data"
             disableSwipeGesture="{Boolean}false"
-            dorType="none"
+            dorPath="dor"
+            dorTemplateRef="/content/dam/formsanddocuments/wknd-vacations/forms/wknd-vacations/jcr:content/renditions/dorTemplate"
+            dorType="generate"
             enableFocusOnFirstField="{Boolean}true"
             enableLayoutLayer="false"
             guideCss="guideContainer"
             guideNodeClass="guideContainerNode"
             name="guide1"
+            redirect="/content/wknd/us/en.html"
+            schemaRef="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
+            schemaType="formdatamodel"
             textIsRich="true"
             thankYouMessage="Thank you for submitting the form."
             thankYouOption="page"
             themeRef="/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default"
-            useExistingAF="false">
+            useExistingAF="false"
+            workflowModel="/var/workflow/models/wknd-form-submission">
             <layout
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fd/af/layouts/defaultGuideLayout"
@@ -57,11 +66,14 @@
                     <panel
                         jcr:created="{Date}2021-05-11T15:09:24.324-04:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-05-11T16:06:30.494-04:00"
+                        jcr:lastModified="{Date}2021-05-20T10:12:40.857-04:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Sidebar"
                         sling:resourceType="fd/af/components/panel"
+                        dorExcludeDescription="true"
+                        dorExcludeTitle="true"
+                        dorExclusion="true"
                         guideNodeClass="guidePanel"
                         name="sidebar"
                         textIsRich="true"
@@ -70,6 +82,8 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="fd/af/layouts/gridFluidLayout2"
                             columns="1"
+                            dorLayoutType="columnar"
+                            dorNumCols="1"
                             nonNavigable="{Boolean}true"
                             toolbarPosition="Bottom"/>
                         <items
@@ -171,12 +185,14 @@
                     <panel_2104326166
                         jcr:created="{Date}2021-05-11T15:10:41.087-04:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-05-11T16:06:08.841-04:00"
+                        jcr:lastModified="{Date}2021-05-20T10:17:05.815-04:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Main"
                         sling:resourceType="fd/af/components/panel"
                         completionExpReq="{Boolean}false"
+                        dorExcludeDescription="true"
+                        dorExcludeTitle="true"
                         guideNodeClass="guidePanel"
                         name="main"
                         textIsRich="true"
@@ -185,17 +201,21 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="fd/af/layouts/panel/verticalTabbedPanelLayout"
                             columns="1"
+                            dorLayoutType="columnar"
+                            dorNumCols="1"
                             enableLayoutOptimization="{Boolean}true"
                             toolbarPosition="Bottom"/>
                         <items
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="fd/af/layouts/gridFluidLayout2">
                             <panel1620763436612
-                                jcr:lastModified="{Date}2021-05-11T16:04:46.102-04:00"
+                                jcr:lastModified="{Date}2021-05-20T10:17:23.635-04:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Overview"
                                 sling:resourceType="fd/af/components/panel"
+                                dorExcludeDescription="true"
+                                dorExcludeTitle="true"
                                 guideNodeClass="guidePanel"
                                 name="panel1620763436612"
                                 textIsRich="true"
@@ -206,11 +226,12 @@
                                     <panel
                                         jcr:created="{Date}2021-05-11T16:07:27.232-04:00"
                                         jcr:createdBy="admin"
-                                        jcr:lastModified="{Date}2021-05-11T16:40:31.175-04:00"
+                                        jcr:lastModified="{Date}2021-05-20T10:18:52.963-04:00"
                                         jcr:lastModifiedBy="admin"
                                         jcr:primaryType="nt:unstructured"
                                         jcr:title="Overview Fragment"
                                         sling:resourceType="fd/af/components/panel"
+                                        dorExcludeTitle="true"
                                         fragRef="/content/dam/formsanddocuments/wknd-vacations/fragments/overview"
                                         guideNodeClass="guidePanel"
                                         name="panel1620763647289"
@@ -221,6 +242,8 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="fd/af/layouts/gridFluidLayout2"
                                             columns="1"
+                                            dorLayoutType="columnar"
+                                            dorNumCols="1"
                                             nonNavigable="{Boolean}true"
                                             toolbarPosition="Bottom"/>
                                         <items jcr:primaryType="nt:unstructured"/>
@@ -230,6 +253,8 @@
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="fd/af/layouts/gridFluidLayout2"
                                     columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
                                     nonNavigable="{Boolean}true"
                                     toolbarPosition="Bottom"/>
                                 <toolbar
@@ -266,11 +291,13 @@
                                 </toolbar>
                             </panel1620763436612>
                             <panel1620763493237
-                                jcr:lastModified="{Date}2021-05-11T16:05:02.490-04:00"
+                                jcr:lastModified="{Date}2021-05-20T10:17:36.055-04:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Itinerary"
                                 sling:resourceType="fd/af/components/panel"
+                                dorExcludeDescription="true"
+                                dorExcludeTitle="true"
                                 guideNodeClass="guidePanel"
                                 name="panel1620763493237"
                                 textIsRich="true"
@@ -281,11 +308,12 @@
                                     <panel
                                         jcr:created="{Date}2021-05-11T16:07:51.152-04:00"
                                         jcr:createdBy="admin"
-                                        jcr:lastModified="{Date}2021-05-11T16:40:42.090-04:00"
+                                        jcr:lastModified="{Date}2021-05-20T10:18:43.474-04:00"
                                         jcr:lastModifiedBy="admin"
                                         jcr:primaryType="nt:unstructured"
                                         jcr:title="Itinerary Fragment"
                                         sling:resourceType="fd/af/components/panel"
+                                        dorExcludeTitle="true"
                                         fragRef="/content/dam/formsanddocuments/wknd-vacations/fragments/itinerary"
                                         guideNodeClass="guidePanel"
                                         name="panel1620763671203"
@@ -296,6 +324,8 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="fd/af/layouts/gridFluidLayout2"
                                             columns="1"
+                                            dorLayoutType="columnar"
+                                            dorNumCols="1"
                                             nonNavigable="{Boolean}true"
                                             toolbarPosition="Bottom"/>
                                         <items jcr:primaryType="nt:unstructured"/>
@@ -305,6 +335,8 @@
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="fd/af/layouts/gridFluidLayout2"
                                     columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
                                     nonNavigable="{Boolean}true"
                                     toolbarPosition="Bottom"/>
                                 <toolbar
@@ -358,11 +390,13 @@
                                 </toolbar>
                             </panel1620763493237>
                             <panel1620763505050
-                                jcr:lastModified="{Date}2021-05-11T16:05:13.443-04:00"
+                                jcr:lastModified="{Date}2021-05-20T10:17:45.905-04:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="What to bring"
                                 sling:resourceType="fd/af/components/panel"
+                                dorExcludeDescription="true"
+                                dorExcludeTitle="true"
                                 guideNodeClass="guidePanel"
                                 name="panel1620763505050"
                                 textIsRich="true"
@@ -373,11 +407,12 @@
                                     <panel
                                         jcr:created="{Date}2021-05-11T16:08:12.709-04:00"
                                         jcr:createdBy="admin"
-                                        jcr:lastModified="{Date}2021-05-11T16:40:57.233-04:00"
+                                        jcr:lastModified="{Date}2021-05-20T10:18:34.323-04:00"
                                         jcr:lastModifiedBy="admin"
                                         jcr:primaryType="nt:unstructured"
                                         jcr:title="What to bring Fragment"
                                         sling:resourceType="fd/af/components/panel"
+                                        dorExcludeTitle="true"
                                         fragRef="/content/dam/formsanddocuments/wknd-vacations/fragments/what-to-bring"
                                         guideNodeClass="guidePanel"
                                         name="panel1620763692747"
@@ -388,6 +423,8 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="fd/af/layouts/gridFluidLayout2"
                                             columns="1"
+                                            dorLayoutType="columnar"
+                                            dorNumCols="1"
                                             nonNavigable="{Boolean}true"
                                             toolbarPosition="Bottom"/>
                                         <items jcr:primaryType="nt:unstructured"/>
@@ -397,6 +434,8 @@
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="fd/af/layouts/gridFluidLayout2"
                                     columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
                                     nonNavigable="{Boolean}true"
                                     toolbarPosition="Bottom"/>
                                 <toolbar
@@ -450,11 +489,13 @@
                                 </toolbar>
                             </panel1620763505050>
                             <panel1620763520319
-                                jcr:lastModified="{Date}2021-05-11T16:07:08.064-04:00"
+                                jcr:lastModified="{Date}2021-05-20T10:17:57.044-04:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Sign Up"
                                 sling:resourceType="fd/af/components/panel"
+                                dorExcludeDescription="true"
+                                dorExcludeTitle="true"
                                 guideNodeClass="guidePanel"
                                 name="panel1620763520319"
                                 textIsRich="true"
@@ -465,11 +506,12 @@
                                     <panel
                                         jcr:created="{Date}2021-05-11T16:08:31.782-04:00"
                                         jcr:createdBy="admin"
-                                        jcr:lastModified="{Date}2021-05-11T16:41:10.560-04:00"
+                                        jcr:lastModified="{Date}2021-05-20T10:18:12.155-04:00"
                                         jcr:lastModifiedBy="admin"
                                         jcr:primaryType="nt:unstructured"
                                         jcr:title="Sign Up Fragment"
                                         sling:resourceType="fd/af/components/panel"
+                                        dorExcludeTitle="true"
                                         fragRef="/content/dam/formsanddocuments/wknd-vacations/fragments/sign-up"
                                         guideNodeClass="guidePanel"
                                         name="panel1620763711835"
@@ -480,15 +522,33 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="fd/af/layouts/gridFluidLayout2"
                                             columns="1"
+                                            dorLayoutType="columnar"
+                                            dorNumCols="1"
                                             nonNavigable="{Boolean}true"
                                             toolbarPosition="Bottom"/>
                                         <items jcr:primaryType="nt:unstructured"/>
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
                                     </panel>
+                                    <adobesignblock
+                                        jcr:created="{Date}2021-05-20T10:20:15.651-04:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2021-05-20T10:41:02.959-04:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Customer Signature"
+                                        sling:resourceType="fd/afaddon/components/adobeSignBlock"
+                                        _value="&lt;p>Signature: &amp;nbsp;&lt;span data-adobesigntype=&quot;signature&quot;>{{sampleField_es_:signer1:signature}}&lt;/span>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                        guideNodeClass="guideAdobeSignBlock"
+                                        name="adobesignblock1621520415697"
+                                        textIsRich="true"
+                                        visible="{Boolean}false"/>
                                 </items>
                                 <layout
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="fd/af/layouts/gridFluidLayout2"
                                     columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
                                     nonNavigable="{Boolean}true"
                                     toolbarPosition="Bottom"/>
                                 <toolbar
@@ -552,20 +612,82 @@
             </rootPanel>
             <signerInfo
                 jcr:primaryType="nt:unstructured"
-                firstSignerFormFiller="false"
+                firstSignerFormFiller="true"
                 signConfigPath="/conf/global/settings/cloudconfigs/echosign/wknd-adobe-sign"
                 workflowType="SEQUENTIAL">
                 <signer0
                     jcr:primaryType="nt:unstructured"
                     countryCode="undefined"
                     countryCodeSource="form"
-                    email="undefined"
+                    email="guide[0].guide1[0].guideRootPanel[0].main[0].panel1620763520319[0].panel1620763711835[0].panel1620763975155[0].email1620764066624[0]"
                     emailSource="form"
                     phone="undefined"
                     phoneSource="form"
                     securityOption="NONE"
-                    signerTitle="Signer One"/>
+                    signerTitle="Signer One">
+                    <signField0
+                        jcr:primaryType="nt:unstructured"
+                        name="sampleField"
+                        som="guide[0].guide1[0].guideRootPanel[0].main[0].panel1620763520319[0].adobesignblock1621520415697[0]"/>
+                </signer0>
             </signerInfo>
+            <view jcr:primaryType="nt:unstructured">
+                <print
+                    jcr:created="{Date}2021-05-20T09:47:00.236-04:00"
+                    jcr:lastModified="{Date}2021-05-20T13:36:23.461-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/authoring/components/dor/dorProperties"
+                    accentColor="#FFDC00"
+                    excludeFromDoRIfHidden="true"
+                    file="/content/dam/forms-wknd/wknd-vacations/wknd-travel.png"
+                    fontFamily="Arial"
+                    hidePanelDescriptions="true"
+                    includeUnboundFields="true"
+                    metaTemplateRef="/libs/fd/af/dor/templates/defaultTemplate.xdp"
+                    optionSeparator=", "
+                    showSelectedOptions="true">
+                    <branding jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <masterpage0 jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <Header jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <AF_LOGO_IMAGE
+                                                jcr:primaryType="nt:unstructured"
+                                                fileName="wknd-travel.png"
+                                                fileReference="/content/dam/forms-wknd/wknd-vacations/wknd-travel.png"
+                                                valueFrom="     "/>
+                                            <HeaderInfo jcr:primaryType="nt:unstructured">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <AF_FORM_TITLE
+                                                        jcr:primaryType="nt:unstructured"
+                                                        resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        value="West Coast Travel"/>
+                                                    <AF_HEADER_TEXT
+                                                        jcr:primaryType="nt:unstructured"
+                                                        resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        value="WKND Vacations"/>
+                                                </items>
+                                            </HeaderInfo>
+                                        </items>
+                                    </Header>
+                                    <Footer jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <AF_DISCLAIMER_LABEL
+                                                jcr:primaryType="nt:unstructured"
+                                                resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                                            <AF_DISCLAIMER_TEXT
+                                                jcr:primaryType="nt:unstructured"
+                                                resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                                        </items>
+                                    </Footer>
+                                </items>
+                            </masterpage0>
+                        </items>
+                    </branding>
+                </print>
+            </view>
         </guideContainer>
     </jcr:content>
 </jcr:root>

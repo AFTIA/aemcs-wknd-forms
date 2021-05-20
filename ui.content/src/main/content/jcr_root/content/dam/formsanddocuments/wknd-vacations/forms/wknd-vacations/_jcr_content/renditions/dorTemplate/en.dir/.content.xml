@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:fd="http://www.adobe.com/aemfd/fd/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    fd:trusted="{Boolean}true"
+    jcr:mixinTypes="[fd:xdp]"
+    jcr:primaryType="nt:file">
+    <jcr:content
+        jcr:lastModifiedBy="fd-service"
+        jcr:mimeType="application/vnd.adobe.xdp+xml"
+        jcr:primaryType="nt:resource"/>
+</jcr:root>
