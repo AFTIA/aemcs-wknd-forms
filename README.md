@@ -168,10 +168,34 @@ Once the IMS config has been created users can navigate to http(s)://server:port
 
 ## Salesforce FDM Config
 
-Follow the instructions provided in the following document in order to configure an FDM with Salesforce https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.html?lang=en#aem-forms-1
+Follow the instructions provided in the following document in order to create a Salesforce instance and configure an FDM with Salesforce https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.html?lang=en#aem-forms-1
 
 **Note:** A dev salesforce server should be acquired in order to get an integration going. 
 
+### Creating a Salesforce Entry (Lead Example)
+
+- Click the square on the top left
+- Click on Setup (top left)
+- Click Object Manager (top left)
+- Search for Lead in the top right search box
+- Click Field and Relationships (left side bar)
+- Click New (top right)
+- Select field type (select text if the data contains strings and numbers)
+- Click Next (top right)
+- Provide a field label
+- Provide a field length (Maximum 255)
+- Provide a field name
+- Click Next 
+- Click Next
+- Click Save
+
+**Note:** The field name is the value that the FDM needs to send over 
+
+### Viewing Salesforce Leads
+
+- Click the square on the top left
+- Click Marketing (top left)
+- Click Leads
 ## Install
 
 Once the Adobe WKND project is installed, then this project can be installed using the `mvn clean install -Padobe-public -PautoInstallSinglePackage` command in the root of the project.
