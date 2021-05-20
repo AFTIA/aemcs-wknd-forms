@@ -209,6 +209,17 @@ Follow the steps in the `Set up a local development environment and initial deve
 System URL's
 - http://localhost:8008/systemenv
 
+## Create Users
+
+Follow the documentation provided here to create users within AEM https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?lang=en#administrator-help
+
+- Create the following users:
+    - George Lang
+        - id: george.lang
+        - groups:
+            - workflow-users
+            - forms-users
+
 # Contributors
 
 - [Patrique Legault](mailto:patrique.legault@aftia.com)
