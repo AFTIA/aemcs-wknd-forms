@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2021-05-11T11:00:24.962-04:00"
+        cq:lastModified="{Date}2021-05-20T10:45:41.864-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/forms-wknd/settings/wcm/templates/blank-af1"
         jcr:lastModified="{Date}2021-03-24T18:22:20.809+05:30"
@@ -12,24 +12,29 @@
         guideComponentType="fd/af/templates">
         <guideContainer
             fd:version="1.1"
-            jcr:lastModified="{Date}2021-05-11T11:00:24.957-04:00"
+            jcr:lastModified="{Date}2021-05-20T10:45:41.857-04:00"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="fd/af/components/guideContainer"
             _invokeSubmitActionSync="true"
-            actionType="fd/af/components/guidesubmittype/restendpoint"
+            actionType="fd/dashboard/components/actions/aemworkflowsubmit"
+            attachmentsFolderPath="attachments"
             clientLibRef="wknd-vacation"
+            dataXMLPath="data"
             disableSwipeGesture="{Boolean}false"
+            dorPath="dor"
             enableFocusOnFirstField="{Boolean}true"
             enableLayoutLayer="false"
             guideCss="guideContainer"
             guideNodeClass="guideContainerNode"
             name="guide1"
+            redirect="/content/wknd/us/en.html"
             textIsRich="true"
             thankYouMessage="Thank you for submitting the form."
             thankYouOption="page"
             themeRef="/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default"
-            useExistingAF="false">
+            useExistingAF="false"
+            workflowModel="/var/workflow/models/wknd-form-submission">
             <layout
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fd/af/layouts/defaultGuideLayout"
@@ -58,8 +63,11 @@
                 workflowType="SEQUENTIAL">
                 <signer0
                     jcr:primaryType="nt:unstructured"
+                    countryCode="undefined"
                     countryCodeSource="form"
+                    email="undefined"
                     emailSource="form"
+                    phone="undefined"
                     phoneSource="form"
                     securityOption="NONE"
                     signerTitle="Signer One"/>
