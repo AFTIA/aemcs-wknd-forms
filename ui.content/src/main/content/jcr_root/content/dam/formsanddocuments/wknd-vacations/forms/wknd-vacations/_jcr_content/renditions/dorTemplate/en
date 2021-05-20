@@ -2048,7 +2048,7 @@
                            <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
                         </para>
                         <value>
-                           <text>Adobe Sign Block</text>
+                           <text>Customer Signature</text>
                         </value>
                         <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
                            <fill>
