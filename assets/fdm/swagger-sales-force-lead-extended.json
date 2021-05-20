@@ -14,7 +14,7 @@
 	"consumes": [
 		"application/json"
 	],
-	"host": "patlego-dev-ed.lightning.force.com",	
+	"host": "na46.salesforce.com",	
 	"paths": {
 		"/services/data/v32.0/query": {
 			"get": {
