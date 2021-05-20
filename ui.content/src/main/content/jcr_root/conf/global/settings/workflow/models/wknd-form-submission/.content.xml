@@ -3,30 +3,139 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/default"
-        cq:lastModified="{Date}2021-05-14T14:27:04.064-04:00"
+        cq:lastModified="{Date}2021-05-20T13:55:31.915-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/cq/workflow/templates/model"
         jcr:primaryType="cq:PageContent"
         jcr:title="WKND Form Submission"
         sling:resourceType="cq/workflow/components/pages/model"
-        lastSynced="{Date}2021-05-14T14:27:04.115-04:00">
+        lastSynced="{Date}2021-05-20T13:55:33.418-04:00">
         <flow
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
-            <initiatorparticipant
-                jcr:created="{Date}2016-12-14T08:11:19.175-05:00"
+            <set_variable
+                jcr:created="{Date}2021-05-20T10:48:55.733-04:00"
                 jcr:createdBy="admin"
-                jcr:description="Description of step 1"
-                jcr:lastModified="{Date}2016-12-14T08:11:45.152-05:00"
+                jcr:description="Set value of variables"
+                jcr:lastModified="{Date}2021-05-20T13:37:34.966-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                jcr:title="Step 1"
-                sling:resourceType="cq/workflow/components/workflow/initiatorparticipantchooser">
+                jcr:title="Set Variable"
+                sling:resourceType="cq/workflow/components/model/set_variable"
+                defaultValue="[,true,,]">
                 <metaData
                     jcr:primaryType="nt:unstructured"
-                    DYNAMIC_PARTICIPANT="/libs/workflow/scripts/initiator-participant-chooser.ecma"
-                    PROCESS_AUTO_ADVANCE="true"/>
-            </initiatorparticipant>
+                    PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
+                    PROCESS_AUTO_ADVANCE="true"
+                    variableMappings="\{&quot;variableName&quot;:&quot;formData&quot;,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;,&quot;mappingValue&quot;:&quot;data&quot;}"/>
+            </set_variable>
+            <afparticipantstep
+                jcr:created="{Date}2021-05-20T13:37:40.421-04:00"
+                jcr:createdBy="admin"
+                jcr:description="Registration application for the west coast bicycle application"
+                jcr:lastModified="{Date}2021-05-20T13:51:44.847-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="West Coast Bicycle Registration"
+                sling:resourceType="fd/workflow/components/dashboard/afParticipantStep">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    ALLOW_OUT_OF_OFFICE="false"
+                    allowExplicitSharing="false"
+                    allowInboxSharing="false"
+                    DELEGATE_TO="workflow-users"
+                    DUEDATE_UNIT="OFF"
+                    DUEDATE_VALUE="[,]"
+                    DYNAMIC_ASSIGNEE="[,]"
+                    FORM_CHOOSER_SERVICE="com.adobe.fd.workflow.api.fdinternal.PayloadFormChooser"
+                    FORM_RESOLUTION="SERVICE"
+                    FORM_TYPE="READ_ONLY_AF"
+                    HISTORY_DOR="READONLY_AF"
+                    HTML_EMAIL_TEMPLATE_LOCATION="/libs/fd/dashboard/templates/email/htmlEmailTemplate.txt"
+                    icDataSourceType="PROVIDEDATADOCUMENT"
+                    INPUT_COMBINED_DATAXML="VARIABLE:formData"
+                    INPUT_COMBINED_FORM_ATTACHMENTS="FOLDER_PAYLOAD:attachments"
+                    IS_ATTACHMENT_ALLOWED="false"
+                    IS_COMMENT_ALLOWED="false"
+                    IS_NEXT_STEP_DATA_ALLOWED="true"
+                    IS_PREVIOUS_STEP_DATA_ALLOWED="true"
+                    PARTICIPANT="workflow-users"
+                    PROCESS="com.adobe.fd.workspace.step.service.AssignFormStep"
+                    PROCESS_AUTO_ADVANCE="false"
+                    PROCESS_PARTICIPANT_TYPE="static"
+                    PROVIDE_METADATA="false"
+                    RECIPIENT_EMAIL_RESOLUTION="DEFAULT"
+                    ROUTE_PROPERTYNAME="actionTaken"
+                    ROUTES="[{&quot;Route_Label&quot;:&quot;Approve&quot;\,&quot;Route_Icon_Name&quot;:&quot;checkCircle&quot;},{&quot;Route_Label&quot;:&quot;Reject&quot;\,&quot;Route_Icon_Name&quot;:&quot;close&quot;}]"
+                    SEND_EMAIL_NOTIFICATION="false"
+                    SHOW_ACTION="true"
+                    SHOW_ASSIGNEE="true"
+                    SHOW_COMMENT="true"
+                    SHOW_DOCUMENT_OF_COMPLETED_TASK="true"
+                    SHOW_PRE_STEP_COMMENT_ATTACHMENT="true"
+                    SHOW_RESET="false"
+                    SHOW_SAVE="false"
+                    SHOW_SUBMIT="true"
+                    STATIC_ASSIGNEE="george.lang"
+                    SUBTYPE="forms:assigntask"
+                    TASK_PRIORITY="HIGH"
+                    TIMEOUT_HANDLER="[,]"
+                    USER_METADATA_RESOURCE="[,]"
+                    WORK_ITEM_TYPE="AF_ASSIGN_STEP"
+                    workflowStage="[,]"/>
+            </afparticipantstep>
+            <fdmoperationstep
+                jcr:created="{Date}2021-05-20T13:52:02.223-04:00"
+                jcr:createdBy="admin"
+                jcr:description="Invoke a Form Data Model Service to fetch or post data to a data source."
+                jcr:lastModified="{Date}2021-05-20T13:55:31.901-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Salesforce Lead Creation"
+                sling:resourceType="fd/workflow/components/fdm/fdmOperationStep">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    binarypathcombined="[,,,,,,,,,,,,,]"
+                    FDM_PATH="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
+                    inputjsonpathcombined="VARIABLE:formData"
+                    inputkey="[Lead.FirstName,Lead.LastName,Lead.Title,Lead.Phone,Lead.email,Lead.MobilePhone,Lead.Company,Lead.LeadSource,Lead.Fax,Lead.street,Lead.city,Lead.province,Lead.postalCode,Lead.country]"
+                    inputoption="[literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal]"
+                    inputvalue="[Tina,Smith,West Coast Cycling Request,6139142478,tina.smith@na.com,6139142478,WKND Vacations,Website,N/A,242 Jasper,Ottawa,ON,K4K1Q4,Canada]"
+                    inputvariablevalue="[,,,,,,,,,,,,,]"
+                    isarray="[false,false,false,false,false,false,false,false,false,false,false,false,false,false]"
+                    isbinary="[false,false,false,false,false,false,false,false,false,false,false,false,false,false]"
+                    isjsoninput="MANUAL"
+                    isjsonoutput="MANUAL"
+                    isrequired="[true,true,false,true,false,false,true,false,false,false,false,false,false,false]"
+                    mapinputfieldshidden="false"
+                    OPERATION="POST /services/data/v32.0/sobjects/Lead"
+                    outputoption="VARIABLE"
+                    outputvalue="id"
+                    outputvariablekey="salesforceid"
+                    PROCESS="com.adobe.fd.workflow.fdm.step.FDMOperationStep"
+                    PROCESS_AUTO_ADVANCE="true"
+                    SUBTYPE="forms:fdmoperation"
+                    terminateWorkflow="true"
+                    ValidationLevel="BASIC"
+                    WORK_ITEM_TYPE="FDM_OPERATION_STEP"/>
+            </fdmoperationstep>
         </flow>
+        <variables jcr:primaryType="nt:unstructured">
+            <formData
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="formData"
+                type="com.google.gson.JsonObject"/>
+            <actionTaken
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="actionTaken"
+                type="java.lang.String"/>
+            <salesforceid
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="salesforceid"
+                type="java.lang.String"/>
+        </variables>
     </jcr:content>
 </jcr:root>
