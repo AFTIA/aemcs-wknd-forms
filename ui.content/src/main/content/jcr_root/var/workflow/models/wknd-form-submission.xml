@@ -7,9 +7,21 @@
     description="No Description"
     title="WKND Form Submission">
     <variables jcr:primaryType="nt:unstructured">
+        <firstName
+            jcr:primaryType="nt:unstructured"
+            name="firstName"
+            type="java.lang.String"/>
+        <lastName
+            jcr:primaryType="nt:unstructured"
+            name="lastName"
+            type="java.lang.String"/>
         <actionTaken
             jcr:primaryType="nt:unstructured"
             name="actionTaken"
+            type="java.lang.String"/>
+        <phoneNumber
+            jcr:primaryType="nt:unstructured"
+            name="phoneNumber"
             type="java.lang.String"/>
         <salesforceid
             jcr:primaryType="nt:unstructured"
@@ -19,13 +31,17 @@
             jcr:primaryType="nt:unstructured"
             name="formData"
             type="com.google.gson.JsonObject"/>
+        <email
+            jcr:primaryType="nt:unstructured"
+            name="email"
+            type="java.lang.String"/>
     </variables>
     <metaData
         cq:generatingPage="/conf/global/settings/workflow/models/wknd-form-submission/jcr:content"
-        cq:lastModified="{Long}1621533333426"
+        cq:lastModified="{Long}1621952744032"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        lastSynced="{Date}2021-05-20T13:55:33.418-04:00"/>
+        lastSynced="{Date}2021-05-25T10:25:44.024-04:00"/>
     <nodes jcr:primaryType="nt:unstructured">
         <node0
             jcr:primaryType="cq:WorkflowNode"
@@ -42,7 +58,7 @@
                 jcr:primaryType="nt:unstructured"
                 PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
                 PROCESS_AUTO_ADVANCE="true"
-                variableMappings="\{&quot;variableName&quot;:&quot;formData&quot;,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;,&quot;mappingValue&quot;:&quot;data&quot;}"/>
+                variableMappings="[{&quot;variableName&quot;:&quot;formData&quot;\,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;\,&quot;mappingValue&quot;:&quot;data&quot;},{&quot;variableName&quot;:&quot;firstName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.FirstName&quot;},{&quot;variableName&quot;:&quot;lastName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.LastName&quot;},{&quot;variableName&quot;:&quot;email&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.email&quot;},{&quot;variableName&quot;:&quot;phoneNumber&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.MobilePhone&quot;}]"/>
         </node1>
         <node2
             jcr:primaryType="cq:WorkflowNode"
@@ -106,9 +122,9 @@
                 FDM_PATH="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
                 inputjsonpathcombined="VARIABLE:formData"
                 inputkey="[Lead.FirstName,Lead.LastName,Lead.Title,Lead.Phone,Lead.email,Lead.MobilePhone,Lead.Company,Lead.LeadSource,Lead.Fax,Lead.street,Lead.city,Lead.province,Lead.postalCode,Lead.country]"
-                inputoption="[literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal]"
+                inputoption="[VARIABLE,VARIABLE,literal,VARIABLE,VARIABLE,VARIABLE,literal,literal,literal,literal,literal,literal,literal,literal]"
                 inputvalue="[Tina,Smith,West Coast Cycling Request,6139142478,tina.smith@na.com,6139142478,WKND Vacations,Website,N/A,242 Jasper,Ottawa,ON,K4K1Q4,Canada]"
-                inputvariablevalue="[,,,,,,,,,,,,,]"
+                inputvariablevalue="[firstName,lastName,,phoneNumber,email,phoneNumber,,,,,,,,]"
                 isarray="[false,false,false,false,false,false,false,false,false,false,false,false,false,false]"
                 isbinary="[false,false,false,false,false,false,false,false,false,false,false,false,false,false]"
                 isjsoninput="MANUAL"

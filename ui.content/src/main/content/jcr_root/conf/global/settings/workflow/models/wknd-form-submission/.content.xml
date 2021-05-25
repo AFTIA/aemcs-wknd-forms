@@ -3,13 +3,13 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/default"
-        cq:lastModified="{Date}2021-05-20T13:55:31.915-04:00"
+        cq:lastModified="{Date}2021-05-25T10:25:42.581-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/cq/workflow/templates/model"
         jcr:primaryType="cq:PageContent"
         jcr:title="WKND Form Submission"
         sling:resourceType="cq/workflow/components/pages/model"
-        lastSynced="{Date}2021-05-20T13:55:33.418-04:00">
+        lastSynced="{Date}2021-05-25T10:25:44.024-04:00">
         <flow
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
@@ -17,17 +17,17 @@
                 jcr:created="{Date}2021-05-20T10:48:55.733-04:00"
                 jcr:createdBy="admin"
                 jcr:description="Set value of variables"
-                jcr:lastModified="{Date}2021-05-20T13:37:34.966-04:00"
+                jcr:lastModified="{Date}2021-05-25T10:19:41.205-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Set Variable"
                 sling:resourceType="cq/workflow/components/model/set_variable"
-                defaultValue="[,true,,]">
+                defaultValue="[,true,,,,true,,,,true,,,,true,,,,true,,]">
                 <metaData
                     jcr:primaryType="nt:unstructured"
                     PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
                     PROCESS_AUTO_ADVANCE="true"
-                    variableMappings="\{&quot;variableName&quot;:&quot;formData&quot;,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;,&quot;mappingValue&quot;:&quot;data&quot;}"/>
+                    variableMappings="[{&quot;variableName&quot;:&quot;formData&quot;\,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;\,&quot;mappingValue&quot;:&quot;data&quot;},{&quot;variableName&quot;:&quot;firstName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.FirstName&quot;},{&quot;variableName&quot;:&quot;lastName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.LastName&quot;},{&quot;variableName&quot;:&quot;email&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.email&quot;},{&quot;variableName&quot;:&quot;phoneNumber&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.MobilePhone&quot;}]"/>
             </set_variable>
             <afparticipantstep
                 jcr:created="{Date}2021-05-20T13:37:40.421-04:00"
@@ -88,7 +88,7 @@
                 jcr:created="{Date}2021-05-20T13:52:02.223-04:00"
                 jcr:createdBy="admin"
                 jcr:description="Invoke a Form Data Model Service to fetch or post data to a data source."
-                jcr:lastModified="{Date}2021-05-20T13:55:31.901-04:00"
+                jcr:lastModified="{Date}2021-05-25T10:25:42.565-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Salesforce Lead Creation"
@@ -99,9 +99,9 @@
                     FDM_PATH="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
                     inputjsonpathcombined="VARIABLE:formData"
                     inputkey="[Lead.FirstName,Lead.LastName,Lead.Title,Lead.Phone,Lead.email,Lead.MobilePhone,Lead.Company,Lead.LeadSource,Lead.Fax,Lead.street,Lead.city,Lead.province,Lead.postalCode,Lead.country]"
-                    inputoption="[literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal,literal]"
+                    inputoption="[VARIABLE,VARIABLE,literal,VARIABLE,VARIABLE,VARIABLE,literal,literal,literal,literal,literal,literal,literal,literal]"
                     inputvalue="[Tina,Smith,West Coast Cycling Request,6139142478,tina.smith@na.com,6139142478,WKND Vacations,Website,N/A,242 Jasper,Ottawa,ON,K4K1Q4,Canada]"
-                    inputvariablevalue="[,,,,,,,,,,,,,]"
+                    inputvariablevalue="[firstName,lastName,,phoneNumber,email,phoneNumber,,,,,,,,]"
                     isarray="[false,false,false,false,false,false,false,false,false,false,false,false,false,false]"
                     isbinary="[false,false,false,false,false,false,false,false,false,false,false,false,false,false]"
                     isjsoninput="MANUAL"
@@ -135,6 +135,26 @@
                 jcr:primaryType="nt:unstructured"
                 additionalProperties="\{}"
                 name="salesforceid"
+                type="java.lang.String"/>
+            <firstName
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="firstName"
+                type="java.lang.String"/>
+            <lastName
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="lastName"
+                type="java.lang.String"/>
+            <email
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="email"
+                type="java.lang.String"/>
+            <phoneNumber
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="phoneNumber"
                 type="java.lang.String"/>
         </variables>
     </jcr:content>
