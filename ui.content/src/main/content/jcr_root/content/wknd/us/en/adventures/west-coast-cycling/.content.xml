@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-05-25T11:15:36.609-04:00"
+        cq:lastModified="{Date}2021-05-28T15:53:23.052-04:00"
         cq:lastModifiedBy="admin"
         cq:lastRolledout="{Date}2020-11-08T12:48:39.078-08:00"
         cq:lastRolledoutBy="admin"
         cq:tags="[wknd:activity/cycling,wknd:season/fall]"
         cq:template="/conf/wknd/settings/wcm/templates/adventure-page-template"
         jcr:description="Join us for this once in a lifetime bike trip traveling from San Francisco to Portland cycling along the Pacific Coast. Experience world class terrain as we head north through redwood forests, state parks, the Columbia river and the Pacific ocean."
-        jcr:mixinTypes="[cq:LiveRelationship]"
+        jcr:mixinTypes="[cq:LiveRelationship,mix:lockable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="West Coast Cycling"
         sling:resourceType="wknd/components/page"
@@ -355,74 +355,27 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="wcm/foundation/components/responsivegrid"/>
                         </item_1570890147607>
-                    </tabs>
-                    <container_25008497
-                        jcr:created="{Date}2021-05-14T16:08:46.362-04:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-05-14T16:08:46.362-04:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="wknd/components/container">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="3"
-                                width="9"/>
-                        </cq:responsive>
-                    </container_25008497>
-                    <text
-                        jcr:created="{Date}2021-05-14T16:15:22.538-04:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-05-14T16:16:30.401-04:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="wknd/components/text"
-                        text="&lt;p>&lt;b>Interested in this vacation package?&lt;/b> &lt;/p>&#xd;&#xa;&lt;p>Application details are below! &lt;b>See you soon.&lt;/b>&lt;/p>&#xd;&#xa;"
-                        textIsRich="true">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="3"
-                                width="9"/>
-                        </cq:responsive>
-                    </text>
-                    <container_1955665817
-                        jcr:created="{Date}2021-05-14T16:13:51.377-04:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-05-14T16:13:51.377-04:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="wknd/components/container">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="2"
-                                width="10"/>
-                        </cq:responsive>
-                        <aemformscontainer
-                            jcr:created="{Date}2021-05-25T11:14:49.414-04:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2021-05-25T11:15:18.320-04:00"
+                        <item_1570890147608
+                            cq:lastRolledout="{Date}2020-11-08T12:40:50.716-08:00"
+                            cq:lastRolledoutBy="admin"
+                            cq:panelTitle="Form Application"
+                            jcr:lastModified="{Date}2020-11-08T12:40:50.714-08:00"
                             jcr:lastModifiedBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="forms-wknd/components/aemformscontainer"
+                            displayMode="singleText"
+                            elementNames="adventureGearList"
                             enableFocusOnFirstField="{Boolean}true"
                             formRef="/content/dam/formsanddocuments/wknd-vacations/forms/wknd-vacations"
                             formType="adaptiveForm"
                             submitType="inline"
+                            text="West Coast Cycling Bike Cycling clothes Water bottles"
                             textIsRich="true"
-                            thankyouConfig="page"
-                            themeRef="/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default"
                             useiframe="false"
-                            usePageLocale="true">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="1"
-                                    width="9"/>
-                            </cq:responsive>
-                        </aemformscontainer>
-                    </container_1955665817>
+                            usePageLocale="true"
+                            variationName="master"/>
+                    </tabs>
                 </container_fixed>
             </container>
         </root>
