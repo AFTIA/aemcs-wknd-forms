@@ -23,11 +23,6 @@
             jcr:primaryType="nt:unstructured"
             name="phoneNumber"
             type="java.lang.String"/>
-        <test
-            jcr:primaryType="nt:unstructured"
-            defaultValue="test"
-            name="test"
-            type="java.lang.String"/>
         <salesforceid
             jcr:primaryType="nt:unstructured"
             name="salesforceid"
@@ -43,10 +38,10 @@
     </variables>
     <metaData
         cq:generatingPage="/conf/global/settings/workflow/models/wknd-form-submission/jcr:content"
-        cq:lastModified="{Long}1622230596453"
+        cq:lastModified="{Long}1622230876245"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        lastSynced="{Date}2021-05-28T15:36:36.440-04:00"/>
+        lastSynced="{Date}2021-05-28T15:41:16.235-04:00"/>
     <nodes jcr:primaryType="nt:unstructured">
         <node0
             jcr:primaryType="cq:WorkflowNode"

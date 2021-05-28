@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/default"
-        cq:lastModified="{Date}2021-05-28T15:36:35.037-04:00"
+        cq:lastModified="{Date}2021-05-28T15:40:24.700-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/cq/workflow/templates/model"
         jcr:primaryType="cq:PageContent"
@@ -192,12 +192,6 @@
                 jcr:primaryType="nt:unstructured"
                 additionalProperties="\{}"
                 name="phoneNumber"
-                type="java.lang.String"/>
-            <test
-                jcr:primaryType="nt:unstructured"
-                additionalProperties="\{}"
-                defaultValue="test"
-                name="test"
                 type="java.lang.String"/>
         </variables>
     </jcr:content>
