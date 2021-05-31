@@ -610,15 +610,15 @@
                     phone_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:—\, —\, 3.55rem\, —]"/>
                 <af_footertext
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_default="[color:#969696,font-size:0.75em]"/>
+                    default_x0023_default="[color:#969696,font-size:0.75em,afterPseudoElement:content: &quot;2021 We.Finance All Rights Reserved&quot;]"/>
             </af_guideFooter>
             <af_guideHeader
                 jcr:primaryType="nt:unstructured"
                 component="fd/af/components/guideheader">
                 <af_header
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_default="[color:#969696,top:0px,right:0px,left:0px,border-left-width:0px,border-bottom-width:1px,border-right-width:0px,border-top-width:0px,height:90px,vertical-align:text-top,border-color:#e6e6e6,margin-bottom:1rem,border-style:solid]"
-                    default_x0023_default_x0023_ui="[borderWidthPopover:0px\, 0px\, 1px\, 0px,paddingLock:link,paddingPopover:Set,borderWidthLock:linkOff,marginLock:linkOff,marginPopover:—\, —\, 1rem\, —]"
+                    default_x0023_default="[color:#969696,top:0px,right:0px,left:0px,border-left-width:0px,border-bottom-width:1px,border-right-width:0px,border-top-width:0px,height:90px,vertical-align:text-top,border-color:#e6e6e6,margin-bottom:1rem,border-style:solid,background:url('/content/dam/we-finance/we-finance.png') left top / contain no-repeat]"
+                    default_x0023_default_x0023_ui="[borderWidthPopover:0px\, 0px\, 1px\, 0px,paddingLock:link,paddingPopover:Set,borderWidthLock:linkOff,marginLock:linkOff,marginPopover:—\, —\, 1rem\, —,backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1622475038653&quot;\,&quot;imageSrc&quot;:&quot;/content/dam/we-finance/we-finance.png&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;size&quot;:&quot;contain&quot;}]}]"
                     phone_x0023_default="[height:64px,padding-left:1rem,padding-right:1rem]"
                     phone_x0023_default_x0023_ui="[paddingLock:linkOff,paddingPopover:1rem,marginLock:linkOff,marginPopover:Set]"/>
                 <af_headerlogo

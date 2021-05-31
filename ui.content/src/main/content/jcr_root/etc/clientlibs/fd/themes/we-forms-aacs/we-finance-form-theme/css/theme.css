@@ -1752,7 +1752,7 @@ color:#969696;
 font-size:0.75em;
 
 }
-.guideTextDraw.footerText::before{
+.guideTextDraw.footerText::after{
 content: "2021 We.Finance All Rights Reserved";
 
 }
@@ -1770,7 +1770,7 @@ vertical-align:text-top;
 border-color:#e6e6e6;
 margin-bottom:1rem;
 border-style:solid;
-background:url('/content/dam/we-finance/we-finance.png') left center / contain no-repeat;
+background:url('/content/dam/we-finance/we-finance.png') left top / contain no-repeat;
 
 }
 @media (max-width : 767px){
@@ -1782,10 +1782,11 @@ padding-right:1rem;
 }
 }
 .guideimage .logoImage img{
+height:3.75rem;
 margin-top:0.9375rem;
 margin-left:0px;
+width:auto;
 max-width:100%;
-height:3rem;
 
 }
 @media (max-width : 767px){

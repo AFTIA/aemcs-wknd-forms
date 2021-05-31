@@ -1752,7 +1752,7 @@ color:#969696;
 font-size:0.75em;
 
 }
-.guideTextDraw.footerText::before{
+.guideTextDraw.footerText::after{
 content: "2021 We.Gov All Rights Reserved";
 
 }
@@ -1770,7 +1770,7 @@ vertical-align:text-top;
 border-color:#e6e6e6;
 margin-bottom:1rem;
 border-style:solid;
-background:url('/content/dam/we-gov/we-gov.png') left center / contain no-repeat,#0e2e54;
+background:url('/content/dam/we-gov/we-gov.png') left top / contain no-repeat,#0e2e54;
 
 }
 @media (max-width : 767px){
