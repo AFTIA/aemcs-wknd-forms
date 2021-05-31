@@ -4,7 +4,7 @@
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/fd/af/default"
         cq:deviceGroups="mobile/groups/responsive"
-        cq:lastModified="{Date}2021-05-28T15:14:53.383-04:00"
+        cq:lastModified="{Date}2021-05-31T09:41:14.973-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/fd/af/templateForFragment/defaultFragmentTemplate"
         jcr:primaryType="cq:PageContent"
@@ -423,7 +423,7 @@
                     <panel_752276257
                         jcr:created="{Date}2021-05-11T16:15:30.593-04:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-05-20T14:55:38.553-04:00"
+                        jcr:lastModified="{Date}2021-05-31T09:41:14.963-04:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Discount"

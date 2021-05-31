@@ -1078,43 +1078,6 @@
                      <text name="dorElementType">AF_TEXT_XFO</text>
                   </extras>
                </draw>
-               <draw name="size" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel-guidetextdraw_2107333374__">
-                  <ui>
-                     <textEdit/>
-                  </ui>
-                  <value>
-                     <exData contentType="text/html">
-                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>The text will appear here</p></body>
-                     </exData>
-                  </value>
-                  <font baselineShift="0pt" fontHorizontalScale="100%" fontVerticalScale="100%" kerningMode="none" letterSpacing="0" lineThrough="0" posture="normal" size="9pt" underline="0" usehref=".#som($template.#subform.#font)" weight="normal">
-                     <fill>
-                        <color value="167,165,165"/>
-                     </fill>
-                  </font>
-                  <margin bottomInset="4.318mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="4.318mm"/>
-                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle">
-                     <hyphenation use="designer__defaultHyphenation.para.hyphenation"/>
-                  </para>
-                  <border>
-                     <edge presence="hidden"/>
-                     <edge presence="hidden"/>
-                     <edge thickness="0.1524mm">
-                        <color value="249,252,251"/>
-                     </edge>
-                     <edge presence="hidden"/>
-                     <corner/>
-                     <corner/>
-                     <corner thickness="0.152mm">
-                        <color value="249,252,251"/>
-                     </corner>
-                     <corner/>
-                  </border>
-                  <keep intact="contentArea"/>
-                  <extras>
-                     <text name="dorElementType">AF_TEXT_XFO</text>
-                  </extras>
-               </draw>
                <draw name="difficulty" w="184.15mm" minH="9.001mm" id="guideContainer-rootPanel-panel-guidetextdraw_1732696197__">
                   <ui>
                      <textEdit/>
