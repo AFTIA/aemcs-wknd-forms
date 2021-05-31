@@ -100,3 +100,5 @@ reports/
 
 # Others
 dispatcher/src/conf.d/variables/default.vars
+
+.DS_Store
