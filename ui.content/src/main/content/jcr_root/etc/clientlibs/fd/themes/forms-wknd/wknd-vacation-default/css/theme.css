@@ -34,25 +34,18 @@ border-bottom-width:0px;
 background:rgba(235,60,54,0.05);
 
 }
-.guideFieldNode.guideActiveField:not(.guideButton):not(.guideTextDraw):not(.guideChart){
-border-right-width:1px;
-border-bottom-width:1px;
-border-left-width:1px;
-border-top-width:1px;
-border-style:solid;
-border-color:#000000;
-
-}
 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){
+margin-top:0.25rem;
 padding-left:0.5rem;
 padding-right:0.75rem;
+border-left-width:0.25rem;
+border-bottom-width:0px;
+border-right-width:0px;
+border-top-width:0px;
 border-style:solid;
-padding-top:0rem;
-border-right-width:.1px;
-border-bottom-width:.1px;
-border-left-width:.1px;
-border-top-width:.1px;
-border-color:rgba(105,105,105,0.13);
+border-color:rgba(255,255,255,0);
+padding-top:0.5rem;
+margin-bottom:0.25rem;
 
 }
 .guideFieldNode.validation-success:not(.guideButton):not(.guideTextDraw):not(.guideChart){
@@ -101,15 +94,17 @@ margin-right:0px;
 width:auto;
 display:block;
 }
-input:focus,select:focus,textarea:focus,.guideScribble img:focus{
-border-right-width:0px;
-border-bottom-width:0px;
-border-left-width:0px;
-border-top-width:0px;
-outline: none;
-
-}
 input,select,textarea,.guideScribble img,.afTermsAndConditions{
+border-style:solid;
+border-top-width:1px;
+border-left-width:1px;
+border-bottom-width:1px;
+border-right-width:1px;
+border-bottom-left-radius:0.25rem;
+border-bottom-right-radius:0.25rem;
+border-top-right-radius:0.25rem;
+border-top-left-radius:0.25rem;
+border-color:#cccccc;
 height:2.5rem;
 color:#555555;
 font-size:0.875rem;
@@ -118,10 +113,6 @@ padding-left:0.625rem;
 padding-top:0.625rem;
 padding-right:0.625rem;
 background:#ffffff;
-border-right-width:0px;
-border-bottom-width:0px;
-border-left-width:0px;
-border-top-width:0px;
 
 }
 .guideFieldWidget:not(.guideFieldButtonWidget) {
@@ -1532,13 +1523,9 @@ border-color:#555555;
 
 }
 button.submit:not(.af-icon-button){
+background:#666666;
 border-color:#666666;
-background:#fee800;
-color:#000000;
-border-top-right-radius:0px;
-border-bottom-left-radius:0px;
-border-bottom-right-radius:0px;
-border-top-left-radius:0px;
+color:#ffffff;
 
 }
 @media (max-width : 767px){
@@ -1612,13 +1599,13 @@ padding-left:1rem;
 padding-top:.625rem;
 padding-right:1rem;
 font-size:14px;
+border-bottom-left-radius:1.5rem;
+border-bottom-right-radius:1.5rem;
+border-top-right-radius:1.5rem;
+border-top-left-radius:1.5rem;
+background:rgba(255,255,255,0);
 color:#666666;
 border-color:#666666;
-border-top-right-radius:0px;
-border-bottom-left-radius:0px;
-border-bottom-right-radius:0px;
-border-top-left-radius:0px;
-background:#FEE800;
 cursor: pointer;
 
 }
@@ -1706,14 +1693,6 @@ cursor: pointer;
 width: max-content;
 
 }
-button.movePrev:not(.af-icon-button){
-background:#fee800;
-border-top-right-radius:0px;
-border-bottom-left-radius:0px;
-border-bottom-right-radius:0px;
-border-top-left-radius:0px;
-
-}
 @media (max-width : 767px){
 button.movePrev:not(.af-icon-button){
 padding-right:0.625rem;
@@ -1752,15 +1731,6 @@ background:rgba(0,0,0,0.02);
 border-color:rgba(0,0,0,0.15);
 
 }
-.textField input[type='text']:focus{
-border-right-width:0px;
-border-bottom-width:0px;
-border-left-width:0px;
-border-top-width:0px;
-border-color:#ffffff;
-border-style:solid;
-
-}
 .afFooter{
 width:100%;
 text-align:center;
@@ -1768,9 +1738,6 @@ margin-top:4rem;
 padding-top:.5em;
 padding-bottom:.5rem;
 float:left;
-box-sizing: content-box;
-display: flex;
-justify-content: left;
 
 }
 @media (max-width : 767px){
@@ -1799,7 +1766,7 @@ border-color:#e6e6e6;
 margin-bottom:1rem;
 border-style:solid;
 color:#001F3F;
-background:#fee800;
+background:url('/content/dam/forms-wknd/wknd-vacations/wknd-travel.png') left top / contain no-repeat,#fee800;
 
 }
 @media (max-width : 767px){
