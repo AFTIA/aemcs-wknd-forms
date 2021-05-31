@@ -220,6 +220,21 @@ Follow the documentation provided here to create users within AEM https://experi
             - workflow-users
             - forms-users
 
+## Viewing Form with Sites
+
+In order to start the story, navigate to the http://localhost:4502/content/wknd/us/en/adventures/west-coast-cycling.html?wcmmode=disabled page and click the fourth tab to view the WKND Vacations form.
+
+Once the user fills out all the necessary fields and submits they then get redirected to Adobe Sign for a signature. 
+
+George Lang logs in and views the application assiged to him. He then approves the application which then inserts the form data into Salesforce were the lead gen team can review the new lead.
+
+**Note:** 
+- The WKND project must be installed first
+- The WKND Forms project must be installed
+- Adobe Sign must be configured
+- Salesforce data source must be configured
+- George Lang must be created
+
 # Contributors
 
 - [Patrique Legault](mailto:patrique.legault@aftia.com)
