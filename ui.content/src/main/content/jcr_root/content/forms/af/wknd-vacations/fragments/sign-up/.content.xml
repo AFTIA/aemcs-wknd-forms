@@ -4,7 +4,7 @@
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/fd/af/default"
         cq:deviceGroups="mobile/groups/responsive"
-        cq:lastModified="{Date}2021-05-31T09:41:14.973-04:00"
+        cq:lastModified="{Date}2021-05-31T13:35:51.339-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/fd/af/templateForFragment/defaultFragmentTemplate"
         jcr:primaryType="cq:PageContent"
@@ -91,14 +91,19 @@
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="fd/af/layouts/gridFluidLayout2">
                                     <panel1622225778911
+                                        jcr:lastModified="{Date}2021-05-31T13:34:53.608-04:00"
+                                        jcr:lastModifiedBy="admin"
                                         jcr:primaryType="nt:unstructured"
-                                        jcr:title="Section"
+                                        jcr:title="Name"
                                         sling:resourceType="fd/af/components/panel"
                                         guideNodeClass="guidePanel"
-                                        name="panel1622225778911">
+                                        name="panel1622225778911"
+                                        textIsRich="true"
+                                        validateOnStepCompletion="{Boolean}false">
                                         <layout
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                            columns="1"
                                             nonNavigable="{Boolean}true"
                                             toolbarPosition="Bottom"/>
                                         <items jcr:primaryType="nt:unstructured">
@@ -146,14 +151,19 @@
                                         </items>
                                     </panel1622225778911>
                                     <panel1622225815602
+                                        jcr:lastModified="{Date}2021-05-31T13:35:07.118-04:00"
+                                        jcr:lastModifiedBy="admin"
                                         jcr:primaryType="nt:unstructured"
-                                        jcr:title="Section"
+                                        jcr:title="Contact"
                                         sling:resourceType="fd/af/components/panel"
                                         guideNodeClass="guidePanel"
-                                        name="panel1622225815602">
+                                        name="panel1622225815602"
+                                        textIsRich="true"
+                                        validateOnStepCompletion="{Boolean}false">
                                         <layout
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                            columns="1"
                                             nonNavigable="{Boolean}true"
                                             toolbarPosition="Bottom"/>
                                         <items jcr:primaryType="nt:unstructured">
@@ -256,16 +266,19 @@
                                     <panel
                                         jcr:created="{Date}2021-05-28T14:22:35.709-04:00"
                                         jcr:createdBy="admin"
-                                        jcr:lastModified="{Date}2021-05-28T14:22:35.709-04:00"
+                                        jcr:lastModified="{Date}2021-05-31T13:35:18.823-04:00"
                                         jcr:lastModifiedBy="admin"
                                         jcr:primaryType="nt:unstructured"
-                                        jcr:title="Section"
+                                        jcr:title="Address"
                                         sling:resourceType="fd/af/components/panel"
                                         guideNodeClass="guidePanel"
-                                        name="panel1622226155754">
+                                        name="panel1622226155754"
+                                        textIsRich="true"
+                                        validateOnStepCompletion="{Boolean}false">
                                         <layout
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                            columns="1"
                                             nonNavigable="{Boolean}true"
                                             toolbarPosition="Bottom"/>
                                         <items
@@ -285,14 +298,19 @@
                                                 name="textbox1622226159756"
                                                 textIsRich="[true,true,true]"/>
                                             <panel1622226268389
+                                                jcr:lastModified="{Date}2021-05-31T13:35:37.343-04:00"
+                                                jcr:lastModifiedBy="admin"
                                                 jcr:primaryType="nt:unstructured"
-                                                jcr:title="Section"
+                                                jcr:title="State and City"
                                                 sling:resourceType="fd/af/components/panel"
                                                 guideNodeClass="guidePanel"
-                                                name="panel1622226268389">
+                                                name="panel1622226268389"
+                                                textIsRich="true"
+                                                validateOnStepCompletion="{Boolean}false">
                                                 <layout
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                                    columns="1"
                                                     nonNavigable="{Boolean}true"
                                                     toolbarPosition="Bottom"/>
                                                 <items jcr:primaryType="nt:unstructured">
@@ -339,14 +357,19 @@
                                                 </items>
                                             </panel1622226268389>
                                             <panel1622226272326
+                                                jcr:lastModified="{Date}2021-05-31T13:35:51.327-04:00"
+                                                jcr:lastModifiedBy="admin"
                                                 jcr:primaryType="nt:unstructured"
-                                                jcr:title="Section"
+                                                jcr:title="Country and Zip Code"
                                                 sling:resourceType="fd/af/components/panel"
                                                 guideNodeClass="guidePanel"
-                                                name="panel1622226272326">
+                                                name="panel1622226272326"
+                                                textIsRich="true"
+                                                validateOnStepCompletion="{Boolean}false">
                                                 <layout
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                                    columns="1"
                                                     nonNavigable="{Boolean}true"
                                                     toolbarPosition="Bottom"/>
                                                 <items jcr:primaryType="nt:unstructured">
