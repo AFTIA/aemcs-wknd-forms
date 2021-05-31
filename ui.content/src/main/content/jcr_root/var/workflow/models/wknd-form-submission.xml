@@ -38,10 +38,10 @@
     </variables>
     <metaData
         cq:generatingPage="/conf/global/settings/workflow/models/wknd-form-submission/jcr:content"
-        cq:lastModified="{Long}1621952744032"
+        cq:lastModified="{Long}1622230876245"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        lastSynced="{Date}2021-05-25T10:25:44.024-04:00"/>
+        lastSynced="{Date}2021-05-28T15:41:16.235-04:00"/>
     <nodes jcr:primaryType="nt:unstructured">
         <node0
             jcr:primaryType="cq:WorkflowNode"
@@ -102,7 +102,7 @@
                 SHOW_PRE_STEP_COMMENT_ATTACHMENT="true"
                 SHOW_RESET="false"
                 SHOW_SAVE="false"
-                SHOW_SUBMIT="true"
+                SHOW_SUBMIT="false"
                 STATIC_ASSIGNEE="george.lang"
                 SUBTYPE="forms:assigntask"
                 TASK_PRIORITY="HIGH"
@@ -112,6 +112,28 @@
                 workflowStage="[,]"/>
         </node2>
         <node3
+            jcr:primaryType="cq:WorkflowNode"
+            title="OR_SPLIT"
+            type="OR_SPLIT">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node3>
+        <node4
+            jcr:primaryType="cq:WorkflowNode"
+            title="OR_JOIN"
+            type="OR_JOIN">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node4>
+        <node5
+            jcr:primaryType="cq:WorkflowNode"
+            description="Use the email step to send an HTML email. For example, you can use the email step to send a document of record, adaptive form and interactive communication link, and a PDF document on completion of a workflow."
+            title="Send Email"
+            type="PROCESS">
+            <metaData
+                jcr:primaryType="nt:unstructured"
+                PROCESS="com.adobe.fd.workflow.email.SendEmailStep"
+                PROCESS_AUTO_ADVANCE="true"/>
+        </node5>
+        <node6
             jcr:primaryType="cq:WorkflowNode"
             description="Invoke a Form Data Model Service to fetch or post data to a data source."
             title="Salesforce Lead Creation"
@@ -141,13 +163,13 @@
                 terminateWorkflow="true"
                 ValidationLevel="BASIC"
                 WORK_ITEM_TYPE="FDM_OPERATION_STEP"/>
-        </node3>
-        <node4
+        </node6>
+        <node7
             jcr:primaryType="cq:WorkflowNode"
             title="End"
             type="END">
             <metaData jcr:primaryType="nt:unstructured"/>
-        </node4>
+        </node7>
     </nodes>
     <transitions jcr:primaryType="nt:unstructured">
         <node0_x0023_node1
@@ -167,15 +189,44 @@
         <node2_x0023_node3
             jcr:primaryType="cq:WorkflowTransition"
             from="node2"
-            rule=""
             to="node3">
             <metaData jcr:primaryType="nt:unstructured"/>
         </node2_x0023_node3>
-        <node3_x0023_node4
+        <node3_x0023_node5
             jcr:primaryType="cq:WorkflowTransition"
             from="node3"
+            rule="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;actionTaken&quot;,&quot;displayName&quot;:&quot;actionTaken&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;workflow_variables/actionTaken/&quot;,&quot;name&quot;:&quot;actionTaken&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONTAINS&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;,&quot;value&quot;:&quot;Reject&quot;}}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
+            to="node5">
+            <metaData
+                jcr:primaryType="nt:unstructured"
+                isDefault="false"/>
+        </node3_x0023_node5>
+        <node5_x0023_node4
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node5"
             to="node4">
             <metaData jcr:primaryType="nt:unstructured"/>
-        </node3_x0023_node4>
+        </node5_x0023_node4>
+        <node3_x0023_node6
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node3"
+            rule="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;actionTaken&quot;,&quot;displayName&quot;:&quot;actionTaken&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;workflow_variables/actionTaken/&quot;,&quot;name&quot;:&quot;actionTaken&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONTAINS&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;,&quot;value&quot;:&quot;Approve&quot;}}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
+            to="node6">
+            <metaData
+                jcr:primaryType="nt:unstructured"
+                isDefault="false"/>
+        </node3_x0023_node6>
+        <node6_x0023_node4
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node6"
+            to="node4">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node6_x0023_node4>
+        <node4_x0023_node7
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node4"
+            to="node7">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node4_x0023_node7>
     </transitions>
 </jcr:root>

@@ -63,3 +63,20 @@ function updatePricing(som, groupSize) {
         console.error("Failed to retrieve the som or the groupSize is undefined for the sidebar operation");
     }
 }
+
+/**
+ * Hide Sidebar if the form is in the web page
+ * @name hideSideBar Hides sidebar if form is in webpage
+ * @param {string} som The som expression of the sidebar
+ */
+function hideSideBar(som) {
+    try {
+        var node = guideBridge.resolveNode(som);
+        if (window.location.href.includes("west-coast-cycling")) {
+            node.visible = false;
+        }
+    }
+    catch (e) {
+        console.error("Failed to retrieve the som");
+    }
+}

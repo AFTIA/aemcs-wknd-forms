@@ -3,13 +3,13 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/default"
-        cq:lastModified="{Date}2021-05-25T10:25:42.581-04:00"
+        cq:lastModified="{Date}2021-05-28T15:40:24.700-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/cq/workflow/templates/model"
         jcr:primaryType="cq:PageContent"
         jcr:title="WKND Form Submission"
         sling:resourceType="cq/workflow/components/pages/model"
-        lastSynced="{Date}2021-05-25T10:25:44.024-04:00">
+        lastSynced="{Date}2021-05-28T15:36:36.440-04:00">
         <flow
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
@@ -33,7 +33,7 @@
                 jcr:created="{Date}2021-05-20T13:37:40.421-04:00"
                 jcr:createdBy="admin"
                 jcr:description="Registration application for the west coast bicycle application"
-                jcr:lastModified="{Date}2021-05-20T13:51:44.847-04:00"
+                jcr:lastModified="{Date}2021-05-28T15:32:24.519-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="West Coast Bicycle Registration"
@@ -75,7 +75,7 @@
                     SHOW_PRE_STEP_COMMENT_ATTACHMENT="true"
                     SHOW_RESET="false"
                     SHOW_SAVE="false"
-                    SHOW_SUBMIT="true"
+                    SHOW_SUBMIT="false"
                     STATIC_ASSIGNEE="george.lang"
                     SUBTYPE="forms:assigntask"
                     TASK_PRIORITY="HIGH"
@@ -84,41 +84,78 @@
                     WORK_ITEM_TYPE="AF_ASSIGN_STEP"
                     workflowStage="[,]"/>
             </afparticipantstep>
-            <fdmoperationstep
-                jcr:created="{Date}2021-05-20T13:52:02.223-04:00"
+            <or
+                jcr:created="{Date}2021-05-28T15:24:18.282-04:00"
                 jcr:createdBy="admin"
-                jcr:description="Invoke a Form Data Model Service to fetch or post data to a data source."
-                jcr:lastModified="{Date}2021-05-25T10:25:42.565-04:00"
+                jcr:lastModified="{Date}2021-05-28T15:36:19.638-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                jcr:title="Salesforce Lead Creation"
-                sling:resourceType="fd/workflow/components/fdm/fdmOperationStep">
-                <metaData
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                branchName1="Reject"
+                branchName2="Approve"
+                branchOrder="[0,1]"
+                expression1="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;actionTaken&quot;,&quot;displayName&quot;:&quot;actionTaken&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;workflow_variables/actionTaken/&quot;,&quot;name&quot;:&quot;actionTaken&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONTAINS&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;,&quot;value&quot;:&quot;Reject&quot;}}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
+                expression2="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;actionTaken&quot;,&quot;displayName&quot;:&quot;actionTaken&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;workflow_variables/actionTaken/&quot;,&quot;name&quot;:&quot;actionTaken&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONTAINS&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;,&quot;value&quot;:&quot;Approve&quot;}}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
+                orSplit="true">
+                <_x0031_
                     jcr:primaryType="nt:unstructured"
-                    binarypathcombined="[,,,,,,,,,,,,,]"
-                    FDM_PATH="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
-                    inputjsonpathcombined="VARIABLE:formData"
-                    inputkey="[Lead.FirstName,Lead.LastName,Lead.Title,Lead.Phone,Lead.email,Lead.MobilePhone,Lead.Company,Lead.LeadSource,Lead.Fax,Lead.street,Lead.city,Lead.province,Lead.postalCode,Lead.country]"
-                    inputoption="[VARIABLE,VARIABLE,literal,VARIABLE,VARIABLE,VARIABLE,literal,literal,literal,literal,literal,literal,literal,literal]"
-                    inputvalue="[Tina,Smith,West Coast Cycling Request,6139142478,tina.smith@na.com,6139142478,WKND Vacations,Website,N/A,242 Jasper,Ottawa,ON,K4K1Q4,Canada]"
-                    inputvariablevalue="[firstName,lastName,,phoneNumber,email,phoneNumber,,,,,,,,]"
-                    isarray="[false,false,false,false,false,false,false,false,false,false,false,false,false,false]"
-                    isbinary="[false,false,false,false,false,false,false,false,false,false,false,false,false,false]"
-                    isjsoninput="MANUAL"
-                    isjsonoutput="MANUAL"
-                    isrequired="[true,true,false,true,false,false,true,false,false,false,false,false,false,false]"
-                    mapinputfieldshidden="false"
-                    OPERATION="POST /services/data/v32.0/sobjects/Lead"
-                    outputoption="VARIABLE"
-                    outputvalue="id"
-                    outputvariablekey="salesforceid"
-                    PROCESS="com.adobe.fd.workflow.fdm.step.FDMOperationStep"
-                    PROCESS_AUTO_ADVANCE="true"
-                    SUBTYPE="forms:fdmoperation"
-                    terminateWorkflow="true"
-                    ValidationLevel="BASIC"
-                    WORK_ITEM_TYPE="FDM_OPERATION_STEP"/>
-            </fdmoperationstep>
+                    sling:resourceType="cq/flow/components/parsys">
+                    <sendemail
+                        jcr:created="{Date}2021-05-28T15:36:34.932-04:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Use the email step to send an HTML email. For example, you can use the email step to send a document of record, adaptive form and interactive communication link, and a PDF document on completion of a workflow."
+                        jcr:lastModified="{Date}2021-05-28T15:36:34.932-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Send Email"
+                        sling:resourceType="fd/workflow/components/email/sendemail">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.adobe.fd.workflow.email.SendEmailStep"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </sendemail>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <fdmoperationstep
+                        jcr:created="{Date}2021-05-20T13:52:02.223-04:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Invoke a Form Data Model Service to fetch or post data to a data source."
+                        jcr:lastModified="{Date}2021-05-25T10:25:42.565-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Salesforce Lead Creation"
+                        sling:resourceType="fd/workflow/components/fdm/fdmOperationStep">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            binarypathcombined="[,,,,,,,,,,,,,]"
+                            FDM_PATH="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
+                            inputjsonpathcombined="VARIABLE:formData"
+                            inputkey="[Lead.FirstName,Lead.LastName,Lead.Title,Lead.Phone,Lead.email,Lead.MobilePhone,Lead.Company,Lead.LeadSource,Lead.Fax,Lead.street,Lead.city,Lead.province,Lead.postalCode,Lead.country]"
+                            inputoption="[VARIABLE,VARIABLE,literal,VARIABLE,VARIABLE,VARIABLE,literal,literal,literal,literal,literal,literal,literal,literal]"
+                            inputvalue="[Tina,Smith,West Coast Cycling Request,6139142478,tina.smith@na.com,6139142478,WKND Vacations,Website,N/A,242 Jasper,Ottawa,ON,K4K1Q4,Canada]"
+                            inputvariablevalue="[firstName,lastName,,phoneNumber,email,phoneNumber,,,,,,,,]"
+                            isarray="[false,false,false,false,false,false,false,false,false,false,false,false,false,false]"
+                            isbinary="[false,false,false,false,false,false,false,false,false,false,false,false,false,false]"
+                            isjsoninput="MANUAL"
+                            isjsonoutput="MANUAL"
+                            isrequired="[true,true,false,true,false,false,true,false,false,false,false,false,false,false]"
+                            mapinputfieldshidden="false"
+                            OPERATION="POST /services/data/v32.0/sobjects/Lead"
+                            outputoption="VARIABLE"
+                            outputvalue="id"
+                            outputvariablekey="salesforceid"
+                            PROCESS="com.adobe.fd.workflow.fdm.step.FDMOperationStep"
+                            PROCESS_AUTO_ADVANCE="true"
+                            SUBTYPE="forms:fdmoperation"
+                            terminateWorkflow="true"
+                            ValidationLevel="BASIC"
+                            WORK_ITEM_TYPE="FDM_OPERATION_STEP"/>
+                    </fdmoperationstep>
+                </_x0032_>
+            </or>
         </flow>
         <variables jcr:primaryType="nt:unstructured">
             <formData
