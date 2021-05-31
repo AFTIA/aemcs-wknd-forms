@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2021-05-31T09:44:56.499-04:00"
+        cq:lastModified="{Date}2021-05-31T13:53:24.433-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/forms-wknd/settings/wcm/templates/blank-af1"
         jcr:language="en"
@@ -270,12 +270,13 @@
                                     <adobesignblock
                                         jcr:created="{Date}2021-05-20T10:20:15.651-04:00"
                                         jcr:createdBy="admin"
-                                        jcr:lastModified="{Date}2021-05-20T10:41:02.959-04:00"
+                                        jcr:lastModified="{Date}2021-05-31T13:53:24.423-04:00"
                                         jcr:lastModifiedBy="admin"
                                         jcr:primaryType="nt:unstructured"
                                         jcr:title="Customer Signature"
                                         sling:resourceType="fd/afaddon/components/adobeSignBlock"
                                         _value="&lt;p>Signature: &amp;nbsp;&lt;span data-adobesigntype=&quot;signature&quot;>{{sampleField_es_:signer1:signature}}&lt;/span>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                        bindRef="/form_properties/signature"
                                         guideNodeClass="guideAdobeSignBlock"
                                         name="adobesignblock1621520415697"
                                         textIsRich="true"
