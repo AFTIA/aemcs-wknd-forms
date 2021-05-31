@@ -47,17 +47,17 @@
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <configuration>
+                    <group>WKND Forms Package</group>
                     <properties>
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
-                    <group>com.adobe.aem.aacs</group>
                     <name>forms-wknd.ui.content</name>
                     <packageType>content</packageType>
                     <accessControlHandling>merge</accessControlHandling>
                     <validatorsSettings>
                         <jackrabbit-filter>
                             <options>
-                                <validRoots>/conf,/content,/content/experience-fragments,/content/dam</validRoots>
+                                <validRoots>/conf,/content,/content/experience-fragments,/content/dam,/var/workflow</validRoots>
                             </options>
                         </jackrabbit-filter>
                     </validatorsSettings>

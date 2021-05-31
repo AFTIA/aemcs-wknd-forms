@@ -48,10 +48,10 @@
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <configuration>
+                    <group>WKND Forms Package</group>
                     <properties>
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
-                    <group>com.adobe.aem.aacs</group>
                     <name>forms-wknd.ui.apps</name>
                     <packageType>application</packageType>
                     <repositoryStructurePackages>

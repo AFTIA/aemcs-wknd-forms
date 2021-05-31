@@ -31,3 +31,23 @@ select,
 textarea {
     font: inherit;
 }
+
+#mainText {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+#mainText p {
+    font-size: 150%;
+}
+
+#wkndVacation .image {
+    display: flex;
+    justify-content: center;
+}
+
+#weFinance .image {
+    display: flex;
+    justify-content: center;
+}
