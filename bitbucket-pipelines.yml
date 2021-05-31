@@ -12,23 +12,23 @@ pipelines:
           caches:
             - maven
           script: # Modify the commands below to build your repository.
-            - mvn clean install
+            - mvn clean install -Padobe-public
   branches:
     develop:
       - step:
           caches:
             - maven
           script: # Modify the commands below to build your repository.
-            - mvn clean install
+            - mvn clean install -Padobe-public
     master:
       - step:
           caches:
             - maven
           script: 
-            - mvn clean install
+            - mvn clean install -Padobe-public
     feature/*:
       - step:
           caches:
             - maven
           script:
-            - mvn clean install
+            - mvn clean install -Padobe-public
