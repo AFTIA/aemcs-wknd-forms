@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2021-06-01T11:26:04.494-04:00"
+        cq:lastModified="{Date}2021-06-01T13:35:48.638-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/forms-wknd/settings/wcm/templates/blank-af2"
         jcr:language="en"
@@ -13,25 +13,34 @@
         sling:resourceType="fd/af/components/page2/aftemplatedpage">
         <guideContainer
             fd:version="1.1"
-            jcr:lastModified="{Date}2021-06-01T11:26:04.482-04:00"
+            jcr:lastModified="{Date}2021-06-01T13:35:48.620-04:00"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="fd/af/components/guideContainer"
             _invokeSubmitActionSync="true"
-            actionType="fd/af/components/guidesubmittype/restendpoint"
+            _useSignedPdf="true"
+            actionType="fd/dashboard/components/actions/aemworkflowsubmit"
+            attachmentsFolderPath="attachments"
             clientLibRef="we-forms"
+            dataXMLPath="data"
             disableSwipeGesture="{Boolean}false"
-            dorType="none"
+            dorPath="dor"
+            dorTemplateRef="/content/dam/formsanddocuments/we--forms/forms/we--base-form/jcr:content/renditions/dorTemplate"
+            dorType="generate"
             enableFocusOnFirstField="{Boolean}true"
             enableLayoutLayer="false"
             guideCss="guideContainer"
             guideNodeClass="guideContainerNode"
             name="guide1"
+            redirect="/content/forms/af/we--forms/forms/thank-you"
+            schemaRef="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
+            schemaType="formdatamodel"
             textIsRich="true"
             thankYouMessage="Thank you for submitting the form."
-            thankYouOption="page"
+            thankYouOption="message"
             themeRef="/content/dam/formsanddocuments-themes/we-forms-aacs/we-gov-form-theme"
-            useExistingAF="false">
+            useExistingAF="false"
+            workflowModel="/var/workflow/models/wknd-form-submission">
             <layout
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fd/af/layouts/defaultGuideLayout"
@@ -91,12 +100,13 @@
                             <guidetextbox
                                 jcr:created="{Date}2021-05-12T15:14:25.301-04:00"
                                 jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2021-05-12T15:23:13.479-04:00"
+                                jcr:lastModified="{Date}2021-06-01T13:09:24.424-04:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="First Name"
                                 sling:resourceType="fd/af/components/guidetextbox"
                                 autofillFieldKeyword="name"
+                                bindRef="/Lead/FirstName"
                                 guideNodeClass="guideTextBox"
                                 mandatory="true"
                                 name="textbox1620846865341"
@@ -104,12 +114,13 @@
                             <guidetextbox_1941375923
                                 jcr:created="{Date}2021-05-12T15:14:32.894-04:00"
                                 jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2021-05-12T15:23:18.652-04:00"
+                                jcr:lastModified="{Date}2021-06-01T13:10:13.248-04:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Last Name"
                                 sling:resourceType="fd/af/components/guidetextbox"
                                 autofillFieldKeyword="name"
+                                bindRef="/Lead/LastName"
                                 guideNodeClass="guideTextBox"
                                 mandatory="true"
                                 name="textbox_19413759231620846872942"
@@ -117,12 +128,13 @@
                             <guideemail
                                 jcr:created="{Date}2021-05-12T15:14:46.077-04:00"
                                 jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2021-05-12T15:23:48.357-04:00"
+                                jcr:lastModified="{Date}2021-06-01T13:10:21.795-04:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Email"
                                 sling:resourceType="fd/af/components/guideemail"
                                 autofillFieldKeyword="email"
+                                bindRef="/Lead/email"
                                 guideNodeClass="guideTextBox"
                                 mandatory="true"
                                 name="email1620846886122"
@@ -132,18 +144,19 @@
                             <guidetelephone
                                 jcr:created="{Date}2021-05-12T15:14:56.354-04:00"
                                 jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2021-05-12T15:23:43.999-04:00"
+                                jcr:lastModified="{Date}2021-06-01T13:11:50.911-04:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Telephone"
                                 sling:resourceType="fd/af/components/guidetelephone"
                                 autofillFieldKeyword="tel"
+                                bindRef="/Lead/MobilePhone"
                                 guideNodeClass="guideTelephone"
                                 mandatory="true"
                                 name="telephone1620846896401"
                                 textIsRich="[true,true]"
-                                validatePictureClause="^[+][0-9]{0,14}$"
-                                validationPatternType="^[+][0-9]{0,14}$"/>
+                                validatePictureClause="^[0-9]{0,14}$"
+                                validationPatternType="custom"/>
                             <guidetextbox_1624430462
                                 jcr:created="{Date}2021-05-12T15:15:09.853-04:00"
                                 jcr:createdBy="admin"
@@ -175,6 +188,18 @@
                                     toolbarPosition="Bottom"/>
                                 <items jcr:primaryType="nt:unstructured"/>
                             </panel>
+                            <adobesignblock
+                                jcr:created="{Date}2021-06-01T13:08:58.758-04:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2021-06-01T13:08:58.758-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Adobe Sign Block"
+                                sling:resourceType="fd/afaddon/components/adobeSignBlock"
+                                _value="&lt;p>Signature: &amp;nbsp;&lt;span data-adobesigntype=&quot;signature&quot;>{{sampleField_es_:signer1:signature}}&lt;/span>&amp;nbsp;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                                guideNodeClass="guideAdobeSignBlock"
+                                name="adobesignblock1622567338801"
+                                visible="{Boolean}false"/>
                         </items>
                     </panel>
                 </items>
@@ -212,20 +237,85 @@
             </rootPanel>
             <signerInfo
                 jcr:primaryType="nt:unstructured"
-                firstSignerFormFiller="false"
+                firstSignerFormFiller="true"
                 signConfigPath="/conf/global/settings/cloudconfigs/echosign/wknd-adobe-sign"
                 workflowType="SEQUENTIAL">
                 <signer0
                     jcr:primaryType="nt:unstructured"
                     countryCode="undefined"
                     countryCodeSource="form"
-                    email="undefined"
+                    email="guide[0].guide1[0].guideRootPanel[0].panel1620846853788[0].email1620846886122[0]"
                     emailSource="form"
                     phone="undefined"
                     phoneSource="form"
                     securityOption="NONE"
-                    signerTitle="Signer One"/>
+                    signerTitle="Signer One">
+                    <signField0
+                        jcr:primaryType="nt:unstructured"
+                        name="sampleField"
+                        som="guide[0].guide1[0].guideRootPanel[0].panel1620846853788[0].adobesignblock1622567338801[0]"/>
+                </signer0>
             </signerInfo>
+            <view jcr:primaryType="nt:unstructured">
+                <print
+                    jcr:created="{Date}2021-06-01T13:08:02.337-04:00"
+                    jcr:lastModified="{Date}2021-06-01T13:27:42.357-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/authoring/components/dor/dorProperties"
+                    accentColor="#001F3F"
+                    file="/content/dam/we-gov/we-gov.png"
+                    fontFamily="Arial"
+                    hidePanelDescriptions="true"
+                    metaTemplateRef="/libs/fd/af/dor/templates/defaultTemplate.xdp"
+                    optionSeparator=", "
+                    showSelectedOptions="true">
+                    <branding jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <masterpage0 jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <Header jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <AF_LOGO_IMAGE
+                                                jcr:primaryType="nt:unstructured"
+                                                fileName="we-gov.png"
+                                                fileReference="/content/dam/we-gov/we-gov.png"
+                                                valueFrom="     "/>
+                                            <HeaderInfo jcr:primaryType="nt:unstructured">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <AF_FORM_TITLE
+                                                        jcr:primaryType="nt:unstructured"
+                                                        resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        value="Enrollment Form"
+                                                        valueFrom="     "/>
+                                                    <AF_HEADER_TEXT
+                                                        jcr:primaryType="nt:unstructured"
+                                                        resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        value="Application Submission"
+                                                        valueFrom="     "/>
+                                                </items>
+                                            </HeaderInfo>
+                                        </items>
+                                    </Header>
+                                    <Footer jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <AF_DISCLAIMER_LABEL
+                                                jcr:primaryType="nt:unstructured"
+                                                resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                valueFrom="     "/>
+                                            <AF_DISCLAIMER_TEXT
+                                                jcr:primaryType="nt:unstructured"
+                                                resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                valueFrom="     "/>
+                                        </items>
+                                    </Footer>
+                                </items>
+                            </masterpage0>
+                        </items>
+                    </branding>
+                </print>
+            </view>
+            <fd:rules jcr:primaryType="nt:unstructured"/>
         </guideContainer>
     </jcr:content>
 </jcr:root>
