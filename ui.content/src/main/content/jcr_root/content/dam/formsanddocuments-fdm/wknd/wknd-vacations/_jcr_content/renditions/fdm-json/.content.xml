@@ -204,6 +204,30 @@
                         type="string"/>
                 </properties>
             </SFResult>
+            <form_properties
+                fdm:binaryEntity="{Boolean}false"
+                fdm:bindRef=""
+                fdm:defaultBinaryEntity="{Boolean}false"
+                fdm:genericOperationAllowed="{Boolean}false"
+                fdm:rootEntity="{Boolean}true"
+                jcr:primaryType="nt:unstructured"
+                id="form_properties"
+                name="form_properties"
+                title="Form Properties">
+                <links jcr:primaryType="nt:unstructured"/>
+                <properties jcr:primaryType="nt:unstructured">
+                    <signature
+                        fdm:bindRef=""
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        name="signature"
+                        type="string"/>
+                </properties>
+            </form_properties>
         </definitions>
         <links jcr:primaryType="nt:unstructured">
             <post_services_datav320sobjectslead
@@ -273,6 +297,14 @@
                 jcr:primaryType="nt:unstructured"
                 _x0024_ref="SFResult"
                 name="SFResult"/>
+            <form_properties
+                fdm:computed="{Boolean}false"
+                fdm:nullable="{Boolean}true"
+                fdm:protected="{Boolean}false"
+                fdm:required="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                _x0024_ref="form_properties"
+                name="form_properties"/>
         </properties>
     </jcr:content>
 </jcr:root>
