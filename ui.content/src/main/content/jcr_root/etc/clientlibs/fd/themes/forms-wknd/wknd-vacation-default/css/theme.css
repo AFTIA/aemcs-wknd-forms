@@ -647,20 +647,12 @@ background:url('/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-d
 }
 .accordion-navigators .active > .guideHeader > a, .accordion-navigators .active .guideHeader > a:hover{
 color:#666666;
-border-left-width:2px;
-border-bottom-width:0px;
-border-top-width:2px;
-border-right-width:2px;
-border-style:solid;
 background:url('/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default/assets/Chevron-Active.svg') 0.5rem 50% / auto 1rem no-repeat;
+border-style:hidden;
 
 }
 .accordion-navigators .guideHeader > a{
 display:block;
-border-style:solid;
-border-top-width:2px;
-border-left-width:2px;
-border-right-width:2px;
 padding-bottom:1rem;
 padding-left:2rem;
 padding-top:1rem;
@@ -669,8 +661,8 @@ font-size:0.875rem;
 text-decoration:none;
 color:#969696;
 cursor:pointer;
-border-bottom-width:2px;
 background:url('/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default/assets/Chevron-Right.svg') 0.5rem 50% / auto 1rem no-repeat;
+border-style:hidden;
 
 }
 .accordion-navigators .guideHeader .repeatableButtons > button.Add:hover{
@@ -1446,12 +1438,7 @@ padding-left:0px;
 }
 }
 .guideAccordionLayout{
-border-left-width:2px;
-border-bottom-width:2px;
-border-top-width:2px;
-border-right-width:2px;
 border-style:hidden;
-border-color:#ffffff;
 
 }
 hr{
@@ -1648,11 +1635,7 @@ padding-left:3.5rem;
 padding-bottom:1rem;
 padding-right:3.5rem;
 padding-top:1rem;
-border-style:solid;
-border-left-width:2px;
-border-bottom-width:2px;
-border-top-width:0px;
-border-right-width:2px;
+border-style:hidden;
 
 }
 @media (max-width : 767px){

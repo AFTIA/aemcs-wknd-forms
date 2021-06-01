@@ -211,10 +211,10 @@
                     phone_x0023_default_x0023_ui="[paddingLock:linkOff,marginLock:linkOff,marginPopover:0px\, 1rem\, 0px\, 0px,paddingPopover:Set]"/>
                 <af_accordionpanelheader
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_active="[color:#666666,border-left-width:2px,border-bottom-width:0px,border-top-width:2px,border-right-width:2px,border-style:solid,background:url('../assets/Chevron-Active.svg') 0.5rem 50% / auto 1rem no-repeat]"
-                    default_x0023_active_x0023_ui="[backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1454047995903&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Active.svg&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;}]},borderWidthPopover:2px\, 2px\, 0px\, 2px,borderWidthLock:linkOff]"
-                    default_x0023_default="[display:block,border-style:solid,border-top-width:2px,border-left-width:2px,border-right-width:2px,padding-bottom:1rem,padding-left:2rem,padding-top:1rem,padding-right:1rem,font-size:0.875rem,text-decoration:none,color:#969696,cursor:pointer,border-bottom-width:2px,background:url('../assets/Chevron-Right.svg') 0.5rem 50% / auto 1rem no-repeat]"
-                    default_x0023_default_x0023_ui="[backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1454047923118&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Right.svg&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;}]},paddingPopover:1rem\, 1rem\, 1rem\, 2rem,paddingLock:linkOff,borderWidthLock:link,borderWidthPopover:2px]"
+                    default_x0023_active="[color:#666666,background:url('../assets/Chevron-Active.svg') 0.5rem 50% / auto 1rem no-repeat,border-style:hidden]"
+                    default_x0023_active_x0023_ui="[backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1454047995903&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Active.svg&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;}]},borderWidthPopover:Set,borderWidthLock:link]"
+                    default_x0023_default="[display:block,padding-bottom:1rem,padding-left:2rem,padding-top:1rem,padding-right:1rem,font-size:0.875rem,text-decoration:none,color:#969696,cursor:pointer,background:url('../assets/Chevron-Right.svg') 0.5rem 50% / auto 1rem no-repeat,border-style:hidden]"
+                    default_x0023_default_x0023_ui="[backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1454047923118&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Right.svg&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;}]},paddingPopover:1rem\, 1rem\, 1rem\, 2rem,paddingLock:linkOff,borderWidthLock:link,borderWidthPopover:Set]"
                     default_x0023_hover="[color:#666666,background:url('../assets/Chevron-Right-Hover.svg') 0.5rem 50% / auto 1rem no-repeat]"
                     default_x0023_hover_x0023_ui="[backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1456742812761&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Right-Hover.svg&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;}]}]"/>
                 <af_accordionpaneladdbutton
@@ -491,8 +491,8 @@
                     tablet_x0023_default_x0023_ui="[paddingPopover:—\, 0rem\, —\, 0rem,paddingLock:linkOff]"/>
                 <af_accordionpanel
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_default="[border-left-width:2px,border-bottom-width:2px,border-top-width:2px,border-right-width:2px,border-style:hidden,border-color:#ffffff]"
-                    default_x0023_default_x0023_ui="[borderWidthPopover:2px,borderWidthLock:link]"/>
+                    default_x0023_default="[border-style:hidden]"
+                    default_x0023_default_x0023_ui="[borderWidthLock:link,borderWidthPopover:Set]"/>
                 <af_form
                     jcr:primaryType="nt:unstructured"
                     phone_x0023_default_x0023_ui="[marginLock:linkOff,marginPopover:Set]"/>
@@ -568,8 +568,8 @@
                     default_x0023_default="[font-size:0.875rem,color:#888888,cssOverride:cursor: pointer;]"/>
                 <af_accordionpanelcontentarea
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_default="[padding-left:3.5rem,padding-bottom:1rem,padding-right:3.5rem,padding-top:1rem,border-style:solid,border-left-width:2px,border-bottom-width:2px,border-top-width:0px,border-right-width:2px]"
-                    default_x0023_default_x0023_ui="[paddingPopover:1rem\, 3.5rem\, 1rem\, 3.5rem,paddingLock:linkOff,borderWidthPopover:0px\, 2px\, 2px\, 2px,borderWidthLock:linkOff]"
+                    default_x0023_default="[padding-left:3.5rem,padding-bottom:1rem,padding-right:3.5rem,padding-top:1rem,border-style:hidden]"
+                    default_x0023_default_x0023_ui="[paddingPopover:1rem\, 3.5rem\, 1rem\, 3.5rem,paddingLock:linkOff,borderWidthLock:link,borderWidthPopover:Set]"
                     phone_x0023_default="[padding-left:0px,padding-bottom:0px,padding-top:0px,padding-right:0px]"
                     phone_x0023_default_x0023_ui="[paddingPopover:0px]"/>
                 <af_tncconsentarea
