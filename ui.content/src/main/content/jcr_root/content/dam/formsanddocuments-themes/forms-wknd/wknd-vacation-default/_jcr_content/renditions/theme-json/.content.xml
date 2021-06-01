@@ -22,8 +22,8 @@
                     default_x0023_default="[height:100%,width:inherit,max-width:100%,max-height:100%]"/>
                 <af_field
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_default="[margin-top:0.25rem,padding-left:0.5rem,padding-right:0.75rem,border-left-width:0.25rem,border-bottom-width:0px,border-right-width:0px,border-top-width:0px,border-style:solid,border-color:rgba(255\,255\,255\,0),padding-top:0.5rem,margin-bottom:0.25rem]"
-                    default_x0023_default_x0023_ui="[marginLock:linkOff,paddingLock:linkOff,paddingPopover:0.5rem\, 0.75rem\, —\, 0.5rem,borderRadiusPopover:Set,borderWidthLock:linkOff,borderWidthPopover:0px\, 0px\, 0px\, 0.25rem,marginPopover:0.25rem\, —\, 0.25rem\, —]"
+                    default_x0023_default="[border-style:solid,display:block,padding-top:20px,padding-right:20px,padding-bottom:0px,padding-left:20px,border-right-width:1px,border-bottom-width:1px,border-left-width:1px,border-top-width:1px,border-color:#e5e9ec]"
+                    default_x0023_default_x0023_ui="[marginLock:linkOff,paddingLock:linkOff,borderRadiusPopover:Set,paddingPopover:20px\, 20px\, 0px\, 20px,marginPopover:Set,borderWidthLock:link,borderWidthPopover:1px]"
                     default_x0023_error="[border-left-width:4px,border-style:solid,border-color:rgb(235\,60\,54),border-right-width:0px,border-top-width:0px,border-bottom-width:0px,background:rgba(235\,60\,54\,0.05)]"
                     default_x0023_error_x0023_ui="[borderWidthLock:linkOff,borderWidthPopover:0px\, 0px\, 0px\, 4px,borderRadiusPopover:Set,backgroundColor:rgba(235\,60\,54\,0.05)]"
                     default_x0023_success="[border-bottom-width:0px,border-right-width:0px,border-top-width:0px,border-left-width:4px,border-style:solid,border-color:#23b482]"
@@ -38,8 +38,10 @@
                     default_x0023_default_x0023_ui="[width:auto,marginPopover:0px\, 0px\, 2px\, 0px,marginLock:linkOff,display:block,paddingPopover:Set]"/>
                 <af_widgetAndText
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_default="[border-style:solid,border-top-width:1px,border-left-width:1px,border-bottom-width:1px,border-right-width:1px,border-bottom-left-radius:0.25rem,border-bottom-right-radius:0.25rem,border-top-right-radius:0.25rem,border-top-left-radius:0.25rem,border-color:#cccccc,height:2.5rem,color:#555555,font-size:0.875rem,padding-bottom:0.625rem,padding-left:0.625rem,padding-top:0.625rem,padding-right:0.625rem,background:#ffffff,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot;.guideFieldWidget:not(.guideFieldButtonWidget)&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;100%&quot;\,&quot;display&quot;:&quot;block&quot;}}}}]"
-                    default_x0023_default_x0023_ui="[marginLock:link,paddingPopover:0.625rem,paddingLock:link,borderWidthPopover:1px,borderWidthLock:link,borderRadiusPopover:0.25rem,borderRadiusLock:link,backgroundColor:#ffffff,width:100%,display:block,shadowContainer:{&quot;itemList&quot;:[]},marginPopover:Set]"/>
+                    default_x0023_default="[border-style:solid,border-bottom-left-radius:0.25rem,border-bottom-right-radius:0.25rem,border-top-right-radius:0.25rem,border-top-left-radius:0.25rem,height:2.5rem,color:#555555,font-size:0.875rem,padding-bottom:0.625rem,padding-left:0.625rem,padding-top:0.625rem,padding-right:0.625rem,addonCss:{&quot;selectors&quot;:{&quot;parent&quot;:{&quot;cssSelector&quot;:&quot;.guideFieldWidget:not(.guideFieldButtonWidget)&quot;\,&quot;properties&quot;:{&quot;width&quot;:&quot;100%&quot;\,&quot;display&quot;:&quot;block&quot;}}}},border-right-width:0px,border-bottom-width:0px,border-left-width:0px,border-top-width:0px]"
+                    default_x0023_default_x0023_ui="[marginLock:link,paddingPopover:0.625rem,paddingLock:link,borderWidthLock:link,borderRadiusPopover:0.25rem,borderRadiusLock:link,width:100%,display:block,shadowContainer:{&quot;itemList&quot;:[]},marginPopover:Set,borderWidthPopover:0px]"
+                    default_x0023_focus="[cssOverride:outline: none;]"
+                    default_x0023_focus_x0023_ui="[borderWidthLock:link,borderWidthPopover:Set]"/>
                 <af_checkboxfieldwidgetandtext
                     jcr:primaryType="nt:unstructured"
                     default_x0023_default="[width:100%,display:block]"/>
@@ -209,12 +211,12 @@
                     phone_x0023_default_x0023_ui="[paddingLock:linkOff,marginLock:linkOff,marginPopover:0px\, 1rem\, 0px\, 0px,paddingPopover:Set]"/>
                 <af_accordionpanelheader
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_active="[color:#666666,background:url(../assets/Chevron-Active.svg) 0.5rem 50% / auto 1rem no-repeat\,#f5f5f5,border-left-width:2px,border-bottom-width:0px,border-top-width:2px,border-right-width:2px,border-style:solid,border-color:#cccccc]"
-                    default_x0023_active_x0023_ui="[backgroundColor:#f5f5f5,backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1454047995903&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Active.svg&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;}]},borderWidthPopover:2px\, 2px\, 0px\, 2px,borderWidthLock:linkOff]"
-                    default_x0023_default="[display:block,border-style:solid,border-top-width:2px,border-left-width:2px,border-right-width:2px,border-color:#cccccc,padding-bottom:1rem,padding-left:2rem,padding-top:1rem,padding-right:1rem,font-size:0.875rem,text-decoration:none,color:#969696,cursor:pointer,background:url(../assets/Chevron-Right.svg) 0.5rem 50% / auto 1rem no-repeat\,#f1f1f1,border-bottom-width:2px]"
-                    default_x0023_default_x0023_ui="[backgroundColor:#f1f1f1,backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1454047923118&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Right.svg&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;}]},paddingPopover:1rem\, 1rem\, 1rem\, 2rem,paddingLock:linkOff,borderWidthLock:link,borderWidthPopover:2px]"
-                    default_x0023_hover="[background:url(../assets/Chevron-Right-Hover.svg) 0.5rem 50% / auto 1rem no-repeat\,#f0f0f0,color:#666666]"
-                    default_x0023_hover_x0023_ui="[backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1456742812761&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Right-Hover.svg&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;}]},backgroundColor:#f0f0f0]"/>
+                    default_x0023_active="[color:#666666,border-left-width:2px,border-bottom-width:0px,border-top-width:2px,border-right-width:2px,border-style:solid,background:url('../assets/Chevron-Active.svg') 0.5rem 50% / auto 1rem no-repeat]"
+                    default_x0023_active_x0023_ui="[backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1454047995903&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Active.svg&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;}]},borderWidthPopover:2px\, 2px\, 0px\, 2px,borderWidthLock:linkOff]"
+                    default_x0023_default="[display:block,border-style:solid,border-top-width:2px,border-left-width:2px,border-right-width:2px,padding-bottom:1rem,padding-left:2rem,padding-top:1rem,padding-right:1rem,font-size:0.875rem,text-decoration:none,color:#969696,cursor:pointer,border-bottom-width:2px,background:url('../assets/Chevron-Right.svg') 0.5rem 50% / auto 1rem no-repeat]"
+                    default_x0023_default_x0023_ui="[backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1454047923118&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Right.svg&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;}]},paddingPopover:1rem\, 1rem\, 1rem\, 2rem,paddingLock:linkOff,borderWidthLock:link,borderWidthPopover:2px]"
+                    default_x0023_hover="[color:#666666,background:url('../assets/Chevron-Right-Hover.svg') 0.5rem 50% / auto 1rem no-repeat]"
+                    default_x0023_hover_x0023_ui="[backgroundContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;image.1456742812761&quot;\,&quot;imageSrc&quot;:&quot;../assets/Chevron-Right-Hover.svg&quot;\,&quot;size&quot;:&quot;custom&quot;\,&quot;position&quot;:&quot;custom&quot;\,&quot;x-position&quot;:&quot;0.5rem&quot;\,&quot;y-position&quot;:&quot;50%&quot;\,&quot;tiling&quot;:&quot;no-repeat&quot;\,&quot;width&quot;:&quot;auto&quot;\,&quot;height&quot;:&quot;1rem&quot;}]}]"/>
                 <af_accordionpaneladdbutton
                     jcr:primaryType="nt:unstructured"
                     default_x0023_active="[background:url(../assets/Accordion-Add-Hover.svg) 50% 40% / 1.2rem 1.2rem no-repeat]"
@@ -566,8 +568,8 @@
                     default_x0023_default="[font-size:0.875rem,color:#888888,cssOverride:cursor: pointer;]"/>
                 <af_accordionpanelcontentarea
                     jcr:primaryType="nt:unstructured"
-                    default_x0023_default="[padding-left:3.5rem,padding-bottom:1rem,padding-right:3.5rem,padding-top:1rem,border-style:solid,border-left-width:2px,border-bottom-width:2px,border-top-width:0px,border-right-width:2px,border-color:#cccccc,background:#f5f5f5]"
-                    default_x0023_default_x0023_ui="[paddingPopover:1rem\, 3.5rem\, 1rem\, 3.5rem,paddingLock:linkOff,borderWidthPopover:0px\, 2px\, 2px\, 2px,borderWidthLock:linkOff,backgroundColor:#f5f5f5]"
+                    default_x0023_default="[padding-left:3.5rem,padding-bottom:1rem,padding-right:3.5rem,padding-top:1rem,border-style:solid,border-left-width:2px,border-bottom-width:2px,border-top-width:0px,border-right-width:2px]"
+                    default_x0023_default_x0023_ui="[paddingPopover:1rem\, 3.5rem\, 1rem\, 3.5rem,paddingLock:linkOff,borderWidthPopover:0px\, 2px\, 2px\, 2px,borderWidthLock:linkOff]"
                     phone_x0023_default="[padding-left:0px,padding-bottom:0px,padding-top:0px,padding-right:0px]"
                     phone_x0023_default_x0023_ui="[paddingPopover:0px]"/>
                 <af_tncconsentarea
@@ -598,6 +600,16 @@
                     jcr:primaryType="nt:unstructured"
                     default_x0023_default="[border-top-width:1px,border-bottom-width:1px,border-left-width:1px,border-right-width:1px,border-style:solid,border-top-left-radius:4px,border-bottom-left-radius:4px,border-bottom-right-radius:4px,border-top-right-radius:4px,padding-top:0.5rem,padding-bottom:0.5rem,padding-left:0.5rem,padding-right:0.5rem,background:rgba(0\,0\,0\,0.02),border-color:rgba(0\,0\,0\,0.15)]"
                     default_x0023_default_x0023_ui="[borderWidthPopover:1px,borderRadiusPopover:4px,paddingPopover:0.5rem,backgroundColor:rgba(0\,0\,0\,0.02)]"/>
+                <af_textboxwidgetandtext
+                    jcr:primaryType="nt:unstructured"
+                    default_x0023_default="[border-right-width:0px,border-bottom-width:0px,border-left-width:0px,border-top-width:0px]"
+                    default_x0023_default_x0023_ui="[borderWidthLock:link,borderWidthPopover:0px]"
+                    default_x0023_focus="[border-right-width:0px,border-bottom-width:0px,border-left-width:0px,border-top-width:0px]"
+                    default_x0023_focus_x0023_ui="[borderWidthPopover:0px]"/>
+                <af_numericboxwidgetandtext
+                    jcr:primaryType="nt:unstructured"
+                    default_x0023_default="[border-right-width:0px,border-bottom-width:0px,border-left-width:0px,border-top-width:0px]"
+                    default_x0023_default_x0023_ui="[borderWidthPopover:0px]"/>
             </af_guideContainer>
             <af_guideFooter
                 jcr:primaryType="nt:unstructured"

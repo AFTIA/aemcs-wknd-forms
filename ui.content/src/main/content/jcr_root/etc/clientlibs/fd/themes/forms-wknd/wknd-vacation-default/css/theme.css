@@ -35,17 +35,17 @@ background:rgba(235,60,54,0.05);
 
 }
 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){
-margin-top:0.25rem;
-padding-left:0.5rem;
-padding-right:0.75rem;
-border-left-width:0.25rem;
-border-bottom-width:0px;
-border-right-width:0px;
-border-top-width:0px;
 border-style:solid;
-border-color:rgba(255,255,255,0);
-padding-top:0.5rem;
-margin-bottom:0.25rem;
+display:block;
+padding-top:20px;
+padding-right:20px;
+padding-bottom:0px;
+padding-left:20px;
+border-right-width:1px;
+border-bottom-width:1px;
+border-left-width:1px;
+border-top-width:1px;
+border-color:#e5e9ec;
 
 }
 .guideFieldNode.validation-success:not(.guideButton):not(.guideTextDraw):not(.guideChart){
@@ -94,17 +94,16 @@ margin-right:0px;
 width:auto;
 display:block;
 }
+input:focus,select:focus,textarea:focus,.guideScribble img:focus{
+outline: none;
+
+}
 input,select,textarea,.guideScribble img,.afTermsAndConditions{
 border-style:solid;
-border-top-width:1px;
-border-left-width:1px;
-border-bottom-width:1px;
-border-right-width:1px;
 border-bottom-left-radius:0.25rem;
 border-bottom-right-radius:0.25rem;
 border-top-right-radius:0.25rem;
 border-top-left-radius:0.25rem;
-border-color:#cccccc;
 height:2.5rem;
 color:#555555;
 font-size:0.875rem;
@@ -112,7 +111,10 @@ padding-bottom:0.625rem;
 padding-left:0.625rem;
 padding-top:0.625rem;
 padding-right:0.625rem;
-background:#ffffff;
+border-right-width:0px;
+border-bottom-width:0px;
+border-left-width:0px;
+border-top-width:0px;
 
 }
 .guideFieldWidget:not(.guideFieldButtonWidget) {
@@ -639,19 +641,18 @@ margin-left:0px;
 }
 }
 .accordion-navigators .guideHeader > a:hover{
-background:url(/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default/assets/Chevron-Right-Hover.svg) 0.5rem 50% / auto 1rem no-repeat,#f0f0f0;
 color:#666666;
+background:url('/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default/assets/Chevron-Right-Hover.svg') 0.5rem 50% / auto 1rem no-repeat;
 
 }
 .accordion-navigators .active > .guideHeader > a, .accordion-navigators .active .guideHeader > a:hover{
 color:#666666;
-background:url(/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default/assets/Chevron-Active.svg) 0.5rem 50% / auto 1rem no-repeat,#f5f5f5;
 border-left-width:2px;
 border-bottom-width:0px;
 border-top-width:2px;
 border-right-width:2px;
 border-style:solid;
-border-color:#cccccc;
+background:url('/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default/assets/Chevron-Active.svg') 0.5rem 50% / auto 1rem no-repeat;
 
 }
 .accordion-navigators .guideHeader > a{
@@ -660,7 +661,6 @@ border-style:solid;
 border-top-width:2px;
 border-left-width:2px;
 border-right-width:2px;
-border-color:#cccccc;
 padding-bottom:1rem;
 padding-left:2rem;
 padding-top:1rem;
@@ -669,8 +669,8 @@ font-size:0.875rem;
 text-decoration:none;
 color:#969696;
 cursor:pointer;
-background:url(/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default/assets/Chevron-Right.svg) 0.5rem 50% / auto 1rem no-repeat,#f1f1f1;
 border-bottom-width:2px;
+background:url('/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default/assets/Chevron-Right.svg') 0.5rem 50% / auto 1rem no-repeat;
 
 }
 .accordion-navigators .guideHeader .repeatableButtons > button.Add:hover{
@@ -1653,8 +1653,6 @@ border-left-width:2px;
 border-bottom-width:2px;
 border-top-width:0px;
 border-right-width:2px;
-border-color:#cccccc;
-background:#f5f5f5;
 
 }
 @media (max-width : 767px){
@@ -1729,6 +1727,27 @@ padding-left:0.5rem;
 padding-right:0.5rem;
 background:rgba(0,0,0,0.02);
 border-color:rgba(0,0,0,0.15);
+
+}
+.textField input[type='text']:focus{
+border-right-width:0px;
+border-bottom-width:0px;
+border-left-width:0px;
+border-top-width:0px;
+
+}
+.textField input[type='text']{
+border-right-width:0px;
+border-bottom-width:0px;
+border-left-width:0px;
+border-top-width:0px;
+
+}
+.numericInput input[type='text'], .numericInput input[type='number']{
+border-right-width:0px;
+border-bottom-width:0px;
+border-left-width:0px;
+border-top-width:0px;
 
 }
 .afFooter{
