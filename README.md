@@ -183,12 +183,14 @@ Follow the instructions provided in the following document in order to create a 
 - Click New (top right)
 - Select field type (select text if the data contains strings and numbers)
 - Click Next (top right)
-- Provide a field label
+- Provide a field label (i.e. province)
 - Provide a field length (Maximum 255)
-- Provide a field name
+- Provide a field name (i.e. province)
 - Click Next 
 - Click Next
 - Click Save
+
+**Note:** That the API Name of the newly created field is what the binding path of the FDM needs to be set to
 
 **Note:** The field name is the value that the FDM needs to send over 
 
@@ -223,7 +225,9 @@ Follow the documentation provided here to create users within AEM https://experi
 
 ## Viewing Form with Sites
 
-In order to start the story, navigate to the http://localhost:4502/content/wknd/us/en/adventures/west-coast-cycling.html?wcmmode=disabled page and click the fourth tab to view the WKND Vacations form.
+WKND Form Experience Fragment is located http://localhost:4502/content/experience-fragments/wknd/us/en/adventures/wknd-form/master.html?wcmmode=disabled
+
+In order to start the story, navigate to the http://localhost:4502/content/wknd/language-masters/en/adventures/west-coast-cycling.html?wcmmode=disabled page and click the fourth tab to view the WKND Vacations form.
 
 Once the user fills out all the necessary fields and submits they then get redirected to Adobe Sign for a signature. 
 
@@ -235,6 +239,19 @@ George Lang logs in and views the application assiged to him. He then approves t
 - Adobe Sign must be configured
 - Salesforce data source must be configured
 - George Lang must be created
+
+## We.Finance and We.Gov
+
+The WE forms are located under the following folder http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/we--forms/forms the `WE.Base Form` supports rendering both forms (We.Gov and We.Finance).
+
+### Rendering Form Type
+- Load the WE.Base Form in the form editor
+- Edit the Form Container
+- Change the Adaptive Form Theme from `We.Gov Form Theme` to `We.Finance Form Theme`
+
+**Note:** If you change the theme on this form make sure to change the theme on the Thank you form http://localhost:4502/editor.html/content/forms/af/we--forms/forms/thank-you.html
+
+**Note:** The logo for the DoR is set to be We.Gov because the logo for the DoR is derived from the template and not the theme, the DoR property makes reference to the fileReference property within the guideheader node of the guideimage within the form template.
 
 # Contributors
 
