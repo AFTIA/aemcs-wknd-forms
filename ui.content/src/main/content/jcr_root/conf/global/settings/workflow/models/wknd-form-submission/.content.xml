@@ -3,13 +3,13 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/default"
-        cq:lastModified="{Date}2021-05-28T15:40:24.700-04:00"
+        cq:lastModified="{Date}2021-06-01T13:38:29.711-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/cq/workflow/templates/model"
         jcr:primaryType="cq:PageContent"
         jcr:title="WKND Form Submission"
         sling:resourceType="cq/workflow/components/pages/model"
-        lastSynced="{Date}2021-05-28T15:36:36.440-04:00">
+        lastSynced="{Date}2021-06-01T13:38:32.191-04:00">
         <flow
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
@@ -32,11 +32,11 @@
             <afparticipantstep
                 jcr:created="{Date}2021-05-20T13:37:40.421-04:00"
                 jcr:createdBy="admin"
-                jcr:description="Registration application for the west coast bicycle application"
-                jcr:lastModified="{Date}2021-05-28T15:32:24.519-04:00"
+                jcr:description="Form application has been submitted for review."
+                jcr:lastModified="{Date}2021-06-01T13:38:29.682-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                jcr:title="West Coast Bicycle Registration"
+                jcr:title="Application Submission"
                 sling:resourceType="fd/workflow/components/dashboard/afParticipantStep">
                 <metaData
                     jcr:primaryType="nt:unstructured"
@@ -78,7 +78,7 @@
                     SHOW_SUBMIT="false"
                     STATIC_ASSIGNEE="george.lang"
                     SUBTYPE="forms:assigntask"
-                    TASK_PRIORITY="HIGH"
+                    TASK_PRIORITY="MEDIUM"
                     TIMEOUT_HANDLER="[,]"
                     USER_METADATA_RESOURCE="[,]"
                     WORK_ITEM_TYPE="AF_ASSIGN_STEP"
