@@ -23,6 +23,10 @@
             jcr:primaryType="nt:unstructured"
             name="phoneNumber"
             type="java.lang.String"/>
+        <comments
+            jcr:primaryType="nt:unstructured"
+            name="comments"
+            type="java.lang.String"/>
         <salesforceid
             jcr:primaryType="nt:unstructured"
             name="salesforceid"
@@ -38,10 +42,10 @@
     </variables>
     <metaData
         cq:generatingPage="/conf/global/settings/workflow/models/wknd-form-submission/jcr:content"
-        cq:lastModified="{Long}1622569112210"
+        cq:lastModified="{Long}1624566809841"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        lastSynced="{Date}2021-06-01T13:38:32.191-04:00"/>
+        lastSynced="{Date}2021-06-24T16:33:29.832-04:00"/>
     <nodes jcr:primaryType="nt:unstructured">
         <node0
             jcr:primaryType="cq:WorkflowNode"
@@ -83,7 +87,7 @@
                 INPUT_COMBINED_DATAXML="VARIABLE:formData"
                 INPUT_COMBINED_FORM_ATTACHMENTS="FOLDER_PAYLOAD:attachments"
                 IS_ATTACHMENT_ALLOWED="false"
-                IS_COMMENT_ALLOWED="false"
+                IS_COMMENT_ALLOWED="true"
                 IS_NEXT_STEP_DATA_ALLOWED="true"
                 IS_PREVIOUS_STEP_DATA_ALLOWED="true"
                 PARTICIPANT="workflow-users"
@@ -109,7 +113,8 @@
                 TIMEOUT_HANDLER="[,]"
                 USER_METADATA_RESOURCE="[,]"
                 WORK_ITEM_TYPE="AF_ASSIGN_STEP"
-                workflowStage="[,]"/>
+                workflowStage="[,]"
+                WORKITEM_COMMENT="VARIABLE:comments"/>
         </node2>
         <node3
             jcr:primaryType="cq:WorkflowNode"
@@ -126,12 +131,21 @@
         <node5
             jcr:primaryType="cq:WorkflowNode"
             description="Use the email step to send an HTML email. For example, you can use the email step to send a document of record, adaptive form and interactive communication link, and a PDF document on completion of a workflow."
-            title="Send Email"
+            title="Send Rejection Email"
             type="PROCESS">
             <metaData
                 jcr:primaryType="nt:unstructured"
+                bccAddressType="Literal"
+                ccAddressType="Literal"
+                emailSubject="Application Submission"
+                fromAddressType="Literal"
+                fromAddressValue="demo@aftia.com"
                 PROCESS="com.adobe.fd.workflow.email.SendEmailStep"
-                PROCESS_AUTO_ADVANCE="true"/>
+                PROCESS_AUTO_ADVANCE="true"
+                subjectType="Literal"
+                templatePath="/content/dam/forms-wknd/email-template.html"
+                toAddressType="Variable"
+                toAddressValue="email"/>
         </node5>
         <node6
             jcr:primaryType="cq:WorkflowNode"

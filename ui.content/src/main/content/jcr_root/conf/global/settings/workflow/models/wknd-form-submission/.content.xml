@@ -3,13 +3,13 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/default"
-        cq:lastModified="{Date}2021-06-01T13:38:29.711-04:00"
+        cq:lastModified="{Date}2021-06-24T16:33:17.737-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/cq/workflow/templates/model"
         jcr:primaryType="cq:PageContent"
         jcr:title="WKND Form Submission"
         sling:resourceType="cq/workflow/components/pages/model"
-        lastSynced="{Date}2021-06-01T13:38:32.191-04:00">
+        lastSynced="{Date}2021-06-24T16:33:29.832-04:00">
         <flow
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
@@ -33,7 +33,7 @@
                 jcr:created="{Date}2021-05-20T13:37:40.421-04:00"
                 jcr:createdBy="admin"
                 jcr:description="Form application has been submitted for review."
-                jcr:lastModified="{Date}2021-06-01T13:38:29.682-04:00"
+                jcr:lastModified="{Date}2021-06-24T15:59:02.981-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Application Submission"
@@ -56,7 +56,7 @@
                     INPUT_COMBINED_DATAXML="VARIABLE:formData"
                     INPUT_COMBINED_FORM_ATTACHMENTS="FOLDER_PAYLOAD:attachments"
                     IS_ATTACHMENT_ALLOWED="false"
-                    IS_COMMENT_ALLOWED="false"
+                    IS_COMMENT_ALLOWED="true"
                     IS_NEXT_STEP_DATA_ALLOWED="true"
                     IS_PREVIOUS_STEP_DATA_ALLOWED="true"
                     PARTICIPANT="workflow-users"
@@ -82,7 +82,8 @@
                     TIMEOUT_HANDLER="[,]"
                     USER_METADATA_RESOURCE="[,]"
                     WORK_ITEM_TYPE="AF_ASSIGN_STEP"
-                    workflowStage="[,]"/>
+                    workflowStage="[,]"
+                    WORKITEM_COMMENT="VARIABLE:comments"/>
             </afparticipantstep>
             <or
                 jcr:created="{Date}2021-05-28T15:24:18.282-04:00"
@@ -105,15 +106,24 @@
                         jcr:created="{Date}2021-05-28T15:36:34.932-04:00"
                         jcr:createdBy="admin"
                         jcr:description="Use the email step to send an HTML email. For example, you can use the email step to send a document of record, adaptive form and interactive communication link, and a PDF document on completion of a workflow."
-                        jcr:lastModified="{Date}2021-05-28T15:36:34.932-04:00"
+                        jcr:lastModified="{Date}2021-06-24T16:33:17.718-04:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Send Email"
+                        jcr:title="Send Rejection Email"
                         sling:resourceType="fd/workflow/components/email/sendemail">
                         <metaData
                             jcr:primaryType="nt:unstructured"
+                            bccAddressType="Literal"
+                            ccAddressType="Literal"
+                            emailSubject="Application Submission"
+                            fromAddressType="Literal"
+                            fromAddressValue="demo@aftia.com"
                             PROCESS="com.adobe.fd.workflow.email.SendEmailStep"
-                            PROCESS_AUTO_ADVANCE="true"/>
+                            PROCESS_AUTO_ADVANCE="true"
+                            subjectType="Literal"
+                            templatePath="/content/dam/forms-wknd/email-template.html"
+                            toAddressType="Variable"
+                            toAddressValue="email"/>
                     </sendemail>
                 </_x0031_>
                 <_x0032_
@@ -192,6 +202,11 @@
                 jcr:primaryType="nt:unstructured"
                 additionalProperties="\{}"
                 name="phoneNumber"
+                type="java.lang.String"/>
+            <comments
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="comments"
                 type="java.lang.String"/>
         </variables>
     </jcr:content>
