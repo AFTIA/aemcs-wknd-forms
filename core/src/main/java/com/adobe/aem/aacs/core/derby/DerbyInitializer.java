@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 @Component(service = DBInitializer.class, immediate = true)
@@ -34,6 +35,20 @@ public class DerbyInitializer implements DBInitializer {
         try (Statement stmt = connection.createStatement()) {
             String createTable = IOUtils.toString(this.getClass().getClassLoader().getResourceAsStream("derby/create-table.sql"), StandardCharsets.UTF_8.name());
             stmt.execute(createTable);
+        } catch (SQLException e) {
+            // Derby error codes http://db.apache.org/derby/docs/10.8/ref/rrefexcept71493.html
+            if (!e.getSQLState().equals("X0Y32")) {
+                logger.error("Caught an unexpected error in the table creation process", e);
+                return Boolean.FALSE;
+            }
+        } catch (Exception e) {
+            logger.error("Failed to create lead table", e);
+            return Boolean.FALSE;
+        }
+
+        try (Statement stmt = connection.createStatement()) {
+            String insertTable = IOUtils.toString(this.getClass().getClassLoader().getResourceAsStream("derby/insert-table.sql"), StandardCharsets.UTF_8.name());
+            stmt.execute(insertTable);
         } catch (Exception e) {
             logger.error("Failed to create lead table", e);
             return Boolean.FALSE;

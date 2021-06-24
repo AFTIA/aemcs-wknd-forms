@@ -228,6 +228,104 @@
                         type="string"/>
                 </properties>
             </form_properties>
+            <LEAD
+                fdm:binaryEntity="{Boolean}false"
+                fdm:bindRef="LEAD"
+                fdm:defaultBinaryEntity="{Boolean}false"
+                fdm:genericOperationAllowed="{Boolean}true"
+                fdm:rootEntity="{Boolean}true"
+                fdm:schemaName="APP"
+                fdm:source="source2"
+                jcr:primaryType="nt:unstructured"
+                id="LEAD"
+                name="LEAD"
+                required="[LEAD_ID,AGE]">
+                <links jcr:primaryType="nt:unstructured">
+                    <get_1624561378834
+                        fdm:source="source2"
+                        jcr:primaryType="nt:unstructured"
+                        description="fetch specified table data "
+                        genericOperation="{Boolean}true"
+                        id="get_1624561378834"
+                        method="GET"
+                        name="get"
+                        rel="self">
+                        <fdm:data jcr:primaryType="nt:unstructured"/>
+                        <schema
+                            fdm:bindRef="schema"
+                            fdm:computed="{Boolean}false"
+                            fdm:nullable="{Boolean}true"
+                            fdm:primaryKey="{Boolean}false"
+                            fdm:protected="{Boolean}false"
+                            fdm:required="{Boolean}false"
+                            jcr:primaryType="nt:unstructured"
+                            name="schema">
+                            <properties jcr:primaryType="nt:unstructured"/>
+                        </schema>
+                        <targetSchema
+                            fdm:bindRef="LEAD"
+                            fdm:computed="{Boolean}false"
+                            fdm:nullable="{Boolean}true"
+                            fdm:primaryKey="{Boolean}false"
+                            fdm:protected="{Boolean}false"
+                            fdm:required="{Boolean}false"
+                            jcr:primaryType="nt:unstructured"
+                            _x0024_ref="LEAD"
+                            name="LEAD"
+                            type="object"/>
+                    </get_1624561378834>
+                </links>
+                <properties jcr:primaryType="nt:unstructured">
+                    <LEAD_ID
+                        fdm:bindRef="LEAD_ID"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}false"
+                        fdm:primaryKey="{Boolean}true"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        format="int32"
+                        name="LEAD_ID"
+                        title="LEAD_ID"
+                        type="integer"/>
+                    <AGE
+                        fdm:bindRef="AGE"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}false"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        format="int32"
+                        name="AGE"
+                        title="AGE"
+                        type="integer"/>
+                    <FIRST_NAME
+                        fdm:bindRef="FIRST_NAME"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="FIRST_NAME"
+                        title="FIRST_NAME"
+                        type="string"/>
+                    <LAST_NAME
+                        fdm:bindRef="LAST_NAME"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="LAST_NAME"
+                        title="LAST_NAME"
+                        type="string"/>
+                </properties>
+            </LEAD>
         </definitions>
         <links jcr:primaryType="nt:unstructured">
             <post_services_datav320sobjectslead
@@ -279,6 +377,100 @@
                     name="SFResult"
                     type="object"/>
             </post_services_datav320sobjectslead>
+            <get
+                fdm:source="source2"
+                jcr:primaryType="nt:unstructured"
+                description="fetch specified table data "
+                genericOperation="{Boolean}true"
+                id="get"
+                method="GET"
+                name="get"
+                rel="LEAD">
+                <fdm:data jcr:primaryType="nt:unstructured"/>
+                <schema
+                    fdm:bindRef="schema"
+                    fdm:computed="{Boolean}false"
+                    fdm:nullable="{Boolean}true"
+                    fdm:primaryKey="{Boolean}false"
+                    fdm:protected="{Boolean}false"
+                    fdm:required="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    name="schema">
+                    <properties jcr:primaryType="nt:unstructured">
+                        <LEAD_ID
+                            fdm:bindRef="LEAD_ID"
+                            fdm:computed="{Boolean}false"
+                            fdm:nullable="{Boolean}false"
+                            fdm:primaryKey="{Boolean}true"
+                            fdm:protected="{Boolean}false"
+                            fdm:required="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            format="int32"
+                            name="LEAD_ID"
+                            title="LEAD_ID"
+                            type="integer"/>
+                    </properties>
+                </schema>
+                <targetSchema
+                    fdm:bindRef="LEAD"
+                    fdm:computed="{Boolean}false"
+                    fdm:nullable="{Boolean}true"
+                    fdm:primaryKey="{Boolean}false"
+                    fdm:protected="{Boolean}false"
+                    fdm:required="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    name="LEAD"
+                    type="array">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        _x0024_ref="LEAD"
+                        type="object"/>
+                </targetSchema>
+            </get>
+            <insert
+                fdm:source="source2"
+                jcr:primaryType="nt:unstructured"
+                description="Insert new row in specified table"
+                genericOperation="{Boolean}true"
+                id="insert"
+                method="POST"
+                name="insert">
+                <fdm:data jcr:primaryType="nt:unstructured"/>
+                <schema
+                    fdm:bindRef="schema"
+                    fdm:computed="{Boolean}false"
+                    fdm:nullable="{Boolean}true"
+                    fdm:primaryKey="{Boolean}false"
+                    fdm:protected="{Boolean}false"
+                    fdm:required="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    name="schema">
+                    <properties jcr:primaryType="nt:unstructured">
+                        <LEAD
+                            fdm:bindRef="LEAD"
+                            fdm:computed="{Boolean}false"
+                            fdm:nullable="{Boolean}true"
+                            fdm:protected="{Boolean}false"
+                            fdm:required="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            _x0024_ref="LEAD"
+                            name="LEAD"
+                            title="LEAD"
+                            type="object"/>
+                    </properties>
+                </schema>
+                <targetSchema
+                    fdm:bindRef="result"
+                    fdm:computed="{Boolean}false"
+                    fdm:nullable="{Boolean}true"
+                    fdm:primaryKey="{Boolean}false"
+                    fdm:protected="{Boolean}false"
+                    fdm:required="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    description="Insert action status"
+                    name="result"
+                    type="boolean"/>
+            </insert>
         </links>
         <properties jcr:primaryType="nt:unstructured">
             <Lead
@@ -305,6 +497,14 @@
                 jcr:primaryType="nt:unstructured"
                 _x0024_ref="form_properties"
                 name="form_properties"/>
+            <LEAD
+                fdm:computed="{Boolean}false"
+                fdm:nullable="{Boolean}true"
+                fdm:protected="{Boolean}false"
+                fdm:required="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                _x0024_ref="LEAD"
+                name="LEAD"/>
         </properties>
     </jcr:content>
 </jcr:root>
