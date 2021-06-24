@@ -65,7 +65,7 @@ public class DerbyInitializer implements DBInitializer {
                     StandardCharsets.UTF_8.name());
             stmt.execute(insertTable);
         } catch (Exception e) {
-            logger.error("Failed to create lead table", e);
+            logger.error("Failed to insert into lead table", e);
             return Boolean.FALSE;
         }
 
