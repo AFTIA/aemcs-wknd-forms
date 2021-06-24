@@ -1,0 +1,7 @@
+CREATE TABLE Lead (
+   lead_id INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+   age INT NOT NULL,
+   first_name VARCHAR(255),
+   last_name VARCHAR(255),
+   PRIMARY KEY (lead_id)
+)

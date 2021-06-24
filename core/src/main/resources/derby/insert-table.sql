@@ -1,0 +1,1 @@
+INSERT INTO Lead VALUES (default, 29, 'Patrique', 'Legault')
