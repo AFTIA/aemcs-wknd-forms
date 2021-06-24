@@ -589,6 +589,17 @@ Bundle-DocURL:
             <artifactId>core-forms-components-core</artifactId>
             <version>${core.forms.components.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derbyclient</artifactId>
+            <version>10.13.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>10.13.1.1</version>
+        </dependency>
+        
 
 
             <!-- Testing -->
