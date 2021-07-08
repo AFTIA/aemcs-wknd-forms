@@ -38,10 +38,10 @@
     </variables>
     <metaData
         cq:generatingPage="/conf/global/settings/workflow/models/wknd-form-submission/jcr:content"
-        cq:lastModified="{Long}1622569112210"
+        cq:lastModified="{Long}1625764473707"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        lastSynced="{Date}2021-06-01T13:38:32.191-04:00"/>
+        lastSynced="{Date}2021-07-08T13:14:33.515-04:00"/>
     <nodes jcr:primaryType="nt:unstructured">
         <node0
             jcr:primaryType="cq:WorkflowNode"
@@ -126,12 +126,29 @@
         <node5
             jcr:primaryType="cq:WorkflowNode"
             description="Use the email step to send an HTML email. For example, you can use the email step to send a document of record, adaptive form and interactive communication link, and a PDF document on completion of a workflow."
-            title="Send Email"
+            title="Form Submission Rejected"
             type="PROCESS">
             <metaData
                 jcr:primaryType="nt:unstructured"
+                attachmentFileNameType="Literal"
+                attachmentName="Document of Record.pdf"
+                attachmentPathHiddenField="FOLDER_PAYLOAD:dor"
+                bccAddressType="Literal"
+                ccAddressType="Literal"
+                emailSubject="Rejected - WKND Vacation Details Request"
+                fromAddressType="Literal"
+                fromAddressValue="demo@aftia.com"
+                hiddenCheckbox="false"
+                hiddenIsFormsAsset="false"
+                Key="firstName"
                 PROCESS="com.adobe.fd.workflow.email.SendEmailStep"
-                PROCESS_AUTO_ADVANCE="true"/>
+                PROCESS_AUTO_ADVANCE="true"
+                subjectType="Literal"
+                templatemetadatatype="Variable"
+                templatePath="/content/dam/forms-wknd/email-template.html"
+                toAddressType="Variable"
+                toAddressValue="email"
+                Value="firstName"/>
         </node5>
         <node6
             jcr:primaryType="cq:WorkflowNode"

@@ -3,13 +3,13 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/default"
-        cq:lastModified="{Date}2021-06-01T13:38:29.711-04:00"
+        cq:lastModified="{Date}2021-07-08T13:14:21.897-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/cq/workflow/templates/model"
         jcr:primaryType="cq:PageContent"
         jcr:title="WKND Form Submission"
         sling:resourceType="cq/workflow/components/pages/model"
-        lastSynced="{Date}2021-06-01T13:38:32.191-04:00">
+        lastSynced="{Date}2021-07-08T13:14:33.515-04:00">
         <flow
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
@@ -87,7 +87,7 @@
             <or
                 jcr:created="{Date}2021-05-28T15:24:18.282-04:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2021-05-28T15:36:19.638-04:00"
+                jcr:lastModified="{Date}2021-07-06T15:44:15.670-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq/workflow/components/model/or"
@@ -105,15 +105,32 @@
                         jcr:created="{Date}2021-05-28T15:36:34.932-04:00"
                         jcr:createdBy="admin"
                         jcr:description="Use the email step to send an HTML email. For example, you can use the email step to send a document of record, adaptive form and interactive communication link, and a PDF document on completion of a workflow."
-                        jcr:lastModified="{Date}2021-05-28T15:36:34.932-04:00"
+                        jcr:lastModified="{Date}2021-07-08T13:14:21.669-04:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Send Email"
+                        jcr:title="Form Submission Rejected"
                         sling:resourceType="fd/workflow/components/email/sendemail">
                         <metaData
                             jcr:primaryType="nt:unstructured"
+                            attachmentFileNameType="Literal"
+                            attachmentName="Document of Record.pdf"
+                            attachmentPathHiddenField="FOLDER_PAYLOAD:dor"
+                            bccAddressType="Literal"
+                            ccAddressType="Literal"
+                            emailSubject="Rejected - WKND Vacation Details Request"
+                            fromAddressType="Literal"
+                            fromAddressValue="demo@aftia.com"
+                            hiddenCheckbox="false"
+                            hiddenIsFormsAsset="false"
+                            Key="firstName"
                             PROCESS="com.adobe.fd.workflow.email.SendEmailStep"
-                            PROCESS_AUTO_ADVANCE="true"/>
+                            PROCESS_AUTO_ADVANCE="true"
+                            subjectType="Literal"
+                            templatemetadatatype="Variable"
+                            templatePath="/content/dam/forms-wknd/email-template.html"
+                            toAddressType="Variable"
+                            toAddressValue="email"
+                            Value="firstName"/>
                     </sendemail>
                 </_x0031_>
                 <_x0032_

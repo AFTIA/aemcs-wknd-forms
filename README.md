@@ -253,6 +253,14 @@ The WE forms are located under the following folder http://localhost:4502/aem/fo
 
 **Note:** The logo for the DoR is set to be We.Gov because the logo for the DoR is derived from the template and not the theme, the DoR property makes reference to the fileReference property within the guideheader node of the guideimage within the form template.
 
+### Email Configuration
+
+- Login to the http://localhost:4502/system/console/configMgr
+- Edit the Day CQ Mail Service and add the necessary information to connect to your SMTP server
+- Edit the WKND FORM SUBMISSION workflow
+- Open the Send Rejection Email step
+- Edit the Sender Details panel to submit using your email address
+
 # Contributors
 
 - [Patrique Legault](mailto:patrique.legault@aftia.com)
