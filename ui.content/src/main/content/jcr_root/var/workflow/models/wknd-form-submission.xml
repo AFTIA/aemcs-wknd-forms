@@ -43,10 +43,10 @@
     </variables>
     <metaData
         cq:generatingPage="/conf/global/settings/workflow/models/wknd-form-submission/jcr:content"
-        cq:lastModified="{Long}1626097676543"
+        cq:lastModified="{Long}1626102660218"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        lastSynced="{Date}2021-07-12T09:47:56.507-04:00"/>
+        lastSynced="{Date}2021-07-12T11:11:00.129-04:00"/>
     <nodes jcr:primaryType="nt:unstructured">
         <node0
             jcr:primaryType="cq:WorkflowNode"
@@ -207,7 +207,7 @@
                 jcr:primaryType="nt:unstructured"
                 binarypathcombined="[,]"
                 FDM_PATH="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
-                inputkey="[LEAD.FIRST_NAME,LEAD.LAST_NAME]"
+                inputkey="[derby_lead.FirstName,derby_lead.LastName]"
                 inputoption="[VARIABLE,VARIABLE]"
                 inputvalue="[,]"
                 inputvariablevalue="[firstName,lastName]"
