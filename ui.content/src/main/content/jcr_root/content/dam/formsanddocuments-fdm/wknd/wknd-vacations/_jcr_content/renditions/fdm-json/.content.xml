@@ -290,6 +290,94 @@
                         maxLength="{Double}255.0"
                         name="LastName"
                         type="string"/>
+                    <Phone
+                        fdm:bindRef="PHONE_NUMBER"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="Phone"
+                        type="string"/>
+                    <email
+                        fdm:bindRef="EMAIL_ADDRESS"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="email"
+                        type="string"/>
+                    <BirthDate
+                        fdm:bindRef="BIRTH_DATE"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="BirthDate"
+                        type="string"/>
+                    <StreetAddress
+                        fdm:bindRef="STREET_ADDRESS"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="StreetAddress"
+                        type="string"/>
+                    <city
+                        fdm:bindRef="CITY"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="city"
+                        type="string"/>
+                    <PostalCode
+                        fdm:bindRef="POSTAL_CODE"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="PostalCode"
+                        type="string"/>
+                    <province
+                        fdm:bindRef="PROVINCE"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="province"
+                        type="string"/>
+                    <country
+                        fdm:bindRef="COUNTRY"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="country"
+                        type="string"/>
                 </properties>
             </derby_lead>
         </definitions>
@@ -361,7 +449,8 @@
                     fdm:protected="{Boolean}false"
                     fdm:required="{Boolean}false"
                     jcr:primaryType="nt:unstructured"
-                    name="schema">
+                    name="schema"
+                    type="object">
                     <properties jcr:primaryType="nt:unstructured"/>
                 </schema>
                 <targetSchema
@@ -375,9 +464,17 @@
                     name="derby_lead"
                     type="array">
                     <items
+                        fdm:binaryEntity="{Boolean}false"
+                        fdm:bindRef="items"
+                        fdm:defaultBinaryEntity="{Boolean}false"
+                        fdm:genericOperationAllowed="{Boolean}false"
+                        fdm:rootEntity="{Boolean}true"
                         jcr:primaryType="nt:unstructured"
                         _x0024_ref="derby_lead"
-                        type="object"/>
+                        name="items"
+                        type="object">
+                        <links jcr:primaryType="nt:unstructured"/>
+                    </items>
                 </targetSchema>
             </get>
             <insert
@@ -397,12 +494,14 @@
                     fdm:protected="{Boolean}false"
                     fdm:required="{Boolean}false"
                     jcr:primaryType="nt:unstructured"
-                    name="schema">
+                    name="schema"
+                    type="object">
                     <properties jcr:primaryType="nt:unstructured">
                         <derby_lead
                             fdm:bindRef="derby_lead"
                             fdm:computed="{Boolean}false"
                             fdm:nullable="{Boolean}true"
+                            fdm:primaryKey="{Boolean}false"
                             fdm:protected="{Boolean}false"
                             fdm:required="{Boolean}true"
                             jcr:primaryType="nt:unstructured"

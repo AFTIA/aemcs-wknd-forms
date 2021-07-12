@@ -3,13 +3,13 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/libs/settings/wcm/designs/default"
-        cq:lastModified="{Date}2021-07-12T11:10:57.196-04:00"
+        cq:lastModified="{Date}2021-07-12T14:01:13.607-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/cq/workflow/templates/model"
         jcr:primaryType="cq:PageContent"
         jcr:title="WKND Form Submission"
         sling:resourceType="cq/workflow/components/pages/model"
-        lastSynced="{Date}2021-07-12T11:11:00.129-04:00">
+        lastSynced="{Date}2021-07-12T14:01:16.119-04:00">
         <flow
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
@@ -17,17 +17,17 @@
                 jcr:created="{Date}2021-05-20T10:48:55.733-04:00"
                 jcr:createdBy="admin"
                 jcr:description="Set value of variables"
-                jcr:lastModified="{Date}2021-07-12T09:42:36.384-04:00"
+                jcr:lastModified="{Date}2021-07-12T14:01:13.550-04:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Set Variable"
                 sling:resourceType="cq/workflow/components/model/set_variable"
-                defaultValue="[,true,,,,true,,,,true,,,,true,,,,true,,,,true,,]">
+                defaultValue="[,true,,,,true,,,,true,,,,true,,,,true,,,,true,,,,true,,,,true,,,,true,,,,true,,,,true,,,,true,,]">
                 <metaData
                     jcr:primaryType="nt:unstructured"
                     PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
                     PROCESS_AUTO_ADVANCE="true"
-                    variableMappings="[{&quot;variableName&quot;:&quot;formData&quot;\,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;\,&quot;mappingValue&quot;:&quot;data&quot;},{&quot;variableName&quot;:&quot;firstName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.FirstName&quot;},{&quot;variableName&quot;:&quot;lastName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.LastName&quot;},{&quot;variableName&quot;:&quot;email&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.email&quot;},{&quot;variableName&quot;:&quot;phoneNumber&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.MobilePhone&quot;},{&quot;variableName&quot;:&quot;submit_to&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.submission_settings.submit_to&quot;}]"/>
+                    variableMappings="[{&quot;variableName&quot;:&quot;formData&quot;\,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;\,&quot;mappingValue&quot;:&quot;data&quot;},{&quot;variableName&quot;:&quot;firstName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.FirstName&quot;},{&quot;variableName&quot;:&quot;lastName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.LastName&quot;},{&quot;variableName&quot;:&quot;email&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.email&quot;},{&quot;variableName&quot;:&quot;phoneNumber&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.MobilePhone&quot;},{&quot;variableName&quot;:&quot;submit_to&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.submission_settings.submit_to&quot;},{&quot;variableName&quot;:&quot;birthDate&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.BirthDate&quot;},{&quot;variableName&quot;:&quot;streetAddress&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.StreetAddress&quot;},{&quot;variableName&quot;:&quot;city&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.city&quot;},{&quot;variableName&quot;:&quot;postalCode&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.PostalCode&quot;},{&quot;variableName&quot;:&quot;province&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.province&quot;},{&quot;variableName&quot;:&quot;country&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.country&quot;}]"/>
             </set_variable>
             <afparticipantstep
                 jcr:created="{Date}2021-05-20T13:37:40.421-04:00"
@@ -197,24 +197,24 @@
                                 jcr:created="{Date}2021-07-10T12:57:36.856-04:00"
                                 jcr:createdBy="admin"
                                 jcr:description="Invoke a Form Data Model Service to fetch or post data to a data source."
-                                jcr:lastModified="{Date}2021-07-12T11:10:57.139-04:00"
+                                jcr:lastModified="{Date}2021-07-12T13:59:21.550-04:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Derby Database Insert"
                                 sling:resourceType="fd/workflow/components/fdm/fdmOperationStep">
                                 <metaData
                                     jcr:primaryType="nt:unstructured"
-                                    binarypathcombined="[,]"
+                                    binarypathcombined="[,,,,,,,,,]"
                                     FDM_PATH="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
-                                    inputkey="[derby_lead.FirstName,derby_lead.LastName]"
-                                    inputoption="[VARIABLE,VARIABLE]"
-                                    inputvalue="[,]"
-                                    inputvariablevalue="[firstName,lastName]"
-                                    isarray="[false,false]"
-                                    isbinary="[false,false]"
+                                    inputkey="[derby_lead.FirstName,derby_lead.LastName,derby_lead.Phone,derby_lead.email,derby_lead.BirthDate,derby_lead.StreetAddress,derby_lead.city,derby_lead.PostalCode,derby_lead.province,derby_lead.country]"
+                                    inputoption="[VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE]"
+                                    inputvalue="[,,,,,,,,,]"
+                                    inputvariablevalue="[firstName,lastName,email,email,birthDate,streetAddress,city,postalCode,province,country]"
+                                    isarray="[false,false,false,false,false,false,false,false,false,false]"
+                                    isbinary="[false,false,false,false,false,false,false,false,false,false]"
                                     isjsoninput="MANUAL"
                                     isjsonoutput="MANUAL"
-                                    isrequired="[false,false]"
+                                    isrequired="[false,false,false,false,false,false,false,false,false,false]"
                                     mapinputfieldshidden="false"
                                     OPERATION="insert"
                                     PROCESS="com.adobe.fd.workflow.fdm.step.FDMOperationStep"
@@ -271,6 +271,36 @@
                 defaultValue="1"
                 name="submit_to"
                 type="java.lang.Double"/>
+            <birthDate
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="birthDate"
+                type="java.lang.String"/>
+            <streetAddress
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="streetAddress"
+                type="java.lang.String"/>
+            <city
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="city"
+                type="java.lang.String"/>
+            <postalCode
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="postalCode"
+                type="java.lang.String"/>
+            <province
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="province"
+                type="java.lang.String"/>
+            <country
+                jcr:primaryType="nt:unstructured"
+                additionalProperties="\{}"
+                name="country"
+                type="java.lang.String"/>
         </variables>
     </jcr:content>
 </jcr:root>

@@ -7,13 +7,38 @@
     description="No Description"
     title="WKND Form Submission">
     <variables jcr:primaryType="nt:unstructured">
-        <firstName
-            jcr:primaryType="nt:unstructured"
-            name="firstName"
-            type="java.lang.String"/>
         <lastName
             jcr:primaryType="nt:unstructured"
             name="lastName"
+            type="java.lang.String"/>
+        <country
+            jcr:primaryType="nt:unstructured"
+            name="country"
+            type="java.lang.String"/>
+        <city
+            jcr:primaryType="nt:unstructured"
+            name="city"
+            type="java.lang.String"/>
+        <postalCode
+            jcr:primaryType="nt:unstructured"
+            name="postalCode"
+            type="java.lang.String"/>
+        <salesforceid
+            jcr:primaryType="nt:unstructured"
+            name="salesforceid"
+            type="java.lang.String"/>
+        <submit_to
+            jcr:primaryType="nt:unstructured"
+            defaultValue="1"
+            name="submit_to"
+            type="java.lang.Double"/>
+        <birthDate
+            jcr:primaryType="nt:unstructured"
+            name="birthDate"
+            type="java.lang.String"/>
+        <firstName
+            jcr:primaryType="nt:unstructured"
+            name="firstName"
             type="java.lang.String"/>
         <actionTaken
             jcr:primaryType="nt:unstructured"
@@ -23,19 +48,18 @@
             jcr:primaryType="nt:unstructured"
             name="phoneNumber"
             type="java.lang.String"/>
-        <salesforceid
+        <province
             jcr:primaryType="nt:unstructured"
-            name="salesforceid"
+            name="province"
+            type="java.lang.String"/>
+        <streetAddress
+            jcr:primaryType="nt:unstructured"
+            name="streetAddress"
             type="java.lang.String"/>
         <formData
             jcr:primaryType="nt:unstructured"
             name="formData"
             type="com.google.gson.JsonObject"/>
-        <submit_to
-            jcr:primaryType="nt:unstructured"
-            defaultValue="1"
-            name="submit_to"
-            type="java.lang.Double"/>
         <email
             jcr:primaryType="nt:unstructured"
             name="email"
@@ -43,10 +67,10 @@
     </variables>
     <metaData
         cq:generatingPage="/conf/global/settings/workflow/models/wknd-form-submission/jcr:content"
-        cq:lastModified="{Long}1626102660218"
+        cq:lastModified="{Long}1626112876167"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        lastSynced="{Date}2021-07-12T11:11:00.129-04:00"/>
+        lastSynced="{Date}2021-07-12T14:01:16.119-04:00"/>
     <nodes jcr:primaryType="nt:unstructured">
         <node0
             jcr:primaryType="cq:WorkflowNode"
@@ -63,7 +87,7 @@
                 jcr:primaryType="nt:unstructured"
                 PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
                 PROCESS_AUTO_ADVANCE="true"
-                variableMappings="[{&quot;variableName&quot;:&quot;formData&quot;\,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;\,&quot;mappingValue&quot;:&quot;data&quot;},{&quot;variableName&quot;:&quot;firstName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.FirstName&quot;},{&quot;variableName&quot;:&quot;lastName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.LastName&quot;},{&quot;variableName&quot;:&quot;email&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.email&quot;},{&quot;variableName&quot;:&quot;phoneNumber&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.MobilePhone&quot;},{&quot;variableName&quot;:&quot;submit_to&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.submission_settings.submit_to&quot;}]"/>
+                variableMappings="[{&quot;variableName&quot;:&quot;formData&quot;\,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;\,&quot;mappingValue&quot;:&quot;data&quot;},{&quot;variableName&quot;:&quot;firstName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.FirstName&quot;},{&quot;variableName&quot;:&quot;lastName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.LastName&quot;},{&quot;variableName&quot;:&quot;email&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.email&quot;},{&quot;variableName&quot;:&quot;phoneNumber&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.MobilePhone&quot;},{&quot;variableName&quot;:&quot;submit_to&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.submission_settings.submit_to&quot;},{&quot;variableName&quot;:&quot;birthDate&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.BirthDate&quot;},{&quot;variableName&quot;:&quot;streetAddress&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.StreetAddress&quot;},{&quot;variableName&quot;:&quot;city&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.city&quot;},{&quot;variableName&quot;:&quot;postalCode&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.PostalCode&quot;},{&quot;variableName&quot;:&quot;province&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.province&quot;},{&quot;variableName&quot;:&quot;country&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.derby_lead.country&quot;}]"/>
         </node1>
         <node2
             jcr:primaryType="cq:WorkflowNode"
@@ -205,17 +229,17 @@
             type="PROCESS">
             <metaData
                 jcr:primaryType="nt:unstructured"
-                binarypathcombined="[,]"
+                binarypathcombined="[,,,,,,,,,]"
                 FDM_PATH="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
-                inputkey="[derby_lead.FirstName,derby_lead.LastName]"
-                inputoption="[VARIABLE,VARIABLE]"
-                inputvalue="[,]"
-                inputvariablevalue="[firstName,lastName]"
-                isarray="[false,false]"
-                isbinary="[false,false]"
+                inputkey="[derby_lead.FirstName,derby_lead.LastName,derby_lead.Phone,derby_lead.email,derby_lead.BirthDate,derby_lead.StreetAddress,derby_lead.city,derby_lead.PostalCode,derby_lead.province,derby_lead.country]"
+                inputoption="[VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE,VARIABLE]"
+                inputvalue="[,,,,,,,,,]"
+                inputvariablevalue="[firstName,lastName,email,email,birthDate,streetAddress,city,postalCode,province,country]"
+                isarray="[false,false,false,false,false,false,false,false,false,false]"
+                isbinary="[false,false,false,false,false,false,false,false,false,false]"
                 isjsoninput="MANUAL"
                 isjsonoutput="MANUAL"
-                isrequired="[false,false]"
+                isrequired="[false,false,false,false,false,false,false,false,false,false]"
                 mapinputfieldshidden="false"
                 OPERATION="insert"
                 PROCESS="com.adobe.fd.workflow.fdm.step.FDMOperationStep"
