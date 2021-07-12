@@ -228,6 +228,158 @@
                         type="string"/>
                 </properties>
             </form_properties>
+            <submission_settings
+                fdm:binaryEntity="{Boolean}false"
+                fdm:bindRef=""
+                fdm:defaultBinaryEntity="{Boolean}false"
+                fdm:genericOperationAllowed="{Boolean}false"
+                fdm:rootEntity="{Boolean}true"
+                jcr:primaryType="nt:unstructured"
+                id="submission_settings"
+                name="submission_settings"
+                title="Submission Settings">
+                <links jcr:primaryType="nt:unstructured"/>
+                <properties jcr:primaryType="nt:unstructured">
+                    <submit_to
+                        fdm:bindRef=""
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        format="int32"
+                        name="submit_to"
+                        title="Database Submission Settings "
+                        type="integer"/>
+                </properties>
+            </submission_settings>
+            <derby_lead
+                fdm:binaryEntity="{Boolean}false"
+                fdm:bindRef="LEAD"
+                fdm:defaultBinaryEntity="{Boolean}false"
+                fdm:genericOperationAllowed="{Boolean}true"
+                fdm:rootEntity="{Boolean}true"
+                fdm:schemaName="APP"
+                fdm:source="source2"
+                jcr:primaryType="nt:unstructured"
+                id="derby_lead"
+                name="derby_lead"
+                title="Derby Lead">
+                <links jcr:primaryType="nt:unstructured"/>
+                <properties jcr:primaryType="nt:unstructured">
+                    <FirstName
+                        fdm:bindRef="FIRST_NAME"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="FirstName"
+                        type="string"/>
+                    <LastName
+                        fdm:bindRef="LAST_NAME"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="LastName"
+                        type="string"/>
+                    <Phone
+                        fdm:bindRef="PHONE_NUMBER"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="Phone"
+                        type="string"/>
+                    <email
+                        fdm:bindRef="EMAIL_ADDRESS"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="email"
+                        type="string"/>
+                    <BirthDate
+                        fdm:bindRef="BIRTH_DATE"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="BirthDate"
+                        type="string"/>
+                    <StreetAddress
+                        fdm:bindRef="STREET_ADDRESS"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="StreetAddress"
+                        type="string"/>
+                    <city
+                        fdm:bindRef="CITY"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="city"
+                        type="string"/>
+                    <PostalCode
+                        fdm:bindRef="POSTAL_CODE"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="PostalCode"
+                        type="string"/>
+                    <province
+                        fdm:bindRef="PROVINCE"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="province"
+                        type="string"/>
+                    <country
+                        fdm:bindRef="COUNTRY"
+                        fdm:computed="{Boolean}false"
+                        fdm:nullable="{Boolean}true"
+                        fdm:primaryKey="{Boolean}false"
+                        fdm:protected="{Boolean}false"
+                        fdm:required="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        maxLength="{Double}255.0"
+                        name="country"
+                        type="string"/>
+                </properties>
+            </derby_lead>
         </definitions>
         <links jcr:primaryType="nt:unstructured">
             <post_services_datav320sobjectslead
@@ -279,6 +431,147 @@
                     name="SFResult"
                     type="object"/>
             </post_services_datav320sobjectslead>
+            <get
+                fdm:source="source2"
+                jcr:primaryType="nt:unstructured"
+                description="fetch specified table data "
+                genericOperation="{Boolean}true"
+                id="get"
+                method="GET"
+                name="get"
+                rel="derby_lead">
+                <fdm:data jcr:primaryType="nt:unstructured"/>
+                <schema
+                    fdm:bindRef="schema"
+                    fdm:computed="{Boolean}false"
+                    fdm:nullable="{Boolean}true"
+                    fdm:primaryKey="{Boolean}false"
+                    fdm:protected="{Boolean}false"
+                    fdm:required="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    name="schema"
+                    type="object">
+                    <properties jcr:primaryType="nt:unstructured"/>
+                </schema>
+                <targetSchema
+                    fdm:bindRef="derby_lead"
+                    fdm:computed="{Boolean}false"
+                    fdm:nullable="{Boolean}true"
+                    fdm:primaryKey="{Boolean}false"
+                    fdm:protected="{Boolean}false"
+                    fdm:required="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    name="derby_lead"
+                    type="array">
+                    <items
+                        fdm:binaryEntity="{Boolean}false"
+                        fdm:bindRef="items"
+                        fdm:defaultBinaryEntity="{Boolean}false"
+                        fdm:genericOperationAllowed="{Boolean}false"
+                        fdm:rootEntity="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        _x0024_ref="derby_lead"
+                        name="items"
+                        type="object">
+                        <links jcr:primaryType="nt:unstructured"/>
+                    </items>
+                </targetSchema>
+            </get>
+            <insert
+                fdm:source="source2"
+                jcr:primaryType="nt:unstructured"
+                description="Insert new row in specified table"
+                genericOperation="{Boolean}true"
+                id="insert"
+                method="POST"
+                name="insert">
+                <fdm:data jcr:primaryType="nt:unstructured"/>
+                <schema
+                    fdm:bindRef="schema"
+                    fdm:computed="{Boolean}false"
+                    fdm:nullable="{Boolean}true"
+                    fdm:primaryKey="{Boolean}false"
+                    fdm:protected="{Boolean}false"
+                    fdm:required="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    name="schema"
+                    type="object">
+                    <properties jcr:primaryType="nt:unstructured">
+                        <derby_lead
+                            fdm:bindRef="derby_lead"
+                            fdm:computed="{Boolean}false"
+                            fdm:nullable="{Boolean}true"
+                            fdm:primaryKey="{Boolean}false"
+                            fdm:protected="{Boolean}false"
+                            fdm:required="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            _x0024_ref="derby_lead"
+                            name="derby_lead"
+                            title="Derby Lead"
+                            type="object"/>
+                    </properties>
+                </schema>
+                <targetSchema
+                    fdm:bindRef="result"
+                    fdm:computed="{Boolean}false"
+                    fdm:nullable="{Boolean}true"
+                    fdm:primaryKey="{Boolean}false"
+                    fdm:protected="{Boolean}false"
+                    fdm:required="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    description="Insert action status"
+                    name="result"
+                    type="boolean"/>
+            </insert>
+            <get_services_datav320sobjectsleadid
+                fdm:source="source1"
+                jcr:primaryType="nt:unstructured"
+                description="Fetch Lead Information From SDFC"
+                genericOperation="{Boolean}false"
+                href="na46.salesforce.com"
+                id="GET /services/data/v32.0/sobjects/Lead/{id}"
+                method="GET"
+                name="GET /services/data/v32.0/sobjects/Lead/{id}">
+                <fdm:data jcr:primaryType="nt:unstructured"/>
+                <schema
+                    fdm:bindRef="schema"
+                    fdm:computed="{Boolean}false"
+                    fdm:nullable="{Boolean}true"
+                    fdm:primaryKey="{Boolean}false"
+                    fdm:protected="{Boolean}false"
+                    fdm:required="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    description="operation input description"
+                    name="schema"
+                    type="object">
+                    <properties jcr:primaryType="nt:unstructured">
+                        <id
+                            fdm:bindRef="id"
+                            fdm:computed="{Boolean}false"
+                            fdm:in="path"
+                            fdm:nullable="{Boolean}true"
+                            fdm:primaryKey="{Boolean}false"
+                            fdm:protected="{Boolean}false"
+                            fdm:required="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            description="path to store data into"
+                            name="id"
+                            type="string"/>
+                    </properties>
+                </schema>
+                <targetSchema
+                    fdm:bindRef="Lead"
+                    fdm:computed="{Boolean}false"
+                    fdm:nullable="{Boolean}true"
+                    fdm:primaryKey="{Boolean}false"
+                    fdm:protected="{Boolean}false"
+                    fdm:required="{Boolean}false"
+                    jcr:primaryType="nt:unstructured"
+                    _x0024_ref="Lead"
+                    name="Lead"
+                    title="Lead"
+                    type="object"/>
+            </get_services_datav320sobjectsleadid>
         </links>
         <properties jcr:primaryType="nt:unstructured">
             <Lead
@@ -305,6 +598,22 @@
                 jcr:primaryType="nt:unstructured"
                 _x0024_ref="form_properties"
                 name="form_properties"/>
+            <submission_settings
+                fdm:computed="{Boolean}false"
+                fdm:nullable="{Boolean}true"
+                fdm:protected="{Boolean}false"
+                fdm:required="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                _x0024_ref="submission_settings"
+                name="submission_settings"/>
+            <derby_lead
+                fdm:computed="{Boolean}false"
+                fdm:nullable="{Boolean}true"
+                fdm:protected="{Boolean}false"
+                fdm:required="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                _x0024_ref="derby_lead"
+                name="derby_lead"/>
         </properties>
     </jcr:content>
 </jcr:root>
