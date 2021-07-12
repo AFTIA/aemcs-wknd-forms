@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2021-07-07T13:26:32.568-04:00"
+        cq:lastModified="{Date}2021-07-12T09:39:09.002-04:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/forms-wknd/settings/wcm/templates/blank-af1"
         jcr:language="en"
@@ -284,12 +284,13 @@
                                     <guideradiobutton
                                         jcr:created="{Date}2021-07-06T10:26:59.227-04:00"
                                         jcr:createdBy="admin"
-                                        jcr:lastModified="{Date}2021-07-06T10:29:12.546-04:00"
+                                        jcr:lastModified="{Date}2021-07-12T09:39:08.957-04:00"
                                         jcr:lastModifiedBy="admin"
                                         jcr:primaryType="nt:unstructured"
                                         jcr:title="Submit to:"
                                         sling:resourceType="fd/af/components/guideradiobutton"
                                         alignment="guideFieldHorizontalAlignment"
+                                        bindRef="/submission_settings/submit_to"
                                         guideNodeClass="guideRadioButton"
                                         mandatory="true"
                                         mandatoryMessage="Please select your submission prefernce"

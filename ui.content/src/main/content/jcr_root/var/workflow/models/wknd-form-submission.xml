@@ -31,6 +31,11 @@
             jcr:primaryType="nt:unstructured"
             name="formData"
             type="com.google.gson.JsonObject"/>
+        <submit_to
+            jcr:primaryType="nt:unstructured"
+            defaultValue="1"
+            name="submit_to"
+            type="java.lang.Double"/>
         <email
             jcr:primaryType="nt:unstructured"
             name="email"
@@ -38,10 +43,10 @@
     </variables>
     <metaData
         cq:generatingPage="/conf/global/settings/workflow/models/wknd-form-submission/jcr:content"
-        cq:lastModified="{Long}1625764473707"
+        cq:lastModified="{Long}1626097676543"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        lastSynced="{Date}2021-07-08T13:14:33.515-04:00"/>
+        lastSynced="{Date}2021-07-12T09:47:56.507-04:00"/>
     <nodes jcr:primaryType="nt:unstructured">
         <node0
             jcr:primaryType="cq:WorkflowNode"
@@ -58,7 +63,7 @@
                 jcr:primaryType="nt:unstructured"
                 PROCESS="com.adobe.granite.workflow.core.process.SetVariableProcess"
                 PROCESS_AUTO_ADVANCE="true"
-                variableMappings="[{&quot;variableName&quot;:&quot;formData&quot;\,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;\,&quot;mappingValue&quot;:&quot;data&quot;},{&quot;variableName&quot;:&quot;firstName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.FirstName&quot;},{&quot;variableName&quot;:&quot;lastName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.LastName&quot;},{&quot;variableName&quot;:&quot;email&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.email&quot;},{&quot;variableName&quot;:&quot;phoneNumber&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.MobilePhone&quot;}]"/>
+                variableMappings="[{&quot;variableName&quot;:&quot;formData&quot;\,&quot;mappingType&quot;:&quot;RELATIVE_TO_PAYLOAD&quot;\,&quot;mappingValue&quot;:&quot;data&quot;},{&quot;variableName&quot;:&quot;firstName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.FirstName&quot;},{&quot;variableName&quot;:&quot;lastName&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.LastName&quot;},{&quot;variableName&quot;:&quot;email&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.email&quot;},{&quot;variableName&quot;:&quot;phoneNumber&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.Lead.MobilePhone&quot;},{&quot;variableName&quot;:&quot;submit_to&quot;\,&quot;mappingType&quot;:&quot;JSON_DOT_NOTATION&quot;\,&quot;mappingValue&quot;:&quot;formData:afData.afBoundData.data.submission_settings.submit_to&quot;}]"/>
         </node1>
         <node2
             jcr:primaryType="cq:WorkflowNode"
@@ -152,6 +157,18 @@
         </node5>
         <node6
             jcr:primaryType="cq:WorkflowNode"
+            title="OR_SPLIT"
+            type="OR_SPLIT">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node6>
+        <node7
+            jcr:primaryType="cq:WorkflowNode"
+            title="OR_JOIN"
+            type="OR_JOIN">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node7>
+        <node8
+            jcr:primaryType="cq:WorkflowNode"
             description="Invoke a Form Data Model Service to fetch or post data to a data source."
             title="Salesforce Lead Creation"
             type="PROCESS">
@@ -180,13 +197,40 @@
                 terminateWorkflow="true"
                 ValidationLevel="BASIC"
                 WORK_ITEM_TYPE="FDM_OPERATION_STEP"/>
-        </node6>
-        <node7
+        </node8>
+        <node9
+            jcr:primaryType="cq:WorkflowNode"
+            description="Invoke a Form Data Model Service to fetch or post data to a data source."
+            title="Derby Database Insert"
+            type="PROCESS">
+            <metaData
+                jcr:primaryType="nt:unstructured"
+                binarypathcombined="[,]"
+                FDM_PATH="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
+                inputkey="[LEAD.FIRST_NAME,LEAD.LAST_NAME]"
+                inputoption="[VARIABLE,VARIABLE]"
+                inputvalue="[,]"
+                inputvariablevalue="[firstName,lastName]"
+                isarray="[false,false]"
+                isbinary="[false,false]"
+                isjsoninput="MANUAL"
+                isjsonoutput="MANUAL"
+                isrequired="[false,false]"
+                mapinputfieldshidden="false"
+                OPERATION="insert"
+                PROCESS="com.adobe.fd.workflow.fdm.step.FDMOperationStep"
+                PROCESS_AUTO_ADVANCE="true"
+                SUBTYPE="forms:fdmoperation"
+                terminateWorkflow="true"
+                ValidationLevel="BASIC"
+                WORK_ITEM_TYPE="FDM_OPERATION_STEP"/>
+        </node9>
+        <node10
             jcr:primaryType="cq:WorkflowNode"
             title="End"
             type="END">
             <metaData jcr:primaryType="nt:unstructured"/>
-        </node7>
+        </node10>
     </nodes>
     <transitions jcr:primaryType="nt:unstructured">
         <node0_x0023_node1
@@ -229,21 +273,49 @@
             from="node3"
             rule="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;actionTaken&quot;,&quot;displayName&quot;:&quot;actionTaken&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;workflow_variables/actionTaken/&quot;,&quot;name&quot;:&quot;actionTaken&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONTAINS&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;,&quot;value&quot;:&quot;Approve&quot;}}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
             to="node6">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node3_x0023_node6>
+        <node6_x0023_node8
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node6"
+            rule="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;submit_to&quot;,&quot;displayName&quot;:&quot;submit_to&quot;,&quot;type&quot;:&quot;NUMBER&quot;,&quot;displayPath&quot;:&quot;workflow_variables/submit_to/&quot;,&quot;name&quot;:&quot;submit_to&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;NUMERIC_LITERAL&quot;,&quot;value&quot;:&quot;0&quot;}}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
+            to="node8">
             <metaData
                 jcr:primaryType="nt:unstructured"
                 isDefault="false"/>
-        </node3_x0023_node6>
-        <node6_x0023_node4
+        </node6_x0023_node8>
+        <node8_x0023_node7
             jcr:primaryType="cq:WorkflowTransition"
-            from="node6"
-            to="node4">
-            <metaData jcr:primaryType="nt:unstructured"/>
-        </node6_x0023_node4>
-        <node4_x0023_node7
-            jcr:primaryType="cq:WorkflowTransition"
-            from="node4"
+            from="node8"
             to="node7">
             <metaData jcr:primaryType="nt:unstructured"/>
-        </node4_x0023_node7>
+        </node8_x0023_node7>
+        <node6_x0023_node9
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node6"
+            rule="\{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;submit_to&quot;,&quot;displayName&quot;:&quot;submit_to&quot;,&quot;type&quot;:&quot;NUMBER&quot;,&quot;displayPath&quot;:&quot;workflow_variables/submit_to/&quot;,&quot;name&quot;:&quot;submit_to&quot;,&quot;parent&quot;:&quot;workflow_variables&quot;}}},{&quot;nodeName&quot;:&quot;OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;NUMERIC_LITERAL&quot;,&quot;value&quot;:&quot;1&quot;}}]},&quot;nested&quot;:false}}],&quot;isValid&quot;:true,&quot;enabled&quot;:true,&quot;version&quot;:1}"
+            to="node9">
+            <metaData
+                jcr:primaryType="nt:unstructured"
+                isDefault="true"/>
+        </node6_x0023_node9>
+        <node9_x0023_node7
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node9"
+            to="node7">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node9_x0023_node7>
+        <node7_x0023_node4
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node7"
+            to="node4">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node7_x0023_node4>
+        <node4_x0023_node10
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node4"
+            to="node10">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node4_x0023_node10>
     </transitions>
 </jcr:root>
