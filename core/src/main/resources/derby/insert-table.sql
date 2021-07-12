@@ -1,1 +1,1 @@
-INSERT INTO Lead VALUES (default, 'Patrique', 'Legault')
+INSERT INTO Lead VALUES (default, 'Bishoy', 'Sefin','2899412986','sefinb@mcmaster.ca','1998-09-28','30 Larkspur', 'Hamilton','L9K1C6','ON','Canada')
