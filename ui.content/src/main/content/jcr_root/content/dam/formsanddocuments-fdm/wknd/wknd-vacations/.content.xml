@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="dam:Asset">
     <jcr:content
-        cq:conf=""
-        jcr:lastModified="{Date}2021-06-24T16:42:19.189-04:00"
+        jcr:lastModified="{Date}2021-07-12T10:40:14.944-04:00"
         jcr:primaryType="dam:AssetContent"
         sling:resourceType="fd/fm/fdm/render"
         type="formdatamodel">
@@ -11,6 +10,6 @@
             jcr:primaryType="nt:unstructured"
             author="admin"
             title="WKND Vacations"
-            uiModel="\{&quot;models&quot;:{&quot;Lead&quot;:{&quot;x&quot;:520,&quot;y&quot;:80},&quot;SFResult&quot;:{&quot;x&quot;:280,&quot;y&quot;:80},&quot;form_properties&quot;:{&quot;x&quot;:760,&quot;y&quot;:80},&quot;LEAD&quot;:{&quot;x&quot;:1000,&quot;y&quot;:80}}}"/>
+            uiModel="\{&quot;models&quot;:{&quot;Lead&quot;:{&quot;x&quot;:520,&quot;y&quot;:80},&quot;SFResult&quot;:{&quot;x&quot;:280,&quot;y&quot;:80},&quot;form_properties&quot;:{&quot;x&quot;:760,&quot;y&quot;:80},&quot;submission_settings&quot;:{&quot;x&quot;:1240,&quot;y&quot;:80},&quot;derby_lead&quot;:{&quot;x&quot;:1000,&quot;y&quot;:80}}}"/>
     </jcr:content>
 </jcr:root>
