@@ -33,8 +33,7 @@ pipelines:
             - maven
           script: 
             - git remote add adobe https://$ADOBE_GIT_USER:$ADOBE_GIT_PASSWORD@$ADOBE_GIT_URL
-            - git branch -a
-            - git push adobe develop
+            - git push adobe master:develop
     feature/*:
       - step:
           caches:
