@@ -21,18 +21,19 @@ pipelines:
           script: # Modify the commands below to build your repository.
             - mvn clean install -Padobe-public
     master:
-      - step:
-          name: 'Build and Test'
-          caches:
-            - maven
-          script: 
-            - mvn clean install
+      # - step:
+      #     name: 'Build and Test'
+      #     caches:
+      #       - maven
+      #     script: 
+      #       - mvn clean install
       - step:
           name: 'Push to Production Pipeline'
           caches:
             - maven
           script: 
             - git remote add adobe https://$ADOBE_GIT_USER:$ADOBE_GIT_PASSWORD@$ADOBE_GIT_URL
+            - git pull adobe
             - git push adobe develop
     feature/*:
       - step:
