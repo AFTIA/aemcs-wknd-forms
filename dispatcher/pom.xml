@@ -7,16 +7,16 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.adobewkndproject</groupId>
-        <artifactId>aem-adobewkndproject-project</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.adobe.aem.aacs</groupId>
+        <artifactId>forms-wknd</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>aem-adobewkndproject-project.dispatcher.cloud</artifactId>
+    <artifactId>forms-wknd.dispatcher.cloud</artifactId>
     <packaging>pom</packaging>
-    <name>Adobe WKND Project - Dispatcher</name>
-    <description>HTTP &amp; Dispatcher configurations for Adobe WKND Project</description>
+    <name>WKND Forms aaCS - Dispatcher</name>
+    <description>HTTP &amp; Dispatcher configurations for WKND Forms aaCS</description>
 
     <build>
         <plugins>

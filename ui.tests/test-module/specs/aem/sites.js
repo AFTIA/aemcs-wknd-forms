@@ -18,7 +18,7 @@ const config = require('../../lib/config');
 const commons = require('../../lib/commons');
 const { expect } = require('chai');
 
-const AEM_SAMPLE_PAGE_PARENT = '/content/adobewkndproject/us';
+const AEM_SAMPLE_PAGE_PARENT = '/content/forms-wknd/us';
 const AEM_SAMPLE_PAGE_ID = 'en';
 
 describe('AEM Sites Console', () => {

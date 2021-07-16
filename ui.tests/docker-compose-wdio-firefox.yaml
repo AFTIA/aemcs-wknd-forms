@@ -34,7 +34,7 @@ services:
     volumes:
       - ./target/reports:/tmp/reports
       - 'shared:/tmp/shared'
-    image: 'com.adobewkndproject-aem-adobewkndproject-project.ui.tests/ui.tests:latest'
+    image: 'com.adobe.aem.aacs-forms-wknd.ui.tests/ui.tests:latest'
   selenium-firefox:
     image: 'selenium/standalone-firefox-debug'
     ports:

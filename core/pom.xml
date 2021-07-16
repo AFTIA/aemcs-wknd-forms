@@ -14,18 +14,17 @@
  |  See the License for the specific language governing permissions and
  |  limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.adobewkndproject</groupId>
-        <artifactId>aem-adobewkndproject-project</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.adobe.aem.aacs</groupId>
+        <artifactId>forms-wknd</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>aem-adobewkndproject-project.core</artifactId>
-    <name>Adobe WKND Project - Core</name>
-    <description>Core bundle for Adobe WKND Project</description>
+    <artifactId>forms-wknd.core</artifactId>
+    <name>WKND Forms aaCS - Core</name>
+    <description>Core bundle for WKND Forms aaCS</description>
     <build>
         <plugins>
             <plugin>
@@ -42,9 +41,11 @@
                             <goal>bnd-process</goal>
                         </goals>
                         <configuration>
-                            <bnd><![CDATA[
+                            <bnd>
+                                <![CDATA[
 Import-Package: javax.annotation;version=0.0.0,*
-                                ]]></bnd>
+                                ]]>
+                            </bnd>
                         </configuration>
                     </execution>
                 </executions>
@@ -89,6 +90,14 @@ Import-Package: javax.annotation;version=0.0.0,*
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>aem-sdk-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
         </dependency>
 
 

@@ -15,6 +15,6 @@
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <workspaceFilter version="1.0">
-    <filter root="/apps/adobewkndproject-packages"/>
-    <filter root="/apps/adobewkndproject-vendor-packages"/>
+    <filter root="/apps/forms-wknd-packages"/>
+    <filter root="/apps/forms-wknd-vendor-packages"/>
 </workspaceFilter>

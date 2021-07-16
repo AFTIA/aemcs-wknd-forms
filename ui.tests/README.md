@@ -76,7 +76,7 @@ This project also provides Maven profiles to build and execute the tests using D
 mvn clean install -Pui-tests-docker-build
 ```
 
-will build Docker image `com.adobewkndproject-aem-adobewkndproject-project.ui.tests/ui.tests` locally
+will build Docker image `com.adobe.aem.aacs-forms-wknd.ui.tests/ui.tests` locally
 
 ### Run Tests
 

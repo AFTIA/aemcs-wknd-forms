@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:fd="http://www.adobe.com/aemfd/fd/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2021-07-12T09:39:09.002-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/forms-wknd/settings/wcm/templates/blank-af1"
+        jcr:language="en"
+        jcr:lastModified="{Date}2021-03-24T18:22:20.809+05:30"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="WKND Vacations"
+        sling:resourceType="fd/af/components/page2/aftemplatedpage">
+        <guideContainer
+            fd:version="1.1"
+            jcr:lastModified="{Date}2021-07-07T13:26:32.522-04:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="fd/af/components/guideContainer"
+            _invokeSubmitActionSync="true"
+            _useSignedPdf="true"
+            actionType="fd/dashboard/components/actions/aemworkflowsubmit"
+            attachmentsFolderPath="attachments"
+            clientLibRef="wknd-vacation"
+            dataXMLPath="data"
+            disableSwipeGesture="{Boolean}false"
+            dorPath="dor"
+            dorTemplateRef="/content/dam/formsanddocuments/wknd-vacations/forms/wknd-vacations/jcr:content/renditions/dorTemplate"
+            dorType="generate"
+            enableFocusOnFirstField="{Boolean}true"
+            enableLayoutLayer="false"
+            guideCss="guideContainer"
+            guideNodeClass="guideContainerNode"
+            name="guide1"
+            redirect="/content/forms/af/wknd-vacations/forms/thank-you.html"
+            schemaRef="/content/dam/formsanddocuments-fdm/wknd/wknd-vacations"
+            schemaType="formdatamodel"
+            textIsRich="true"
+            thankYouMessage="Thank you for submitting the form."
+            thankYouOption="page"
+            themeRef="/content/dam/formsanddocuments-themes/forms-wknd/wknd-vacation-default"
+            useExistingAF="false"
+            workflowModel="/var/workflow/models/wknd-form-submission">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/layouts/defaultGuideLayout"
+                mobileLayout="fd/af/layouts/mobile/step"
+                toolbarPosition="Bottom"/>
+            <rootPanel
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Root Panel"
+                sling:resourceType="fd/af/components/rootPanel"
+                dorExcludeDescription="true"
+                dorExcludeTitle="true"
+                guideNodeClass="rootPanelNode"
+                name="guideRootPanel"
+                panelSetType="Navigable">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                    nonNavigable="{Boolean}true"
+                    toolbarPosition="Bottom"/>
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                    <panel
+                        jcr:created="{Date}2021-05-11T15:09:24.324-04:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-05-28T15:56:24.173-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sidebar"
+                        sling:resourceType="fd/af/components/panel"
+                        dorExcludeDescription="true"
+                        dorExcludeTitle="true"
+                        dorExclusion="true"
+                        enabled="{Boolean}true"
+                        guideNodeClass="guidePanel"
+                        name="sidebar"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false"
+                        visible="{Boolean}true">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            dorLayoutType="columnar"
+                            dorNumCols="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidetextdraw
+                                jcr:created="{Date}2021-05-11T15:47:23.884-04:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2021-05-11T15:55:46.357-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>The text will appear here&lt;/p>"
+                                guideNodeClass="guideTextDraw"
+                                name="social">
+                                <fd:rules
+                                    fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1620760164370.social&quot;\,&quot;type&quot;:&quot;STATIC TEXT|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;social&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;sideBarProp&quot;\,&quot;displayName&quot;:&quot;Returns the value of the sidebar&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;som&quot;\,&quot;description&quot;:&quot;The som expression of the field. Note that the only som expressions supported are for text components&quot;}\,{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;id&quot;\,&quot;description&quot;:&quot;The identifier of the field used to determine what text to set in the som expression&quot;}]\,&quot;impl&quot;:&quot;$0($1\,$2)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;MEMBER_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;PROPERTY_LIST&quot;\,&quot;value&quot;:&quot;somExpression&quot;}\,{&quot;nodeName&quot;:&quot;of&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1620760164370.social&quot;\,&quot;displayName&quot;:&quot;social&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Sidebar/social/&quot;\,&quot;name&quot;:&quot;social&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.panel1620760164370&quot;}}]}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;SOCIAL&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nsideBarProp(this.somExpression\,\\&quot;SOCIAL\\&quot;);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextdraw>
+                            <guidetextdraw_2077990419
+                                jcr:created="{Date}2021-05-11T15:55:53.857-04:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2021-05-11T15:55:58.763-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>The text will appear here&lt;/p>"
+                                guideNodeClass="guideTextDraw"
+                                name="type">
+                                <fd:rules
+                                    fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1620760164370.type&quot;\,&quot;type&quot;:&quot;STATIC TEXT|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;type&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;sideBarProp&quot;\,&quot;displayName&quot;:&quot;Returns the value of the sidebar&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;som&quot;\,&quot;description&quot;:&quot;The som expression of the field. Note that the only som expressions supported are for text components&quot;}\,{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;id&quot;\,&quot;description&quot;:&quot;The identifier of the field used to determine what text to set in the som expression&quot;}]\,&quot;impl&quot;:&quot;$0($1\,$2)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;MEMBER_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;PROPERTY_LIST&quot;\,&quot;value&quot;:&quot;somExpression&quot;}\,{&quot;nodeName&quot;:&quot;of&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1620760164370.type&quot;\,&quot;displayName&quot;:&quot;type&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Sidebar/type/&quot;\,&quot;name&quot;:&quot;type&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.panel1620760164370&quot;}}]}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;TYPE&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nsideBarProp(this.somExpression\,\\&quot;TYPE\\&quot;);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextdraw_2077990419>
+                            <guidetextdraw_405272275
+                                jcr:created="{Date}2021-05-11T15:56:03.100-04:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2021-05-11T15:56:15.930-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>The text will appear here&lt;/p>"
+                                guideNodeClass="guideTextDraw"
+                                name="length">
+                                <fd:rules
+                                    fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1620760164370.length&quot;\,&quot;type&quot;:&quot;STATIC TEXT|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;length&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;sideBarProp&quot;\,&quot;displayName&quot;:&quot;Returns the value of the sidebar&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;som&quot;\,&quot;description&quot;:&quot;The som expression of the field. Note that the only som expressions supported are for text components&quot;}\,{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;id&quot;\,&quot;description&quot;:&quot;The identifier of the field used to determine what text to set in the som expression&quot;}]\,&quot;impl&quot;:&quot;$0($1\,$2)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;MEMBER_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;PROPERTY_LIST&quot;\,&quot;value&quot;:&quot;somExpression&quot;}\,{&quot;nodeName&quot;:&quot;of&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1620760164370.length&quot;\,&quot;displayName&quot;:&quot;length&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Sidebar/length/&quot;\,&quot;name&quot;:&quot;length&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.panel1620760164370&quot;}}]}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;LENGTH&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nsideBarProp(this.somExpression\,\\&quot;LENGTH\\&quot;);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextdraw_405272275>
+                            <guidetextdraw_1732696197
+                                jcr:created="{Date}2021-05-11T15:56:50.985-04:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2021-05-11T15:56:57.931-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>The text will appear here&lt;/p>"
+                                guideNodeClass="guideTextDraw"
+                                name="difficulty">
+                                <fd:rules
+                                    fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1620760164370.difficulty&quot;\,&quot;type&quot;:&quot;STATIC TEXT|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;difficulty&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;sideBarProp&quot;\,&quot;displayName&quot;:&quot;Returns the value of the sidebar&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;som&quot;\,&quot;description&quot;:&quot;The som expression of the field. Note that the only som expressions supported are for text components&quot;}\,{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;id&quot;\,&quot;description&quot;:&quot;The identifier of the field used to determine what text to set in the som expression&quot;}]\,&quot;impl&quot;:&quot;$0($1\,$2)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;MEMBER_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;PROPERTY_LIST&quot;\,&quot;value&quot;:&quot;somExpression&quot;}\,{&quot;nodeName&quot;:&quot;of&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1620760164370.difficulty&quot;\,&quot;displayName&quot;:&quot;difficulty&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Sidebar/difficulty/&quot;\,&quot;name&quot;:&quot;difficulty&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.panel1620760164370&quot;}}]}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;DIFFICULTY&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nsideBarProp(this.somExpression\,\\&quot;DIFFICULTY\\&quot;);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextdraw_1732696197>
+                            <guidetextdraw_1255159616
+                                jcr:created="{Date}2021-05-11T15:57:01.870-04:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2021-05-11T15:57:10.514-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>The text will appear here&lt;/p>"
+                                guideNodeClass="guideTextDraw"
+                                name="price">
+                                <fd:rules
+                                    fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1620760164370.price&quot;\,&quot;type&quot;:&quot;STATIC TEXT|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;price&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;sideBarProp&quot;\,&quot;displayName&quot;:&quot;Returns the value of the sidebar&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;som&quot;\,&quot;description&quot;:&quot;The som expression of the field. Note that the only som expressions supported are for text components&quot;}\,{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;id&quot;\,&quot;description&quot;:&quot;The identifier of the field used to determine what text to set in the som expression&quot;}]\,&quot;impl&quot;:&quot;$0($1\,$2)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;MEMBER_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;PROPERTY_LIST&quot;\,&quot;value&quot;:&quot;somExpression&quot;}\,{&quot;nodeName&quot;:&quot;of&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.panel1620760164370.price&quot;\,&quot;displayName&quot;:&quot;price&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Sidebar/price/&quot;\,&quot;name&quot;:&quot;price&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.panel1620760164370&quot;}}]}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;PRICE&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nsideBarProp(this.somExpression\,\\&quot;PRICE\\&quot;);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextdraw_1255159616>
+                        </items>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                behavior="newline"
+                                offset="1"
+                                width="3"/>
+                        </cq:responsive>
+                        <fd:rules
+                            fd:init="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.sidebar&quot;\,&quot;type&quot;:&quot;PANEL|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;sidebar&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is initialized&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;hideSideBar&quot;\,&quot;displayName&quot;:&quot;Hides sidebar if form is in webpage&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;som&quot;\,&quot;description&quot;:&quot;The som expression of the sidebar&quot;}]\,&quot;impl&quot;:&quot;$0($1)&quot;}\,&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;MEMBER_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;PROPERTY_LIST&quot;\,&quot;value&quot;:&quot;somExpression&quot;}\,{&quot;nodeName&quot;:&quot;of&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.sidebar&quot;\,&quot;displayName&quot;:&quot;Sidebar&quot;\,&quot;type&quot;:&quot;AFCOMPONENT|PANEL&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Sidebar/&quot;\,&quot;name&quot;:&quot;sidebar&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel&quot;}}]}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nhideSideBar(this.somExpression);\\n\\n&quot;\,&quot;eventName&quot;:&quot;Initialize&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </panel>
+                    <panel_2104326166
+                        jcr:created="{Date}2021-05-11T15:10:41.087-04:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-05-28T14:15:36.503-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Main"
+                        sling:resourceType="fd/af/components/panel"
+                        completionExpReq="{Boolean}false"
+                        dorExcludeDescription="true"
+                        dorExcludeTitle="true"
+                        guideNodeClass="guidePanel"
+                        name="main"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            dorLayoutType="columnar"
+                            dorNumCols="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <panel1620763520319
+                                jcr:lastModified="{Date}2021-05-20T10:17:57.044-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Sign Up"
+                                sling:resourceType="fd/af/components/panel"
+                                dorExcludeDescription="true"
+                                dorExcludeTitle="true"
+                                guideNodeClass="guidePanel"
+                                name="panel1620763520319"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                                    <panel
+                                        jcr:created="{Date}2021-05-11T16:08:31.782-04:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2021-05-20T10:18:12.155-04:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Sign Up Fragment"
+                                        sling:resourceType="fd/af/components/panel"
+                                        dorExcludeTitle="true"
+                                        fragRef="/content/dam/formsanddocuments/wknd-vacations/fragments/sign-up"
+                                        guideNodeClass="guidePanel"
+                                        name="panel1620763711835"
+                                        optimizeRenderPerformance="true"
+                                        textIsRich="true"
+                                        validateOnStepCompletion="{Boolean}false">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                            columns="1"
+                                            dorLayoutType="columnar"
+                                            dorNumCols="1"
+                                            nonNavigable="{Boolean}true"
+                                            toolbarPosition="Bottom"/>
+                                        <items jcr:primaryType="nt:unstructured"/>
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                    </panel>
+                                    <guidetermsandconditi
+                                        jcr:created="{Date}2021-05-31T09:28:54.493-04:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2021-07-06T15:54:10.020-04:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Terms and Conditions"
+                                        sling:resourceType="fd/af/components/guidetermsandconditions"
+                                        custom="Terms And Conditions"
+                                        guideNodeClass="guideTermsAndConditions"
+                                        name="termsandconditi1622467734605"
+                                        showApprovalOption="true"
+                                        textIsRich="[true,true,true]"
+                                        tncCheckBoxContent="I agree to the terms &amp; conditions"
+                                        tncTextContent="&lt;p>TERMS OF SERVICE&lt;/p>&#xd;&#xa;&lt;p>OVERVIEW&lt;/p>&#xd;&#xa;&lt;p>This website is operated by WKND Vacations. Throughout the site, the terms “we”, “us” and “our” refer to WKND Vacations. WKND Vacations offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.&lt;/p>&#xd;&#xa;">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <reviewDocument
+                                                jcr:primaryType="nt:unstructured"
+                                                guideNodeClass="guideTextBox"
+                                                name="reviewDocument"/>
+                                            <reviewStatus
+                                                jcr:primaryType="nt:unstructured"
+                                                guideNodeClass="guideCheckBox"
+                                                mandatory="true"
+                                                name="reviewStatus"/>
+                                        </items>
+                                    </guidetermsandconditi>
+                                    <adobesignblock
+                                        jcr:created="{Date}2021-05-20T10:20:15.651-04:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2021-05-31T13:53:24.423-04:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Customer Signature"
+                                        sling:resourceType="fd/afaddon/components/adobeSignBlock"
+                                        _value="&lt;p>Signature: &amp;nbsp;&lt;span data-adobesigntype=&quot;signature&quot;>{{sampleField_es_:signer1:signature}}&lt;/span>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                        bindRef="/form_properties/signature"
+                                        guideNodeClass="guideAdobeSignBlock"
+                                        name="adobesignblock1621520415697"
+                                        textIsRich="true"
+                                        visible="{Boolean}false"/>
+                                    <guideradiobutton
+                                        jcr:created="{Date}2021-07-06T10:26:59.227-04:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2021-07-12T09:39:08.957-04:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Submit to:"
+                                        sling:resourceType="fd/af/components/guideradiobutton"
+                                        alignment="guideFieldHorizontalAlignment"
+                                        bindRef="/submission_settings/submit_to"
+                                        guideNodeClass="guideRadioButton"
+                                        mandatory="true"
+                                        mandatoryMessage="Please select your submission prefernce"
+                                        name="submit_to"
+                                        options="[0=Salesforce,1=Database]"
+                                        textIsRich="[true,true]"/>
+                                </items>
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                    columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <toolbar
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Toolbar"
+                                    sling:resourceType="fd/af/components/toolbar"
+                                    css=""
+                                    guideNodeClass="guideToolbar"
+                                    name="toolbar">
+                                    <items
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="fd/af/layouts/toolbar/defaultToolbarLayout">
+                                        <submit
+                                            jcr:created="{Date}2021-05-11T16:45:27.564-04:00"
+                                            jcr:createdBy="admin"
+                                            jcr:lastModified="{Date}2021-05-11T16:45:27.564-04:00"
+                                            jcr:lastModifiedBy="admin"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Submit"
+                                            sling:resourceType="fd/af/components/actions/submit"
+                                            dorExclusion="true"
+                                            guideNodeClass="guideButton"
+                                            name="submit1620765927612"
+                                            type="submit">
+                                            <fd:rules
+                                                fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;XX&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;XX&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SUBMIT_FORM&quot;\,&quot;items&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nguideBridge.submit();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;}]"
+                                                jcr:primaryType="nt:unstructured"/>
+                                        </submit>
+                                    </items>
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="fd/af/layouts/toolbar/defaultToolbarLayout"/>
+                                </toolbar>
+                            </panel1620763520319>
+                        </items>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </panel_2104326166>
+                </items>
+            </rootPanel>
+            <signerInfo
+                jcr:primaryType="nt:unstructured"
+                firstSignerFormFiller="true"
+                signConfigPath="/conf/global/settings/cloudconfigs/echosign/WKND-Adobe-Sign"
+                workflowType="SEQUENTIAL">
+                <signer0
+                    jcr:primaryType="nt:unstructured"
+                    countryCodeSource="form"
+                    email="guide[0].guide1[0].guideRootPanel[0].main[0].panel1620763520319[0].panel1620763711835[0].panel1620763975155[0].panel1622225937786[0].panel1622225815602[0].email1620764066624[0]"
+                    emailSource="form"
+                    phoneSource="form"
+                    securityOption="NONE"
+                    signerTitle="Signer One">
+                    <signField0
+                        jcr:primaryType="nt:unstructured"
+                        name="sampleField"
+                        som="guide[0].guide1[0].guideRootPanel[0].main[0].panel1620763520319[0].adobesignblock1621520415697[0]"/>
+                </signer0>
+            </signerInfo>
+            <view jcr:primaryType="nt:unstructured">
+                <print
+                    jcr:created="{Date}2021-05-20T09:47:00.236-04:00"
+                    jcr:lastModified="{Date}2021-07-06T12:23:34.678-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/authoring/components/dor/dorProperties"
+                    accentColor="#FFDC00"
+                    file="/content/dam/forms-wknd/wknd-vacations/wknd-travel.png"
+                    fontFamily="Arial"
+                    hidePanelDescriptions="false"
+                    includeUnboundFields="true"
+                    metaTemplateRef="/libs/fd/af/dor/templates/defaultTemplate.xdp"
+                    optionSeparator=", "
+                    showSelectedOptions="true">
+                    <branding jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <masterpage0 jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <Header jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <AF_LOGO_IMAGE
+                                                jcr:primaryType="nt:unstructured"
+                                                fileName="wknd-travel.png"
+                                                fileReference="/content/dam/forms-wknd/wknd-vacations/wknd-travel.png"
+                                                valueFrom="     "/>
+                                            <HeaderInfo jcr:primaryType="nt:unstructured">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <AF_FORM_TITLE
+                                                        jcr:primaryType="nt:unstructured"
+                                                        resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        value="West Coast Travel"/>
+                                                    <AF_HEADER_TEXT
+                                                        jcr:primaryType="nt:unstructured"
+                                                        resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        value="WKND Vacations"/>
+                                                </items>
+                                            </HeaderInfo>
+                                        </items>
+                                    </Header>
+                                    <Footer jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <AF_DISCLAIMER_LABEL
+                                                jcr:primaryType="nt:unstructured"
+                                                resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                                            <AF_DISCLAIMER_TEXT
+                                                jcr:primaryType="nt:unstructured"
+                                                resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                                        </items>
+                                    </Footer>
+                                </items>
+                            </masterpage0>
+                        </items>
+                    </branding>
+                </print>
+            </view>
+        </guideContainer>
+    </jcr:content>
+</jcr:root>

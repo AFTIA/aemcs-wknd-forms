@@ -21,18 +21,18 @@
         <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
         <!-- ====================================================================== -->
     <parent>
-        <groupId>com.adobewkndproject</groupId>
-        <artifactId>aem-adobewkndproject-project</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.adobe.aem.aacs</groupId>
+        <artifactId>forms-wknd</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem-adobewkndproject-project.analyse</artifactId>
-    <name>Adobe WKND Project - Project Analyser</name>
-    <description>Project analysis for Adobe WKND Project</description>
+    <artifactId>forms-wknd.analyse</artifactId>
+    <name>WKND Forms aaCS - Project Analyser</name>
+    <description>Project analysis for WKND Forms aaCS</description>
     <packaging>aem-analyse</packaging>
 
     <build>
@@ -47,8 +47,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.adobewkndproject</groupId>
-            <artifactId>aem-adobewkndproject-project.all</artifactId>
+            <groupId>com.adobe.aem.aacs</groupId>
+            <artifactId>forms-wknd.all</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>

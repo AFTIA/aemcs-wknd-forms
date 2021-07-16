@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/adobewkndproject/clientlibs"/>
-    <filter root="/apps/adobewkndproject/components"/>
-    <filter root="/apps/adobewkndproject/i18n"/>
+    <filter root="/apps/forms-wknd/clientlibs"/>
+    <filter root="/apps/forms-wknd/components"/>
+    <filter root="/apps/forms-wknd/i18n"/>
 </workspaceFilter>

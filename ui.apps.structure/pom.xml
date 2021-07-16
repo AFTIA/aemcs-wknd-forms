@@ -6,18 +6,18 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.adobewkndproject</groupId>
-        <artifactId>aem-adobewkndproject-project</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.adobe.aem.aacs</groupId>
+        <artifactId>forms-wknd</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem-adobewkndproject-project.ui.apps.structure</artifactId>
+    <artifactId>forms-wknd.ui.apps.structure</artifactId>
     <packaging>content-package</packaging>
-    <name>Adobe WKND Project - Repository Structure Package</name>
+    <name>WKND Forms aaCS - Repository Structure Package</name>
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.
         Any roots in the Code packages of this project should have their parent enumerated in the Filters list below.
@@ -35,7 +35,7 @@
                     <filters>
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
-                        <filter><root>/apps/adobewkndproject</root></filter>
+                        <filter><root>/apps/forms-wknd</root></filter>
 
                         <!-- Common overlay roots -->
                         <filter><root>/apps/sling</root></filter>
@@ -48,7 +48,7 @@
                         <filter><root>/apps/settings</root></filter>
 
                         <!-- DAM folder root, will be created via repoinit -->
-                        <filter><root>/content/dam/adobewkndproject</root></filter>
+                        <filter><root>/content/dam/forms-wknd</root></filter>
 
                     </filters>
                 </configuration>

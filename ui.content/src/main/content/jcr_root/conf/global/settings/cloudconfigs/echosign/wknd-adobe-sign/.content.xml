@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-06-01T08:57:23.403-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/adobesign/cloudservices/adobesign/template"
+        jcr:lastModified="{Date}2021-06-01T08:57:23.367-04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="WKND Adobe Sign"
+        sling:resourceType="adobesign/cloudservices/adobesign/page"
+        access_token_uri="https://api.na1.echosign.com/oauth/refresh"
+        api_access_point="https://api.na1.echosign.com/"
+        authorization_scope="agreement_read:self agreement_send:self workflow_read:self agreement_write:self widget_write:self"
+        client_id="CBJCHBCAABAA4RpFVkhL1wCPKvql-Vv8jLWMcn-00u4w"
+        client_secret="\{09d839b8a5b121c28ed01df756db1f3c52d74dd9d6956a7b91b440745db75e65e95e734062db0ef91dafbf8fcd1ac60f52ba3bebd08c7604796e8b0d738dde75}"
+        name="wknd-adobe-sign"
+        oAuthUrl="https://secure.na1.echosign.com/public/oauth"
+        redirect_uri="https://aaf8d6b1726e.ngrok.io/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global"
+        refresh_token="\{cd2c4b93b1c7631d7d73a7d3541aeb5c07400bef3616494abe9e61a4bc3f5109a105bcb3597a9986b27af15b7d289269992bcaa973ceae8e51e8f52d4b328e6e36c57a5e28ffc4e3ec8dfce0fc291382926c6cb7a9399be1b3bd694edfec42c7}"
+        refresh_token_uri="https://api.na1.echosign.com/oauth/token"
+        signattachments="true"
+        web_access_point="https://aftia-solutions.na1.echosign.com/"/>
+</jcr:root>

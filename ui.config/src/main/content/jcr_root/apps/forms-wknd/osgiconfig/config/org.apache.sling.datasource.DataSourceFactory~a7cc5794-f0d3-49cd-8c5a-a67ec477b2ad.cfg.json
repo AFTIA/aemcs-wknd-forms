@@ -1,0 +1,33 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "defaultAutoCommit":"Default",
+  "maxIdle:Integer":100,
+  "initSQL":"",
+  "validationQueryTimeout:Integer":-1,
+  "minEvictableIdleTimeMillis:Integer":60000,
+  "driverClassName":"org.apache.derby.jdbc.EmbeddedDriver",
+  "username":"",
+  "testOnBorrow":false,
+  "maxWait:Integer":30000,
+  "url":"jdbc:derby:memory:wknd-db",
+  "connectionProperties":"",
+  "datasource.name":"wknd-derby",
+  "testWhileIdle":false,
+  "maxActive:Integer":100,
+  "jdbcInterceptors":"StatementCache;SlowQueryReport(threshold=10000);ConnectionState",
+  "timeBetweenEvictionRunsMillis:Integer":5000,
+  "initialSize:Integer":10,
+  "validationInterval:Integer":30000,
+  "testOnReturn":false,
+  "datasource.svc.prop.name":"datasource.name",
+  "defaultTransactionIsolation":"Default",
+  "validationQuery":"",
+  "logValidationErrors":true,
+  "maxAge:Integer":0,
+  "datasource.svc.properties":[
+    ""
+  ],
+  "defaultReadOnly":"Default",
+  "defaultCatalog":"",
+  "minIdle:Integer":10
+}

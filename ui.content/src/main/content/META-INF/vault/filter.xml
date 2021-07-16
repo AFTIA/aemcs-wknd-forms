@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/adobewkndproject" mode="merge"/>
-    <filter root="/content/adobewkndproject" mode="merge"/>
-    <filter root="/content/dam/adobewkndproject/asset.jpg" mode="merge"/>
-    <filter root="/content/experience-fragments/adobewkndproject" mode="merge"/>
-    <filter root="/content/dam/formsanddocuments-themes/adobewkndproject" mode="merge"/>
-    <filter root="/content/dam/adobewkndproject/sample_logo.png" mode="merge"/>
-    <filter root="/content/dam/adobewkndproject/sample_terms.png" mode="merge"/>
+
+    <!-- cloudconfig settings -->
+    <filter root="/conf/global/settings/cloudconfigs/echosign" mode="merge" />
+    <filter root="/conf/global/settings/cloudconfigs/flamingo" mode="merge" />
+    <filter root="/conf/global/settings/cloudconfigs/fdm" mode="merge" />
+
+    <!-- forms-wknd configuration -->
+    <filter root="/conf/forms-wknd" mode="merge" />
+
+    <!-- forms-wknd sites -->
+    <filter root="/content/forms-wknd" mode="merge" />
+
+    <!-- forms-wknd assets -->
+    <filter root="/content/dam/forms-wknd" mode="merge" />
+
+    <!-- forms-wknd experience fragments -->
+    <filter root="/content/experience-fragments/forms-wknd" mode="merge" />
+
+    <!-- forms-wknd themes -->
+    <filter root="/content/dam/formsanddocuments-themes/forms-wknd" mode="merge" />
+    <filter root="/etc/clientlibs/fd/themes/forms-wknd" mode="merge" />
+
+    <!-- forms-we themes -->
+    <filter root="/content/dam/formsanddocuments-themes/we-forms-aacs" mode="merge" />
+    <filter root="/etc/clientlibs/fd/themes/we-forms-aacs" mode="merge" />
+
+    <!-- forms-wknd forms -->
+    <filter root="/content/dam/formsanddocuments/wknd-vacations" mode="merge" />
+    <filter root="/content/forms/af/wknd-vacations" mode="merge" />
+
+    <!-- forms-wknd fdm -->
+    <filter root="/content/dam/formsanddocuments-fdm/wknd" mode="merge" />
+
+    <!-- forms-we forms -->
+    <filter root="/content/dam/formsanddocuments/we--forms" mode="merge" />
+    <filter root="/content/forms/af/we--forms" mode="merge" />
+
+    <!-- We.Finance Asset -->
+    <filter root="/content/dam/we-finance" mode="merge" />
+
+    <!-- We.Gov Asset -->
+    <filter root="/content/dam/we-gov" mode="merge" />
+
+    <!-- WKND Sites Page Cycling -->
+    <filter root="/content/wknd/language-masters/en/adventures/west-coast-cycling" mode="replace" />
+    
+    <!-- WKND Workflow -->
+    <filter root="/var/workflow/models/wknd-form-submission" mode="merge" />
+    <filter root="/conf/global/settings/workflow/models/wknd-form-submission" mode="merge" />
 </workspaceFilter>

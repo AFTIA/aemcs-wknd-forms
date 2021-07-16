@@ -1,0 +1,43 @@
+# This is a sample build configuration for Java (Maven).
+# Check our guides at https://confluence.atlassian.com/x/zd-5Mw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: maven:3.6.3
+
+pipelines:
+  custom: # Pipelines that are triggered manually
+    manual:
+      - step:
+          caches:
+            - maven
+          script: # Modify the commands below to build your repository.
+            - mvn clean install -Padobe-public
+  branches:
+    develop:
+      - step:
+          caches:
+            - maven
+          script: # Modify the commands below to build your repository.
+            - mvn clean install -Padobe-public
+    master:
+      - step:
+          name: 'Build and Test'
+          caches:
+            - maven
+          script: 
+            - mvn clean install
+      - step:
+          name: 'Push to Production Pipeline'
+          deployment: prod-pipeline
+          caches:
+            - maven
+          script: 
+            - git remote add adobe https://$ADOBE_GIT_USER:$ADOBE_GIT_PASSWORD@$ADOBE_GIT_URL
+            - git push adobe develop
+    feature/*:
+      - step:
+          caches:
+            - maven
+          script:
+            - mvn clean install -Padobe-public

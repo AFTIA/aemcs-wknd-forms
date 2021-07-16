@@ -23,15 +23,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.adobewkndproject</groupId>
-        <artifactId>aem-adobewkndproject-project</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.adobe.aem.aacs</groupId>
+        <artifactId>forms-wknd</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>aem-adobewkndproject-project.ui.tests</artifactId>
-    <name>Adobe WKND Project - UI Tests</name>
-    <description>UI Tests for Adobe WKND Project</description>
+    <artifactId>forms-wknd.ui.tests</artifactId>
+    <name>WKND Forms aaCS - UI Tests</name>
+    <description>UI Tests for WKND Forms aaCS</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
