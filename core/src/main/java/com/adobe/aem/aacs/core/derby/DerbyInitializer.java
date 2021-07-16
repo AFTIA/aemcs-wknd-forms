@@ -40,7 +40,7 @@ public class DerbyInitializer implements DBInitializer {
             stmt.execute(createTable);
             logger.info("Lead table deleted");
         } catch (Exception e) {
-            logger.info("No LEAD table located - moving on");
+            logger.warn("No LEAD table located - moving on");
         }
 
         try (Statement stmt = connection.createStatement()) {
