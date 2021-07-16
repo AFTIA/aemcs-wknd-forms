@@ -29,7 +29,6 @@ pipelines:
             - mvn clean install
       - step:
           name: 'Push to Production Pipeline'
-          deployment: prod-pipeline
           caches:
             - maven
           script: 
