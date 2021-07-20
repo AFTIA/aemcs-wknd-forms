@@ -20,6 +20,7 @@ public class DerbyInitializer implements DBInitializer {
     private final String DB_URL = "jdbc:derby:memory:wknd-db;create=true";
 
     @Override
+    @SuppressWarnings({"squid:S2658", "squid:S2095", "squid:S2221"})
     public Boolean initialize() {
         Connection connection = null;
 
@@ -39,7 +40,7 @@ public class DerbyInitializer implements DBInitializer {
             stmt.execute(createTable);
             logger.info("Lead table deleted");
         } catch (Exception e) {
-            logger.info("No LEAD table located - moving on");
+            logger.warn("No LEAD table located - moving on");
         }
 
         try (Statement stmt = connection.createStatement()) {
