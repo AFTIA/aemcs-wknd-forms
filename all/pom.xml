@@ -89,12 +89,17 @@
                         <embedded>
                             <groupId>org.apache.derby</groupId>
                             <artifactId>derbyclient</artifactId>
-                            <target>/apps/forms-wknd-vendor-packages/application/install</target>
+                            <target>/apps/forms-wknd-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>org.apache.derby</groupId>
                             <artifactId>derby</artifactId>
-                            <target>/apps/forms-wknd-vendor-packages/application/install</target>
+                            <target>/apps/forms-wknd-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.aem.aacs</groupId>
+                            <artifactId>forms-wknd.core</artifactId>
+                            <target>/apps/forms-wknd-packages/application/install</target>
                         </embedded>
                     </embeddeds>
                 </configuration>
