@@ -23,7 +23,6 @@ public class DerbyInitializer implements DBInitializer {
     private DataSource dataSource;
 
     @Override
-    @SuppressWarnings({"squid:S2658", "squid:S2095", "squid:S2221"})
     public Boolean initialize() {
         Connection connection = null;
 
