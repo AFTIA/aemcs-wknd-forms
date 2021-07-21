@@ -199,6 +199,44 @@ Follow the instructions provided in the following document in order to create a 
 - Click the square on the top left
 - Click Marketing (top left)
 - Click Leads
+
+## How To Use Derby DB
+Once Derby DB is configured, the user has a choice within the form to submit to Derby DB or Salesforce. That choice is linked to the form workflow which will use the Services created in the FDM (Form Data Model) to submit to either Derby DB or Salesforce.
+
+### How To Query Derby DB in FDM
+- Navigate to AEM Start Page
+- Select Forms -> Data Integrations -> WKND
+- Locate the `WKND Vacations` FDM and select edit
+- Navigate to "Services" From the top of the middle Section
+- Select the Service to be Queried (In this example it is the "get" Service)
+- Click on "Test Service" from the toolbar at the top
+- Now enter JSON key-value pairs to Query the Derby DB. In this example, the Primary Key for the Derby DB is `lead_id`
+- Once the query is constructed click test
+**Note:** A sample Query will to get a user with `lead_id` 2 in JSON Formate is `{"lead_id":2}`
+
+### How To Post To Derby in FDM
+- Follow the steps above to Navigate to the `WKND Vacations` FDM
+- - Navigate to "Services" From the top of the middle Section
+- Select the Service to be Queried (In this example it is the "insert" Service)
+- A sample insert query is pre-populated, modify the query and click Test. If this returns True, you have succesfuly inserted the data in Derby. 
+**Note:** Below is a sample insert Query to Derby DB. When inserted, the `lead_id` will incerement by 1.
+```
+{
+    "derby_lead": {
+        "FirstName": "Lorem laboris Ut culpa",
+        "LastName": "fugiat irure in reprehenderit qui",
+        "Phone": "ut eu exercitation velit",
+        "email": "aliquip esse ad",
+        "BirthDate": "qui deserunt veniam Ut",
+        "StreetAddress": "mollit ea labore et",
+        "city": "irure enim mollit proident",
+        "PostalCode": "in minim consequat et",
+        "province": "velit esse anim",
+        "country": "mollit esse"
+    }
+}
+```
+
 ## Install
 
 Once the Adobe WKND project is installed, then this project can be installed using the `mvn clean install -Padobe-public -PautoInstallSinglePackage` command in the root of the project.
