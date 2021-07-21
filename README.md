@@ -1,5 +1,5 @@
 ![Build Status](https://github.com/AFTIA/aemcs-wknd-forms/workflows/Build%20and%20Test/badge.svg)
-# AEM As A Cloud Service
+# AEM as a Cloud Service WKND Forms Project
 
 This is a project template for AEM As A Cloud Service application. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality. You can also find a WKND Demo form as a starting point to developing forms in AEMaacs.
 
