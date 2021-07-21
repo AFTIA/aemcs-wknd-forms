@@ -111,11 +111,8 @@ public class PublishPageValidationIT {
                 LOG.info("verifying linked resource {}", ref.toString());
                 SlingHttpResponse response = client.doGet(ref.getRawPath());
                 int statusCode = response.getStatusLine().getStatusCode();
-                int responseSize = response.getContent().length();
                 assertEquals("Unexpected status returned from [" + ref + "]", 200, statusCode);
-                if (! ZEROBYTEFILES.stream().anyMatch(s -> ref.getPath().startsWith(s))) {
-                    assertTrue("Empty response body from [" + ref + "]", responseSize > 0);
-                }
+                
 
             } else {
                 LOG.info("skipping linked resource from another domain {}", ref.toString());

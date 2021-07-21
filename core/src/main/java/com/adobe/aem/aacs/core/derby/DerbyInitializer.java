@@ -1,32 +1,33 @@
 package com.adobe.aem.aacs.core.derby;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.derby.jdbc.EmbeddedDriver;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import javax.sql.DataSource;
 
 @Component(service = DBInitializer.class, immediate = true)
 public class DerbyInitializer implements DBInitializer {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
-    private final String DB_URL = "jdbc:derby:memory:wknd-db;create=true";
+    
+    @Reference(target = "(&(objectclass=javax.sql.DataSource)(datasource.name=wknd-derby))")
+    private DataSource dataSource;
 
     @Override
     public Boolean initialize() {
         Connection connection = null;
 
         try {
-            Class.forName(EmbeddedDriver.class.getName()).newInstance();
-            // Get a connection
-            connection = DriverManager.getConnection(DB_URL);
+            connection = this.dataSource.getConnection();
         } catch (Exception e) {
             logger.error("Failed to get a database connection", e);
             return Boolean.FALSE;
@@ -39,7 +40,7 @@ public class DerbyInitializer implements DBInitializer {
             stmt.execute(createTable);
             logger.info("Lead table deleted");
         } catch (Exception e) {
-            logger.info("No LEAD table located - moving on");
+            logger.warn("No LEAD table located - moving on");
         }
 
         try (Statement stmt = connection.createStatement()) {
