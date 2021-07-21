@@ -43,7 +43,7 @@
                         <configuration>
                             <bnd>
                                 <![CDATA[
-Import-Package: javax.annotation;version=0.0.0,*
+Import-Package: javax.annotation;version=0.0.0, *
                                 ]]>
                             </bnd>
                         </configuration>
@@ -90,10 +90,6 @@ Import-Package: javax.annotation;version=0.0.0,*
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>aem-sdk-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.derby</groupId>
-            <artifactId>derby</artifactId>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>

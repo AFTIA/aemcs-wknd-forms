@@ -20,7 +20,7 @@
   "validationInterval:Integer":30000,
   "testOnReturn":false,
   "datasource.svc.prop.name":"datasource.name",
-  "defaultTransactionIsolation":"Default",
+  "defaultTransactionIsolation":"READ_COMMITTED",
   "validationQuery":"",
   "logValidationErrors":true,
   "maxAge:Integer":0,
